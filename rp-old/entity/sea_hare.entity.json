@@ -1,0 +1,28 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "aqua:sea_hare",
+      "materials": { "default": "entity_alphatest" },
+      "textures": {
+        "default": "textures/entity/sea_hare"
+      },
+      "geometry": {
+        "default": "geometry.sea_hare"
+      },
+      "animations": {
+        "idle": "animation.sea_hare.idle"
+      },
+      "scripts": {
+        "animate": [
+          "idle"
+        ]
+      },
+      "render_controllers": [ "controller.render.squid" ],
+      "spawn_egg": {
+        "texture": "mollusc_egg",
+        "texture_index": 7
+      }
+    }
+  }
+}

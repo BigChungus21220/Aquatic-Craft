@@ -1,0 +1,13 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:weighted_random_feature": {
+    "description": {
+      "identifier": "aqua:palm_randomizer"
+    },
+    "features": [
+      [ "aqua:palm_1", 1 ],
+      [ "aqua:palm_2", 1 ],
+      [ "aqua:palm_3", 1 ]
+    ]
+  }
+}

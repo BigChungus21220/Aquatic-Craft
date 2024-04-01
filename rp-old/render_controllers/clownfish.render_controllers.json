@@ -1,0 +1,28 @@
+{
+  "format_version": "1.8.0",
+  "render_controllers": {
+    "controller.render.clownfish": {
+      "arrays": {
+        "textures": {
+          "Array.skins": [
+            "Texture.black_white",
+            "Texture.yellow_red",
+            "Texture.white_orange",
+            "Texture.white_pink",
+            "Texture.yellow_white",
+            "Texture.orange",
+            "Texture.barber",
+            "Texture.clarkii",
+            "Texture.skunk",
+            "Texture.thielle",
+            "Texture.white_bonnet",
+            "Texture.whitesnout"
+          ]
+        }
+      },
+      "geometry": "Geometry.default",
+      "materials": [ { "*": "Material.default" } ],
+      "textures": [ "Array.skins[query.variant]" ]
+    }
+  }
+}

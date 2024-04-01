@@ -1,0 +1,37 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "aqua:corydoras",
+      "materials": { "default": "entity_alphatest" },
+      "textures": {
+        "panda": "textures/entity/corydoras/0",
+        "venezuelan_red": "textures/entity/corydoras/1",
+        "fairy": "textures/entity/corydoras/2",
+        "julii": "textures/entity/corydoras/3",
+        "albino": "textures/entity/corydoras/4",
+        "peppered": "textures/entity/corydoras/5",
+        "emerald": "textures/entity/corydoras/6",
+        "black": "textures/entity/corydoras/7"
+      },
+      "geometry": {
+        "default": "geometry.corydoras"
+      },
+      "animations": {
+        "swim": "animation.corydoras.swim",
+        "bottom_swim": "animation.corydoras.bottom_swim",
+        "swim_controller": "controller.animation.corydoras.swim_controller"
+      },
+      "scripts": {
+        "animate": [
+          "swim_controller"
+        ]
+      },
+      "render_controllers": [ "controller.render.corydoras" ],
+      "spawn_egg": {
+        "texture": "fish_egg",
+        "texture_index": 1
+      }
+    }
+  }
+}

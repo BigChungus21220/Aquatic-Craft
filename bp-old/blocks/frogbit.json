@@ -1,0 +1,87 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:block": {
+      "description": {
+          "identifier": "aqua:frogbit",
+          "properties": {
+            "aqua:rotation": [ 0, 1, 2, 3 ]
+          }
+      },
+      "components": {
+        "minecraft:loot": "loot_tables/blocks/frogbit.json",
+        "minecraft:geometry": "geometry.frogbit",
+        "minecraft:selection_box": {
+          "origin": [-8, 0.1, -8],
+          "size": [16, 0.2, 16]
+        },
+        "minecraft:material_instances": {
+          "*": {
+            "texture": "frogbit",
+            "render_method": "alpha_test"
+          }
+        },
+        "minecraft:block_light_filter" : 0,
+        "minecraft:light_emission" : 0,
+        "minecraft:ticking": {
+          "looping": true,
+          "range": [5, 5],
+          "on_tick": {
+            "event": "test_water"
+          }
+        },
+        "minecraft:placement_filter": {
+          "conditions": [
+            {
+              "block_filter": [
+                "minecraft:water",
+                "minecraft:flowing_water"
+              ],
+              "allowed_faces": ["up"]
+            }
+          ]
+        },
+        "minecraft:on_placed": {
+          "event": "rotate"
+        },
+        //"minecraft:breakonpush": true,
+        "minecraft:block_collision": {
+          "origin": [-8, 0.1, -8],
+          "size": [16, 0.2, 16]
+        }
+      },
+      "events": {
+        "test_water": {
+          "run_command": {
+            "command": [
+              "fill ~1 ~1 ~1 ~-1 ~-1 ~-1 air 1 replace air 0"
+            ]
+          }
+        },
+        "rotate": {
+          "set_block_property": {
+            "aqua:rotation": "Math.random_integer(0, 3)"
+          }
+        }
+      },
+      "permutations": [
+        {
+          "condition": "query.block_property('aqua:rotation') == 1",
+          "components": {
+            "minecraft:rotation": [0, 90, 0]
+          }
+        },
+        {
+          "condition": "query.block_property('aqua:rotation') == 2",
+          "components": {
+            "minecraft:rotation": [0, 180, 0]
+          }
+        },
+        {
+          "condition": "query.block_property('aqua:rotation') == 3",
+          "components": {
+            "minecraft:rotation": [0, 270, 0]
+          }
+        }
+      ]
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_furnace": {
+    "description": {
+    "identifier": "aqua:cooked_fillet"
+    },
+    "tags": ["furnace", "smoker", "campfire"],
+    "input": "aqua:fillet",
+    "output": "aqua:cooked_fillet"
+  }
+}

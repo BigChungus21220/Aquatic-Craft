@@ -1,0 +1,28 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "aqua:ghost_crab",
+      "materials": { "default": "entity_alphatest" },
+      "textures": {
+        "default": "textures/entity/ghost_crab"
+      },
+      "geometry": {
+        "default": "geometry.ghost_crab"
+      },
+      "animations": {
+        "idle": "animation.ghost_crab.idle"
+      },
+      "scripts": {
+        "animate": [
+          "idle"
+        ]
+      },
+      "render_controllers": [ "controller.render.squid" ],
+      "spawn_egg": {
+        "texture": "crustacean_egg",
+        "texture_index": 6
+      }
+    }
+  }
+}

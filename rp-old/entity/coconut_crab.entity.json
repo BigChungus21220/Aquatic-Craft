@@ -1,0 +1,28 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "aqua:coconut_crab",
+      "materials": { "default": "entity_alphatest" },
+      "textures": {
+        "default": "textures/entity/coconut_crab"
+      },
+      "geometry": {
+        "default": "geometry.coconut_crab"
+      },
+      "animations": {
+        "walk": "animation.coconut_crab.idle"
+      },
+      "scripts": {
+        "animate": [
+          "walk"
+        ]
+      },
+      "render_controllers": [ "controller.render.squid" ],
+      "spawn_egg": {
+        "texture": "crustacean_egg",
+        "texture_index": 5
+      }
+    }
+  }
+}

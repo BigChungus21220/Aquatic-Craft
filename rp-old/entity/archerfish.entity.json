@@ -1,0 +1,30 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "aqua:archerfish",
+      "materials": { "default": "entity_alphatest" },
+      "textures": {
+        "banded": "textures/entity/archerfish/0",
+        "primative": "textures/entity/archerfish/1",
+        "spotted": "textures/entity/archerfish/2"
+      },
+      "geometry": {
+        "default": "geometry.archerfish"
+      },
+      "animations": {
+        "swim": "animation.archerfish.swim"
+      },
+      "scripts": {
+        "animate": [
+          "swim"
+        ]
+      },
+      "render_controllers": [ "controller.render.archerfish" ],
+      "spawn_egg": {
+        "texture": "fish_egg",
+        "texture_index": 1
+      }
+    }
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "aqua:tang",
+      "materials": { "default": "entity_alphatest" },
+      "textures": {
+        "light_blue": "textures/entity/tang/0",
+        "grey": "textures/entity/tang/1",
+        "grey_blue": "textures/entity/tang/2",
+        "yellow_blue": "textures/entity/tang/3",
+        "grey_blue_2": "textures/entity/tang/4",
+        "purple": "textures/entity/tang/5",
+        "yellow_grey": "textures/entity/tang/6"
+      },
+      "geometry": {
+        "default": "geometry.tang"
+      },
+      "animations": {
+        "swim": "animation.tang.swim"
+      },
+      "scripts": {
+        "animate": [
+          "swim"
+        ]
+      },
+      "render_controllers": [ "controller.render.tang" ],
+      "spawn_egg": {
+        "texture": "fish_egg",
+        "texture_index": 19
+      }
+    }
+  }
+}

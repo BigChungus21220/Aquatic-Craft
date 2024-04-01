@@ -1,0 +1,49 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:block": {
+      "description": {
+          "identifier": "aqua:georgian_purple",
+          "menu_category": {
+            "category": "nature",
+            "group": "itemGroup.name.coral_decorations"
+          },
+          "properties": {
+            "aqua:is_waterlogged": [ false, true ]
+          }
+      },
+      "components": {
+        "minecraft:geometry": "geometry.georgian",
+        "minecraft:selection_box": {
+          "origin": [-6, 0, -6],
+          "size": [12, 16, 12]
+        },
+        "minecraft:material_instances": {
+          "*": {
+            "texture": "georgian_purple",
+            "render_method": "alpha_test"
+          }
+        },
+        "minecraft:on_placed": {
+          "condition": "query.block_property('aqua:is_waterlogged') != true",
+          "event": "waterlog"
+        },
+        "minecraft:destroy_time": 0.5,
+        "minecraft:block_light_filter" : 0,
+        "minecraft:light_emission" : 0.1,
+        //"minecraft:breakonpush": true,
+        "minecraft:block_collision": {
+          "origin": [-6, 0, -6],
+          "size": [12, 16, 12]
+        }
+      },
+      "events": {
+        "waterlog": {
+          "run_command":{
+            "command": [
+              "structure load mystructure:georgian_purple ~ ~ ~"
+            ]
+          }
+        }
+      }
+  }
+}

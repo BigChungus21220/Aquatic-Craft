@@ -1,0 +1,22 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:block": {
+      "description": {
+          "identifier": "aqua:giant_anemone_tentacle",
+          "menu_category": {
+            "category": "nature",
+            "group": "itemGroup.name.anenome"
+          }
+      },
+      "components": {
+        "minecraft:material_instances": {
+          "*": {
+            "texture": "giant_anemone_tentacle",
+            "render_method": "blend"
+          }
+        },
+        "minecraft:block_light_filter" : 0,
+        "minecraft:destroy_time": 0.5
+      }
+  }
+}

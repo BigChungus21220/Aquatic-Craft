@@ -1,0 +1,35 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "aqua:goldfish",
+      "materials": { "default": "entity_alphatest" },
+      "textures": {
+        "orange": "textures/entity/goldfish/0",
+        "spot_1": "textures/entity/goldfish/1",
+        "spot_2": "textures/entity/goldfish/2",
+        "spot_3": "textures/entity/goldfish/3",
+        "spot_4": "textures/entity/goldfish/4",
+        "yellow": "textures/entity/goldfish/5",
+        "black": "textures/entity/goldfish/6",
+        "black_white": "textures/entity/goldfish/7"
+      },
+      "geometry": {
+        "default": "geometry.goldfish"
+      },
+      "animations": {
+        "swim": "animation.goldfish.swim"
+      },
+      "scripts": {
+        "animate": [
+          "swim"
+        ]
+      },
+      "render_controllers": [ "controller.render.goldfish" ],
+      "spawn_egg": {
+        "texture": "fish_egg",
+        "texture_index": 0
+      }
+    }
+  }
+}

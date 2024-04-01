@@ -1,0 +1,21 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:item": {
+		"description": {
+			"identifier": "aqua:water_lettuce_item",
+			"category": "nature"
+		},
+		"components": {
+			"minecraft:icon": {
+				"texture":  "water_lettuce"
+			},
+			"minecraft:creative_category": {
+				"parent": "itemGroup.name.nature"
+			},
+			"minecraft:block_placer": {
+				"block": "aqua:water_lettuce_helper"
+			},
+			"minecraft:liquid_clipped": true
+		}
+	}
+}

@@ -1,0 +1,14 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.slipper_lobster.idle": {
+                        "anim_time_update": "query.modified_distance_moved*2",
+			"loop": true,
+			"bones": {
+				"legs": {
+					"rotation": ["math.sin(query.anim_time*200)*5", 0, 0]
+				}
+			}
+		}
+	}
+}

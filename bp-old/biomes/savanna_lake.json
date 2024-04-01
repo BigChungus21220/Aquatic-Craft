@@ -1,0 +1,31 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:biome": {
+    "description": {
+      "identifier": "savanna_lake"
+    },
+    "components": {
+      "minecraft:climate": {
+        "downfall": 0.0,
+        "snow_accumulation": [ 0.0, 0.125 ],
+        "temperature": 1.2
+      },
+      "minecraft:overworld_height": {
+        "noise_type": "river"
+      },
+      "minecraft:surface_parameters": {
+        "sea_floor_depth": 20,
+        "sea_floor_material": "minecraft:clay",
+        "foundation_material": "minecraft:stone",
+        "mid_material": "minecraft:dirt",
+        "top_material": "minecraft:grass",
+        "sea_material": "minecraft:water"
+      },
+
+      "river": {},
+      "savanna_lake": {},
+      "monster": {},
+      "overworld": {}
+    }
+  }
+}

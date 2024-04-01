@@ -1,0 +1,12 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:aggregate_feature": {
+    "description": {
+      "identifier": "aqua:cracked_reef_aggregate"
+    },
+    "features": [
+      "aqua:cracked_reef_surface_noise",
+      "aqua:cracked_reef_stack"
+    ]
+  }
+}

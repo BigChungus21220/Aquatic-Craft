@@ -1,0 +1,46 @@
+{
+	"format_version" : "1.10.0",
+	"animation_controllers" : {
+		"controller.animation.mudskipper.hop": { //add skip anim too
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"transitions" : [
+						{
+							"hop" : "q.is_jump_goal_jumping"
+						}
+					]
+				},
+				"hop" : {
+					"animations": ["skip"],
+					"transitions" : [
+						{
+							"default" : "!q.is_jump_goal_jumping && q.all_animations_finished"
+						}
+					]
+				}
+			}
+		},
+		"controller.animation.mudskipper.sail": {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"animations": ["hide_sail"],
+					"transitions" : [
+						{
+							"show_sail" : "q.skin_id == 1 && !q.is_in_water && q.modified_move_speed < 0.5"
+						}
+					]
+				},
+				"show_sail" : {
+					"animations": ["show_sail"],
+					"transitions" : [
+						{
+							"default" : "!(q.skin_id == 1 && !q.is_in_water && q.modified_move_speed < 0.5)"
+						}
+					]
+				}
+			}
+		}
+	}
+}

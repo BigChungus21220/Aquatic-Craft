@@ -1,0 +1,28 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "aqua:coelacanth",
+      "materials": { "default": "entity_alphatest" },
+      "textures": {
+        "default": "textures/entity/coelacanth"
+      },
+      "geometry": {
+        "default": "geometry.coelacanth"
+      },
+      "animations": {
+        "swim": "animation.coelacanth.swim"
+      },
+      "scripts": {
+        "animate": [
+          "swim"
+        ]
+      },
+      "render_controllers": [ "controller.render.squid" ],
+      "spawn_egg": {
+        "texture": "fish_egg",
+        "texture_index": 29
+      }
+    }
+  }
+}

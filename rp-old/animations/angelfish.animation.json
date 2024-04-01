@@ -1,0 +1,35 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.angelfish.swim": {
+			"loop": true,
+			"anim_time_update": "query.modified_distance_moved",
+			"bones": {
+				"tail2": {
+					"rotation": [0, "Math.sin(query.anim_time*200)*10", 0]
+				},
+				"pectoral2": {
+					"rotation": [0, "Math.cos(query.anim_time*200)*15+15", 0]
+				},
+				"pectoral1": {
+					"rotation": [0, "-Math.sin(query.anim_time*200)*15-15", 0]
+				},
+				"pelvic1": {
+					"rotation": [28.83859, 16.35194, 12.03021]
+				},
+				"pelvic2": {
+					"rotation": [30.27821, -5.50573, -3.54168]
+				},
+				"tailfin": {
+					"rotation": [0, "Math.sin(query.anim_time*200)*10", 0]
+				},
+				"body": {
+					"rotation": [0, "Math.sin(query.anim_time*200)*5", 0]
+				},
+				"tail3": {
+					"rotation": [0, "Math.sin(query.anim_time*200)*10", 0]
+				}
+			}
+		}
+	}
+}

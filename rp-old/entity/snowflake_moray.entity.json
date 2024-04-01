@@ -1,0 +1,29 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "aqua:snowflake_moray",
+      "materials": { "default": "entity_alphatest" },
+      "textures": {
+        "default": "textures/entity/snowflake_moray"
+      },
+      "geometry": {
+        "default": "geometry.snowflake_moray"
+      },
+      "animations": {
+        "rest": "animation.snowflake_moray.resting",
+        "swim": "animation.snowflake_moray.swim"
+      },
+      "animation_controllers": [
+        {
+          "moray": "controller.animation.snowflake_moray"
+        }
+      ],
+      "render_controllers": [ "controller.render.squid" ],
+      "spawn_egg": {
+        "texture": "fish_egg",
+        "texture_index": 2
+      }
+    }
+  }
+}

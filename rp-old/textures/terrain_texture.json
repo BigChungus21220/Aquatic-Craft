@@ -1,0 +1,414 @@
+{
+    "num_mip_levels": 4,
+    "padding": 8,
+	"resource_pack_name": "vanilla",
+	"texture_name": "atlas.terrain",
+	"texture_data": {
+		"sand_castle": {
+			"textures": [
+				{
+					"path": "textures/blocks/sand_castle"
+				}
+			]
+		},
+		"clam_shell": {
+			"textures": [
+				{
+					"path": "textures/blocks/clam_shell"
+				}
+			]
+		},
+		"urchin_skeleton": {
+			"textures": [
+				{
+					"path": "textures/blocks/urchin_skeleton"
+				}
+			]
+		},
+		"abalone_shell": {
+			"textures": [
+				{
+					"path": "textures/blocks/abalone_shell"
+				}
+			]
+		},
+		"moon_snail_shell": {
+			"textures": [
+				{
+					"path": "textures/blocks/moon_snail_shell"
+				}
+			]
+		},
+		"cone_shell": {
+			"textures": [
+				{
+					"path": "textures/blocks/cone_shell"
+				}
+			]
+		},
+		"cowrie_shell": {
+			"textures": [
+				{
+					"path": "textures/blocks/cowrie_shell"
+				}
+			]
+		},
+		"shark_tooth": {
+			"textures": [
+				{
+					"path": "textures/blocks/shark_tooth"
+				}
+			]
+		},
+		"top_shell": {
+			"textures": [
+				{
+					"path": "textures/blocks/top_shell"
+				}
+			]
+		},
+		"whelk_shell": {
+			"textures": [
+				{
+					"path": "textures/blocks/whelk_shell"
+				}
+			]
+		},
+		"coconut": {
+			"textures": [
+				{
+					"path": "textures/blocks/coconut"
+				}
+			]
+		},
+		"stalk_sponge": {
+			"textures": [
+				{
+					"path": "textures/blocks/stalk_sponge"
+				}
+			]
+		},
+		"sea_urchin": {
+			"textures": [
+				{
+					"path": "textures/blocks/sea_urchin"
+				}
+			]
+		},
+		"banded_urchin": {
+			"textures": [
+				{
+					"path": "textures/blocks/banded_urchin"
+				}
+			]
+		},
+		"green_urchin": {
+			"textures": [
+				{
+					"path": "textures/blocks/green_urchin"
+				}
+			]
+		},
+		"purple_urchin": {
+			"textures": [
+				{
+					"path": "textures/blocks/purple_urchin"
+				}
+			]
+		},
+		"collector_urchin": {
+			"textures": [
+				{
+					"path": "textures/blocks/collector_urchin"
+				}
+			]
+		},
+		"helmet_urchin": {
+			"textures": [
+				{
+					"path": "textures/blocks/helmet_urchin"
+				}
+			]
+		},
+		"pencil_urchin": {
+			"textures": [
+				{
+					"path": "textures/blocks/pencil_urchin"
+				}
+			]
+		},
+		"rock_urchin": {
+			"textures": [
+				{
+					"path": "textures/blocks/rock_urchin"
+				}
+			]
+		},
+		"sand_dollar": {
+			"textures": [
+				{
+					"path": "textures/blocks/sand_dollar"
+				}
+			]
+		},
+		"limpet": {
+			"textures": [
+				{
+					"path": "textures/blocks/limpet"
+				}
+			]
+		},
+		"barnacle": {
+			"textures": [
+				{
+					"path": "textures/blocks/barnacle"
+				}
+			]
+		},
+		"georgian_pink": {
+			"textures": [
+				{
+					"path": "textures/blocks/georgian_pink"
+				}
+			]
+		},
+		"georgian_purple": {
+			"textures": [
+				{
+					"path": "textures/blocks/georgian_purple"
+				}
+			]
+		},
+		"georgian_yellow": {
+			"textures": [
+				{
+					"path": "textures/blocks/georgian_yellow"
+				}
+			]
+		},
+		"harp_sponge": {
+			"textures": [
+				{
+					"path": "textures/blocks/harp_sponge"
+				}
+			]
+		},
+		"deep_sponge_side": {
+			"textures": [
+				{
+					"path": "textures/blocks/deep_sponge_side"
+				}
+			]
+		},
+		"deep_sponge_top": {
+			"textures": [
+				{
+					"path": "textures/blocks/deep_sponge_top"
+				}
+			]
+		},
+		"deep_sponge_bottom": {
+			"textures": [
+				{
+					"path": "textures/blocks/deep_sponge_bottom"
+				}
+			]
+		},
+		"deep_coral_0": {
+			"textures": [
+				{
+					"path": "textures/blocks/deep_coral/0"
+				}
+			]
+		},
+		"deep_coral_1": {
+			"textures": [
+				{
+					"path": "textures/blocks/deep_coral/1"
+				}
+			]
+		},
+		"deep_coral_2": {
+			"textures": [
+				{
+					"path": "textures/blocks/deep_coral/2"
+				}
+			]
+		},
+		"giant_anemone_stalk": {
+			"textures": [
+				{
+					"path": "textures/blocks/giant_anemone_stalk"
+				}
+			]
+		},
+		"giant_anemone_tentacle": {
+			"textures": [
+				{
+					"path": "textures/blocks/giant_anemone_tentacle"
+				}
+			]
+		},
+		"giant_sponge_head": {
+			"textures": [
+				{
+					"path": "textures/blocks/giant_sponge_head"
+				}
+			]
+		},
+		"giant_sponge_stalk": {
+			"textures": [
+				{
+					"path": "textures/blocks/giant_sponge_stalk"
+				}
+			]
+		},
+		"black_sand": {
+			"textures": [
+				{
+					"path": "textures/blocks/black_sand"
+				}
+			]
+		},
+		"lava_rock": {
+			"textures": [
+				{
+					"path": "textures/blocks/lava_rock"
+				}
+			]
+		},
+		"frogbit": {
+			"textures": [
+				{
+					"path": "textures/blocks/frogbit"
+				}
+			]
+		},
+		"mosaic_plant": {
+			"textures": [
+				{
+					"path": "textures/blocks/mosaic_plant"
+				}
+			]
+		},
+		"crinoid": {
+			"textures": [
+				{
+					"path": "textures/blocks/crinoid"
+				}
+			]
+		},
+		"anenome_0": {
+			"textures": [
+						{
+							"path": "textures/blocks/anenome/0"
+						}
+			]
+		},
+		"anenome_1": {
+			"textures": [
+						{
+							"path": "textures/blocks/anenome/1"
+						}
+			]
+		},
+		"anenome_2": {
+			"textures": [
+						{
+							"path": "textures/blocks/anenome/2"
+						}
+			]
+		},
+		"water_letuce_top": {
+			"textures": [
+				{
+					"path": "textures/blocks/water_lettuce_top"
+				}
+			]
+		},
+		"water_letuce_bottom": {
+			"textures": [
+				{
+					"path": "textures/blocks/water_lettuce_bottom"
+				}
+			]
+		},
+		"water_letuce_side": {
+			"textures": [
+				{
+					"path": "textures/blocks/water_lettuce_side"
+				}
+			]
+		},
+		"horsetail": {
+			"textures": [
+				{
+					"path": "textures/blocks/horsetail"
+				}
+			]
+		},
+		"cattail3": {
+			"textures": [
+				{
+					"path": "textures/blocks/cattail3"
+				}
+			]
+		},
+		"cattail2": {
+			"textures": [
+				{
+					"path": "textures/blocks/cattail2"
+				}
+			]
+		},
+		"cattail1": {
+			"textures": [
+				{
+					"path": "textures/blocks/cattail1"
+				}
+			]
+		},
+		"papyrus1": {
+			"textures": [
+				{
+					"path": "textures/blocks/papyrus1"
+				}
+			]
+		},
+		"papyrus2": {
+			"textures": [
+				{
+					"path": "textures/blocks/papyrus2"
+				}
+			]
+		},
+		"amazon_sword": {
+			"textures": [
+				{
+					"path": "textures/blocks/amazon_sword"
+				}
+			]
+		},
+		"tube_worm": {
+			"textures": [
+				{
+					"path": "textures/blocks/tube_worm"
+				}
+			]
+		},
+		"horsetail_top": {
+			"textures": [
+				{
+					"path": "textures/blocks/horsetail_top"
+				}
+			]
+		},
+		"victoria_lily": {
+			"textures": [
+				{
+					"path": "textures/blocks/victoria_lily_atlas"
+				}
+			]
+		}
+	}
+}

@@ -1,0 +1,38 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.angler.idle": {
+                        "anim_time_update": "query.modified_distance_moved",
+			"loop": true,
+			"bones": {
+				"jaw": {
+					"rotation": [0, 0, 50]
+				},
+				"bait": {
+					"rotation": [0, "math.sin(query.anim_time*200)*5", 0]
+				},
+				"fin": {
+					"rotation": [0, "-20+math.sin(query.anim_time*200)*10", 0]
+				},
+				"fin2": {
+					"rotation": [0, "20+math.sin(query.anim_time*200)*10", 0]
+				},
+				"tail": {
+					"rotation": [0, "-math.sin(query.anim_time*200)*20", 0]
+				}
+			}
+		},
+		"animation.angler.bite": {
+			"animation_length": 0.36,
+			"bones": {
+				"jaw": {
+					"rotation": {
+						"0.0": [0, 0, 50],
+						"0.08": [0, 0, -5],
+						"0.36": [0, 0, 50]
+					}
+				}
+			}
+		}
+	}
+}

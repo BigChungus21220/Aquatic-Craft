@@ -1,0 +1,20 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "aqua:sea_star",
+      "materials": { "default": "entity_alphatest" },
+      "textures": {
+        "default": "textures/entity/sea_star"
+      },
+      "geometry": {
+        "default": "geometry.sea_star"
+      },
+      "render_controllers": [ "controller.render.squid" ],
+      "spawn_egg": {
+        "texture": "deep_egg",
+        "texture_index": 5
+      }
+    }
+  }
+}

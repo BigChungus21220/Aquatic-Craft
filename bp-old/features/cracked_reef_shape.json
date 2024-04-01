@@ -1,0 +1,14 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:scatter_feature": {
+    "description": {
+      "identifier": "aqua:cracked_reef_shape"
+    },
+    "places_feature": "aqua:cracked_reef_shape_rows",
+    "iterations": "t.x = math.ceil(t.length/-2); t.row_length = t.width; return t.length;",
+    "scatter_chance": 100.0,
+    "x": "t.x", //width
+    "y": 0, //height
+    "z": "t.x = t.x + 1; t.row_length = 2 * (-t.width/2 / math.pow(t.length,2) * (2*t.x + t.length) * (2 * t.x - t.length));" //length
+  }
+}

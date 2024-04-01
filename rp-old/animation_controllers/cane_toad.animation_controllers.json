@@ -1,0 +1,65 @@
+{
+	"format_version" : "1.10.0",
+	"animation_controllers" : {
+		"controller.animation.cane_toad.hop": { //add skip anim too
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"transitions" : [
+						{
+							"hop" : "query.modified_move_speed > 0.3 && query.is_in_water != 1"
+						}
+					]
+				},
+				"hop" : {
+					"animations": ["hop"],
+					"transitions" : [
+						{
+							"default" : "query.all_animations_finished == 1"
+						}
+					]
+				}
+			}
+		},
+		"controller.animation.cane_toad.croak": {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"transitions" : [
+						{
+							"croak" : "query.mark_variant == 1 && query.is_in_water != 1"
+						}
+					]
+				},
+				"croak" : {
+					"animations": ["croak"],
+					"transitions" : [
+						{
+							"default" : "query.all_animations_finished == 1"
+						}
+					]
+				}
+			}
+		},
+		"controller.animation.cane_toad.swim": {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"transitions" : [
+						{
+							"swim" : "query.is_in_water == 1"
+						}
+					]
+				},
+				"swim" : {
+					"animations": ["swim"],
+					"transitions" : [
+						{
+							"default" : "query.is_in_water == 0"
+						}
+					]
+				}
+			}
+		}
+	}
+}

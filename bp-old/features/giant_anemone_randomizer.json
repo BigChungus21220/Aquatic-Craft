@@ -1,0 +1,13 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:weighted_random_feature": {
+    "description": {
+      "identifier": "aqua:giant_anemone_randomizer"
+    },
+    "features": [
+      [ "aqua:giant_anemone_0", 1 ],
+      [ "aqua:giant_anemone_1", 1 ],
+      [ "aqua:giant_anemone_2", 1 ]
+    ]
+  }
+}

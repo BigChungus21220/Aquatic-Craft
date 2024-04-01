@@ -1,0 +1,57 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:block": {
+      "description": {
+          "identifier": "aqua:tube_worm",
+          "properties": {
+            "aqua:is_waterlogged": [ false, true ]
+          }
+      },
+      "components": {
+        "minecraft:loot": "loot_tables/blocks/tube_worm.json",
+        "minecraft:geometry": "geometry.tube_worm",
+        "minecraft:destroy_time": 10,
+        "minecraft:selection_box": {
+          "origin": [-5, 0, -5],
+          "size": [10, 14, 10]
+        },      
+        "minecraft:block_light_filter" : 0,
+        "minecraft:light_emission" : 0,
+        "minecraft:material_instances": {
+          "*": {
+            "texture": "amazon_sword",
+            "render_method": "alpha_test"
+          }
+        },
+        "minecraft:placement_filter": {
+          "conditions": [
+            {
+              "block_filter": [
+                "minecraft:dirt",
+                "minecraft:sand",
+                "minecraft:gravel",
+                "minecraft:clay"
+              ],
+              "allowed_faces": ["up"]
+            }
+          ]
+        },
+        //"minecraft:breakonpush": true,
+        "minecraft:block_collision": false
+      },
+      "permutations": [
+        {
+          "condition": "query.block_property('aqua:is_waterlogged') == true",
+          "components": {
+            "minecraft:geometry": "geometry.tube_worm"
+          }
+        },
+        {
+          "condition": "query.block_property('aqua:is_waterlogged') == false",
+          "components": {
+            "minecraft:geometry": "geometry.tube_worm_dry"
+          }
+        }
+      ]
+  }
+}

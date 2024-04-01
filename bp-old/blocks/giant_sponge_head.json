@@ -1,0 +1,23 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:block": {
+      "description": {
+          "identifier": "aqua:giant_sponge_head",
+          "minecraft:creative_category": {
+            "category": "nature",
+            "group": "itemGroup.name.sponge"
+          }
+      },
+      "components": {
+        "minecraft:material_instances": {
+          "*": {
+            "texture": "giant_sponge_head",
+            "render_method": "blend"
+          }
+        },
+        "minecraft:block_light_filter" : 0,
+        "minecraft:light_emission" : 1,
+        "minecraft:destroy_time": 0.5
+      }
+  }
+}

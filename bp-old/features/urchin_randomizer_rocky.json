@@ -1,0 +1,13 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:weighted_random_feature": {
+    "description": {
+      "identifier": "aqua:urchin_randomizer_rocky"
+    },
+    "features": [
+      [ "aqua:urchin_0", 1 ],
+      [ "aqua:urchin_1", 1 ],
+      [ "aqua:urchin_3", 1 ]
+    ]
+  }
+}

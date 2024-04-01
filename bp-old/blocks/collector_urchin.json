@@ -1,0 +1,59 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:block": {
+      "description": {
+          "identifier": "aqua:collector_urchin",
+          "menu_category": {
+            "category": "nature",
+            "group": "itemGroup.name.urchins"
+          },
+          "properties": {
+            "aqua:is_waterlogged": [ false, true ]
+          }
+      },
+      "components": {
+        "minecraft:geometry": "geometry.collector_urchin",
+        "minecraft:selection_box": {
+          "origin": [-3, 0, -3],
+          "size": [6, 4, 6]
+        },
+        "minecraft:material_instances": {
+          "*": {
+            "texture": "collector_urchin",
+            "render_method": "alpha_test"
+          }
+        },
+        "minecraft:on_placed": {
+          "condition": "query.block_property('aqua:is_waterlogged') != true",
+          "event": "waterlog"
+        },
+        "minecraft:on_step_on": {
+          "event": "damage"
+        },
+        "minecraft:destroy_time": 0.5,
+        "minecraft:block_light_filter" : 0,
+        "minecraft:light_emission" : 0.1,
+        //"minecraft:breakonpush": true,
+        "minecraft:block_collision": {
+          "origin": [-3, 0, -3],
+          "size": [6, 4, 6]
+        }
+      },
+      "events": {
+        "waterlog": {
+          "run_command":{
+            "command": [
+              "structure load mystructure:collector_urchin ~ ~ ~"
+            ]
+          }
+        },
+        "damage": {
+          "damage": {
+            "amount": 1,
+            "target": "other",
+            "type": "contact"
+          }
+        }
+      }
+  }
+}

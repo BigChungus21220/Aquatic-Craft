@@ -1,0 +1,30 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "aqua:giant_clam",
+      "materials": { "default": "entity_alphatest" },
+      "textures": {
+        "default": "textures/entity/giant_clam"
+      },
+      "geometry": {
+        "default": "geometry.giant_clam"
+      },
+      "animations": {
+        "open": "animation.giant_clam.open",
+        "opened": "animation.giant_clam.opened",
+        "close": "animation.giant_clam.close"
+      },
+      "animation_controllers": [
+        {
+          "clam": "controller.animation.giant_clam"
+        }
+      ],
+      "render_controllers": [ "controller.render.giant_clam" ],
+      "spawn_egg": {
+        "texture": "mollusc_egg",
+        "texture_index": 8
+      }
+    }
+  }
+}

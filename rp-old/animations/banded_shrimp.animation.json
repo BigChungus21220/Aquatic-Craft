@@ -1,0 +1,32 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.banded_shrimp.idle": {
+                        "anim_time_update": "query.modified_distance_moved*2",
+			"loop": true,
+			"bones": {
+				"longR": {
+					"rotation": [-52.5, 15, -7.5]
+				},
+				"longL": {
+					"rotation": [-52.5, -15, 7.5]
+				},
+				"short": {
+					"rotation": [-25, 0, 0]
+				},
+				"legsR": {
+					"rotation": [0, "math.sin(query.anim_time * 500) * 10", 0]
+				},
+				"legsL": {
+					"rotation": [0, "math.sin((query.anim_time+0.5) * 500) * 10", 0]
+				},
+				"armL": {
+					"rotation": [5, -15, 0]
+				},
+				"armR": {
+					"rotation": [5, 15, 0]
+				}
+			}
+		}
+	}
+}

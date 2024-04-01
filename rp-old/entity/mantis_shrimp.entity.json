@@ -1,0 +1,28 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "aqua:mantis_shrimp",
+      "materials": { "default": "entity_alphatest" },
+      "textures": {
+        "default": "textures/entity/mantis_shrimp/0"
+      },
+      "geometry": {
+        "default": "geometry.mantis_shrimp"
+      },
+      "animations": {
+        "walk": "animation.mantis_shrimp.idle"
+      },
+      "scripts": {
+        "animate": [
+          "walk"
+        ]
+      },
+      "render_controllers": [ "controller.render.squid" ],
+      "spawn_egg": {
+        "texture": "crustacean_egg",
+        "texture_index": 8
+      }
+    }
+  }
+}

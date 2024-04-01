@@ -1,0 +1,77 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.grey_whale",
+				"texture_width": 512,
+				"texture_height": 512,
+				"visible_bounds_width": 23,
+				"visible_bounds_height": 5,
+				"visible_bounds_offset": [0, 1.5, 0]
+			},
+			"bones": [
+				{
+					"name": "body",
+					"pivot": [0, 27, 0],
+					"cubes": [
+						{"origin": [-14, 0, -41], "size": [28, 43, 90], "uv": [0, 0]}
+					]
+				},
+				{
+					"name": "head",
+					"parent": "body",
+					"pivot": [0, 25, -41],
+					"cubes": [
+						{"origin": [-9, 7, -61], "size": [18, 35, 20], "uv": [0, 0]},
+						{"origin": [-9, 12, -86], "size": [18, 30, 25], "uv": [13, 260]},
+						{"origin": [-9, 15, -98], "size": [18, 24, 12], "uv": [148, 30]}
+					]
+				},
+				{
+					"name": "tail0",
+					"parent": "body",
+					"pivot": [0, 25, 49],
+					"cubes": [
+						{"origin": [-11, 6, 49], "size": [22, 35, 30], "uv": [112, 133]},
+						{"origin": [-2.5, 41, 44], "size": [5, 5, 10], "uv": [1, 56]}
+					]
+				},
+				{
+					"name": "tail1",
+					"parent": "tail0",
+					"pivot": [0, 26, 79],
+					"cubes": [
+						{"origin": [-8, 15, 79], "size": [16, 23, 80], "uv": [0, 133]}
+					]
+				},
+				{
+					"name": "tail2",
+					"parent": "tail1",
+					"pivot": [0, 27, 151],
+					"cubes": [
+						{"origin": [-24, 24, 151], "size": [48, 6, 22], "uv": [146, 0]}
+					]
+				},
+				{
+					"name": "arm0",
+					"parent": "body",
+					"pivot": [-14, 8, -33],
+					"rotation": [-25, 0, 0],
+					"cubes": [
+						{"origin": [-16.5, 0, -33], "size": [5, 16, 33], "uv": [234, 31]}
+					]
+				},
+				{
+					"name": "arm1",
+					"parent": "body",
+					"pivot": [14, 8, -33],
+					"rotation": [-25, 0, 0],
+					"cubes": [
+						{"origin": [11.5, 0, -33], "size": [5, 16, 33], "uv": [234, 31], "mirror": true}
+					]
+				}
+			]
+		}
+	]
+}

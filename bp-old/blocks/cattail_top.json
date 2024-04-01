@@ -1,0 +1,49 @@
+{
+  "format_version": "1.16.100",
+  "minecraft:block": {
+    "description": {
+        "identifier": "aqua:cattail_top",
+        "properties": {
+          "aqua:is_updated": [ false, true ]
+        }
+    },
+    "components": {
+      "minecraft:loot": "loot_tables/blocks/empty.json",
+      "minecraft:geometry": "geometry.cattail",
+      "minecraft:selection_box": false,
+      "minecraft:material_instances": {
+        "*": {
+          "texture": "cattail1",
+          "render_method": "alpha_test"
+        }
+      },
+      "minecraft:random_ticking": {
+        "on_tick": {
+          "event": "update",
+          "condition": "query.block_property('aqua:is_updated') == false"
+        }
+      },
+      "minecraft:block_light_filter" : 0,
+      "minecraft:light_emission" : 0,
+      "minecraft:placement_filter": {
+        "conditions": [
+          {
+            "block_filter": [
+              "aqua:cattail_middle"
+            ],
+            "allowed_faces": ["up"]
+          }
+        ]
+      },
+      //"minecraft:breakonpush": true,
+      "minecraft:block_collision": false
+    },
+    "events": {
+      "update": {
+        "set_block_property": {
+          "aqua:is_updated": true
+        }
+      }
+    }
+}
+}

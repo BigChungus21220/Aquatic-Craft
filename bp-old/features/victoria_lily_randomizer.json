@@ -1,0 +1,13 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:weighted_random_feature": {
+    "description": {
+      "identifier": "aqua:victoria_lily_randomizer"
+    },
+    "features": [
+      [ "aqua:victoria_lily_large_feature", 1 ],
+      [ "aqua:victoria_lily_normal_feature", 5 ],
+      [ "aqua:victoria_lily_small_feature", 1 ]
+    ]
+  }
+}

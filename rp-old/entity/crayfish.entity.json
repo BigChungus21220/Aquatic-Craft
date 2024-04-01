@@ -1,0 +1,30 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "aqua:crayfish",
+      "materials": { "default": "entity_alphatest" },
+      "textures": {
+        "brown": "textures/entity/crayfish/brown",
+	      "red": "textures/entity/crayfish/red",
+	      "blue": "textures/entity/crayfish/blue"
+      },
+      "geometry": {
+        "default": "geometry.crayfish"
+      },
+      "animations": {
+        "idle": "animation.crayfish.idle"
+      },
+      "scripts": {
+        "animate": [
+          "idle"
+        ]
+      },
+      "render_controllers": [ "controller.render.crayfish" ],
+      "spawn_egg": {
+        "texture": "crustacean_egg",
+        "texture_index": 0
+      }
+    }
+  }
+}

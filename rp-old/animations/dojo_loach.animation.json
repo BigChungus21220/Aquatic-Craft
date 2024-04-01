@@ -1,0 +1,17 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.dojo_loach.swim": {
+			"anim_time_update": "query.modified_distance_moved",
+			"loop": true,
+			"bones": {
+				"tail": {
+					"rotation": [0, "math.sin(query.anim_time*400)*40", 0]
+				},
+				"root": {
+					"rotation": [0, "-math.sin(query.anim_time*400)*5", 0]
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,45 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "aqua:angelfish",
+      "materials": { "default": "entity_alphatest" },
+      "textures": {
+        "flame": "textures/entity/angelfish/0",
+        "narcosis": "textures/entity/angelfish/1",
+        "heralds": "textures/entity/angelfish/2",
+        "bicolor": "textures/entity/angelfish/3",
+        "lemonpeel": "textures/entity/angelfish/4",
+        "cherub_pygmy": "textures/entity/angelfish/5",
+        "panda_bicolor": "textures/entity/angelfish/6",
+        "african_flameback": "textures/entity/angelfish/7",
+        "brazilian_flameback": "textures/entity/angelfish/8",
+        "blue_velvet": "textures/entity/angelfish/9",
+        "blackspot": "textures/entity/angelfish/10",
+        "keyhole": "textures/entity/angelfish/11",
+        "blackear": "textures/entity/angelfish/12",
+        "cocos_keeling": "textures/entity/angelfish/13",
+        "resplendent_island": "textures/entity/angelfish/14",
+        "double_blackfin_heralds": "textures/entity/angelfish/15",
+        "bandit": "textures/entity/angelfish/16",
+        "midnight": "textures/entity/angelfish/17"
+      },
+      "geometry": {
+        "default": "geometry.angelfish"
+      },
+      "animations": {
+        "swim": "animation.angelfish.swim"
+      },
+      "scripts": {
+        "animate": [
+          "swim"
+        ]
+      },
+      "render_controllers": [ "controller.render.angelfish" ],
+      "spawn_egg": {
+        "texture": "fish_egg",
+        "texture_index": 1
+      }
+    }
+  }
+}

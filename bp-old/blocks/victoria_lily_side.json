@@ -1,0 +1,67 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:block": {
+      "description": {
+          "identifier": "aqua:victoria_lily_side",
+          "properties": {
+            "aqua:rotation": [ 1, 2, 3, 4, 5 ]
+          },
+          "menu_category": {
+            "category": "nature",
+            "group": "itemGroup.name.lily"
+          }
+      },
+      "components": {
+        "minecraft:loot": "loot_tables/blocks/victoria_lily_side.json",
+        "minecraft:geometry": "geometry.victoria_lily_side1", //+z
+        "minecraft:selection_box": {
+          "origin": [-8, 0.1, -8],
+          "size": [16, 0.2, 16]
+        },
+        "minecraft:destroy_time": 0.5,
+        "minecraft:material_instances": {
+          "*": {
+            "texture": "victoria_lily",
+            "render_method": "alpha_test"
+          }
+        },
+        "minecraft:block_light_filter" : 0,
+        "minecraft:light_emission" : 0,
+        "minecraft:on_player_placing": {
+          "event": "rotate"
+        },
+        //"minecraft:breakonpush": true,
+        "minecraft:block_collision": {
+          "origin": [-8, 0.1, -8],
+          "size": [16, 0.2, 16]
+        }
+      },
+      "events": {
+        "rotate": {
+          "set_block_property": {
+            "aqua:rotation": "query.cardinal_facing_2d"
+          }
+        }
+      },
+      "permutations": [
+        {
+          "condition": "query.block_property('aqua:rotation') == 3",
+          "components": {
+		        "minecraft:geometry": "geometry.victoria_lily_side3" //-z
+          }
+        },
+        {
+          "condition": "query.block_property('aqua:rotation') == 4",
+          "components": {
+		        "minecraft:geometry": "geometry.victoria_lily_side2" //+x
+          }
+        },
+        {
+          "condition": "query.block_property('aqua:rotation') == 5",
+          "components": {
+	          "minecraft:geometry": "geometry.victoria_lily_side4" //-x
+          }
+        }
+      ]
+  }
+}

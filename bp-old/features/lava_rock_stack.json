@@ -1,0 +1,17 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:scatter_feature": {
+    "description": {
+      "identifier": "aqua:lava_rock_stack"
+    },
+    "places_feature": "aqua:lava_rock_block",
+    "iterations": 5,
+    "scatter_chance": 100.0,
+    "x": 0,
+    "y": {
+      "distribution": "fixed_grid",
+      "extent": [ -3, "q.noise(v.worldx*2, v.worldz*2)*2*(v.noise-0.7)*3" ]
+    },
+    "z": 0
+  }
+}

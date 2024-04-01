@@ -1,0 +1,26 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "ac:thrown_spear",
+      "materials": {
+        "default": "bat"
+      },
+      "textures": {
+        "default": "textures/entity/spear"
+      },
+      "geometry": {
+        "default": "geometry.spear"
+      },
+      "animations": {
+        "thrown": "animation.thrown_spear.thrown"
+      },
+      "scripts": {
+        "animate": [
+          "thrown"
+        ]
+      },
+      "render_controllers": ["controller.render.bat"]
+    }
+  }
+}

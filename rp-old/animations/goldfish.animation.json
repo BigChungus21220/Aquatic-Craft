@@ -1,0 +1,17 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.goldfish.swim": {
+			"anim_time_update": "query.modified_distance_moved",
+			"loop": true,
+			"bones": {
+				"tail": {
+					"rotation": [0, "math.sin(query.anim_time*200)*20", 0]
+				},
+				"body": {
+					"rotation": [0, "-math.sin(query.anim_time*200)*5", 0]
+				}
+			}
+		}
+	}
+}

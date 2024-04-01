@@ -1,0 +1,28 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "aqua:cane_toad_tadpole",
+      "materials": { "default": "entity_alphatest" },
+      "textures": {
+        "default": "textures/entity/cane_toad_tadpole"
+      },
+      "geometry": {
+        "default": "geometry.cane_toad_tadpole"
+      },
+      "animations": {
+        "swim": "animation.cane_toad_tadpole.swim"
+      },
+      "scripts": {
+        "animate": [
+          "swim"
+        ]
+      },
+      "render_controllers": [ "controller.render.squid" ],
+      "spawn_egg": {
+        "texture": "fish_egg",
+        "texture_index": 6
+      }
+    }
+  }
+}

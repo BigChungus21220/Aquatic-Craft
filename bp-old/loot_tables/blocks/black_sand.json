@@ -1,0 +1,14 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "aqua:black_sand",
+                    "weight": 1
+                }
+            ]
+        }
+    ]
+}

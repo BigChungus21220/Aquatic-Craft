@@ -1,0 +1,54 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:block": {
+      "description": {
+          "identifier": "aqua:amazon_sword",
+          "properties": {
+            "aqua:is_waterlogged": [ false, true ]
+          }
+      },
+      "components": {
+        "minecraft:loot": "loot_tables/blocks/amazon_sword.json",
+        "minecraft:geometry": "geometry.amazon_sword",
+        "minecraft:selection_box": {
+          "origin": [-5, 0, -5],
+          "size": [10, 14, 10]
+        },      
+        "minecraft:block_light_filter" : 0,
+        "minecraft:light_emission" : 0,
+        "minecraft:material_instances": {
+          "*": {
+            "texture": "amazon_sword",
+            "render_method": "alpha_test"
+          }
+        },
+        "minecraft:placement_filter": {
+          "conditions": [
+            {
+              "block_filter": [
+                "minecraft:dirt",
+                "minecraft:sand",
+                "minecraft:gravel",
+                "minecraft:clay"
+              ],
+              "allowed_faces": ["up"]
+            }
+          ]
+        },
+        "minecraft:block_collision": false,
+        "minecraft:on_placed": {
+          "condition": "query.block_property('aqua:is_waterlogged') != true",
+          "event": "waterlog"
+        }
+      },
+      "events": {
+        "waterlog": {
+          "run_command": {
+            "command": [
+              "structure load mystructure:waterlogged_amazon_sword ~ ~ ~"
+            ]
+          }
+        }
+      }
+  }
+}

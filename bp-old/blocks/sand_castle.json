@@ -1,0 +1,35 @@
+{
+  "format_version": "1.16.100",
+  "minecraft:block": {
+    "description": {
+      "identifier": "aqua:sand_castle",
+      "menu_category": {
+        "category": "construction"
+      }
+    },
+    "components": {
+      "minecraft:destroy_time": 1,
+      "minecraft:geometry": "geometry.sand_castle",
+      "minecraft:selection_box": {
+        "origin": [-6, 0, -6],
+        "size": [12, 9, 12]
+      },
+      "minecraft:loot": "loot_tables/blocks/sand_castle.json",
+      "minecraft:material_instances": {
+        "*": {
+          "texture": "sand_castle",
+          "render_method": "alpha_test"
+        }
+      },
+      "minecraft:on_interact": {
+        "event": "drop_item"
+      },
+      "minecraft:block_light_filter" : 0,
+      "minecraft:light_emission" : 0,
+      "minecraft:block_collision": {
+        "origin": [-6, 0, -6],
+        "size": [12, 9, 12]
+      }
+    }
+  }
+}

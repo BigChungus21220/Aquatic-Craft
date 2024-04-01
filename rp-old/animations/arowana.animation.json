@@ -1,0 +1,24 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.arowana.swim": {
+"anim_time_update": "query.modified_distance_moved",
+			"loop": true,
+			"bones": {
+				"body": {
+					"rotation": [0, "math.cos(-40+query.anim_time*50)*-5", 0],
+					"scale": 0.75
+				},
+				"tail": {
+					"rotation": [0, "math.cos(query.anim_time*50)*10", 0]
+				},
+				"tail_tip": {
+					"rotation": [0, "math.cos(-80+query.anim_time*50)*10", 0]
+				},
+				"head": {
+					"rotation": [0, "math.cos(-20+query.anim_time*50)*-5", 0]
+				}
+			}
+		}
+	}
+}

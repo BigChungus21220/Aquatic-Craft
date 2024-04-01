@@ -1,0 +1,37 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "aqua:mudskipper",
+      "materials": { "default": "entity_alphatest" },
+      "textures": {
+        "default": "textures/entity/mudskipper"
+      },
+      "geometry": {
+        "default": "geometry.mudskipper"
+      },
+      "animations": {
+        "show_sail": "animation.mudskipper.show_sail",
+        "hide_sail": "animation.mudskipper.hide_sail",
+        "swim": "animation.mudskipper.swim",
+        "walk": "animation.mudskipper.walk",
+        "skip": "animation.mudskipper.skip",
+        "hop_controller": "controller.animation.mudskipper.hop",
+        "sail_controller": "controller.animation.mudskipper.sail"
+      },
+      "scripts": {
+        "animate": [
+          "sail_controller",
+          "hop_controller",
+          { "walk": "!q.is_in_water && !q.is_jump_goal_jumping" },
+          { "swim": "q.is_in_water" }
+        ]
+      },
+      "render_controllers": [ "controller.render.bat" ],
+      "spawn_egg": {
+        "texture": "fish_egg",
+        "texture_index": 1
+      }
+    }
+  }
+}

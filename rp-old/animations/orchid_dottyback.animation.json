@@ -1,0 +1,23 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.orchid_dottyback.swim": {
+			"anim_time_update": "query.modified_distance_moved",
+			"loop": true,
+			"bones": {
+				"tail": {
+					"rotation": [0, "math.sin(query.anim_time * 200) * 10", 0]
+				},
+				"body": {
+					"rotation": [0, "math.sin(query.anim_time * 200) * 10", 0]
+				},
+				"fin": {
+					"rotation": [0, "-math.sin(query.anim_time * 200) * 15", 0]
+				},
+				"fin2": {
+					"rotation": [0, "-math.sin(query.anim_time * 200) * 15", 0]
+				}
+			}
+		}
+	}
+}

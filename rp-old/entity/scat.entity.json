@@ -1,0 +1,30 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "aqua:scat",
+      "materials": { "default": "entity_alphatest" },
+      "textures": {
+        "spotted": "textures/entity/scat/0",
+        "striped": "textures/entity/scat/1",
+        "african": "textures/entity/scat/2"
+      },
+      "geometry": {
+        "default": "geometry.scat"
+      },
+      "animations": {
+        "swim": "animation.scat.swim"
+      },
+      "scripts": {
+        "animate": [
+          "swim"
+        ]
+      },
+      "render_controllers": [ "controller.render.scat" ],
+      "spawn_egg": {
+        "texture": "fish_egg",
+        "texture_index": 1
+      }
+    }
+  }
+}

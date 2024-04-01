@@ -1,0 +1,22 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.sea_pig.walk": {
+			"loop": true,
+			"bones": {
+				"reartentacles": {
+					"rotation": [0, "-math.sin(query.anim_time*100)*5", 0]
+				},
+				"fronttentacles": {
+					"rotation": [0, "math.sin(query.anim_time*100)*5", 0]
+				},
+				"legs": {
+					"position": [0, 0, "math.sin(query.anim_time*50)*0.5 - 0.5"]
+				},
+				"legs2": {
+					"position": [0, 0, "math.sin(query.anim_time*50)*0.5 - 0.5"]
+				}
+			}
+		}
+	}
+}

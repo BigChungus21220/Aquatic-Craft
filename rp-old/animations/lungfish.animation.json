@@ -1,0 +1,23 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.lungfish.swim": {
+"anim_time_update": "query.modified_distance_moved",
+			"loop": true,
+			"bones": {
+				"body": {
+					"rotation": [0, "math.cos(-80+query.anim_time*50)*-10", 0]
+				},
+				"tail": {
+					"rotation": [0, "math.cos(query.anim_time*50)*10 + query.target_y_rotation", 0]
+				},
+				"tail_tip": {
+					"rotation": [0, "math.cos(-80+query.anim_time*50)*10 + query.target_y_rotation", 0]
+				},
+				"head": {
+					"rotation": [0, "math.cos(query.anim_time*50)*-10", 0]
+				}
+			}
+		}
+	}
+}

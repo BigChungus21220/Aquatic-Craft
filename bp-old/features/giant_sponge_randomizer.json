@@ -1,0 +1,13 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:weighted_random_feature": {
+    "description": {
+      "identifier": "aqua:giant_sponge_randomizer"
+    },
+    "features": [
+      [ "aqua:giant_sponge_0", 1 ],
+      [ "aqua:giant_sponge_1", 1 ],
+      [ "aqua:giant_sponge_2", 1 ]
+    ]
+  }
+}

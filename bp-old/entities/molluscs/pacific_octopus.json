@@ -1,0 +1,228 @@
+{
+  "format_version": "1.16.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "aqua:pacific_octopus",
+      "is_spawnable": true,
+      "is_summonable": true,
+      "is_experimental": false
+    },
+
+    "component_groups":{
+      "minecraft:squid_baby": {
+        "minecraft:is_baby": {
+        },
+        "minecraft:scale": {
+          "value": 0.25
+        }
+      },
+      "has_grav": {
+        "minecraft:physics": {
+          "has_gravity": true
+        }
+      },
+      "not_has_grav": {
+        "minecraft:physics": {
+          "has_gravity": false
+        }
+      }
+    },
+    
+    "components": {
+      "minecraft:nameable": {},
+      "minecraft:balloonable": {},
+        "minecraft:leashable": {
+          "soft_distance": 4.0,
+          "hard_distance": 6.0,
+          "max_distance": 10.0
+        },
+      "minecraft:experience_reward": {
+        "on_death": "query.last_hit_by_player ? Math.Random(1,3) : 0"
+      },
+      "minecraft:type_family": {
+        "family": [ "pacific_octopus", "mollusc", "predator", "aquatic", "medium", "saltwater" ]
+      },
+      "minecraft:behavior.nearest_attackable_target": {
+        "attack_interval_min": 10,
+        "attack_interval": 20,
+        "priority": 7,
+        "must_see": true,
+        "within_radius": 20.0,
+        "must_see_forget_duration": 17.0,
+        "persist_time": 0.5,
+        "entity_types": [
+          {
+            "filters": {
+              "any_of": [
+                {
+                  "all_of": [
+                    { "test": "is_family", "subject": "other", "value": "prey"},
+                    { "test": "is_family", "subject": "other", "value": "saltwater"},
+                    { "test": "is_family", "subject": "other", "value": "aquatic"},
+                    {
+                      "any_of": [
+                        { "test": "is_family", "subject": "other", "value": "small"}
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            "max_dist": 20
+          }
+        ]
+      },
+      "minecraft:attack": {
+        "damage": 5
+      },
+      "minecraft:behavior.melee_attack": {
+        "priority": 6,
+        "speed_multiplier": 1,
+        "track_target": false,
+        "require_complete_path": true
+      },
+      "minecraft:collision_box": {
+        "width": 0.8,
+        "height": 0.8
+      },
+      "minecraft:health": {
+        "value": 15,
+        "max": 15
+      },
+      "minecraft:hurt_on_condition": {
+        "damage_conditions": [
+          {
+            "filters": { "test": "in_lava", "subject": "self", "operator": "==", "value": true },
+            "cause": "lava",
+            "damage_per_tick": 4
+          }
+        ]
+      },
+      "minecraft:loot": {
+        "table": "loot_tables/entities/squid.json"
+      },
+      "minecraft:scale": {
+        "value": 1.0
+      },
+      "minecraft:breathable": {
+        "total_supply": 15,
+        "suffocate_time": 0,
+        "breathes_air": false,
+        "breathes_water": true
+      },
+      "minecraft:movement": {
+        "value": 0.3
+      },
+      "minecraft:underwater_movement": {
+        "value": 0.3
+      },
+      "minecraft:behavior.tempt": {
+        "priority": 4,
+        "speed_multiplier": 1.25,
+        "items": [
+          "fish",
+          "salmon",
+          "tropical_fish"
+        ]
+      },
+      "minecraft:water_movement": {},
+      "minecraft:navigation.swim": { // Allows the mob to go through water
+        "can_swim": true,
+        "can_walk": false,
+        "can_path_over_water": true,
+        "can_path_from_air": true
+      },
+      "minecraft:physics": {
+        "has_gravity": false
+      },
+      "minecraft:timer": {
+        "looping": true,
+        "time": 1,
+        "time_down_event": {
+          "event": "in_water"
+        }
+      },
+      "minecraft:pushable": {
+        "is_pushable": true,
+        "is_pushable_by_piston": true
+      },
+      "minecraft:despawn": {
+        "despawn_from_distance": { 
+          "min_distance": 32,
+          "max_distance": 40
+        }
+      },
+      "minecraft:movement.generic": {
+        "max_turn": 30
+      },
+      "minecraft:behavior.random_swim": {
+        "avoid_surface": true,
+        "priority": 2,
+        "speed_multiplier": 0.2,//has to be set lower than it should
+        "xz_dist": 20,
+        "y_dist": 5,
+        "interval": 50
+      },
+      "minecraft:behavior.random_look_around": {
+        "priority": 1
+      },
+      "minecraft:behavior.avoid_mob_type": {
+        "priority": 6,
+        "entity_types": [
+          {
+            "filters": {
+              "test": "is_family",
+              "subject": "other",
+              "value": "player"
+            },
+            "max_dist": 6,
+            "walk_speed_multiplier": 1.0,
+            "sprint_speed_multiplier": 1.0
+          }
+        ]
+      },
+      "minecraft:conditional_bandwidth_optimization": {
+      }
+    },
+    
+    "events":{
+      "in_water": {
+        "sequence": [
+          {
+            "filters": { "test": "in_water"},
+            "add": { "component_groups": [ "not_has_grav" ] }
+          },
+          {
+            "filters": { "test": "in_water", "operator": "!=" },
+            "add": { "component_groups": [ "has_grav" ] }
+          }
+        ]
+      },
+      "minecraft:entity_spawned": {
+        "sequence": [
+          {
+            "randomize": [
+              {
+                "weight": 95,
+                "remove": {
+                },
+                "add": {
+                }
+              },
+              {
+                "weight": 5,
+                "remove": {
+                },
+                "add": {
+                  "component_groups": [
+                    "minecraft:squid_baby"
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

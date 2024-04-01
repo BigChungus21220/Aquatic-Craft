@@ -1,0 +1,128 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.humboldt_squid",
+				"texture_width": 128,
+				"texture_height": 128,
+				"visible_bounds_width": 5,
+				"visible_bounds_height": 3.5,
+				"visible_bounds_offset": [0, 1.25, 0]
+			},
+			"bones": [
+				{
+					"name": "body",
+					"pivot": [0, 4, 0],
+					"rotation": [0, 180, 0],
+					"cubes": [
+						{"origin": [-2.5, 1.5, 0], "size": [5, 5, 7], "uv": [24, 2]},
+						{"origin": [-2, 2, -4], "size": [4, 4, 4], "uv": [50, 20]},
+						{"origin": [-1.5, 2.5, 5.75], "size": [3, 3, 6], "uv": [13, 0]}
+					]
+				},
+				{
+					"name": "siphon",
+					"parent": "body",
+					"pivot": [0.5, 0, 1.5],
+					"cubes": [
+						{"origin": [-0.5, 1.5, -4.5], "size": [1, 1, 5], "uv": [13, 12]}
+					]
+				},
+				{
+					"name": "skirt",
+					"parent": "body",
+					"pivot": [1, -25, -4.5],
+					"cubes": [
+						{"origin": [-6, -54, -21], "size": [12, 0, 6], "pivot": [1, -25, -4.5], "rotation": [180, 0, 0], "uv": [43, 41]}
+					]
+				},
+				{
+					"name": "limbs",
+					"parent": "body",
+					"pivot": [0.5, -11.5, -4.5]
+				},
+				{
+					"name": "arm1",
+					"parent": "limbs",
+					"pivot": [0, 2.5, -4],
+					"cubes": [
+						{"origin": [-2, 5, -15], "size": [1, 1, 11], "pivot": [-1.5, 5.5, -4], "rotation": [0, 0, -90], "uv": [0, 0]}
+					]
+				},
+				{
+					"name": "arm2",
+					"parent": "limbs",
+					"pivot": [-1.5, 4, -4],
+					"cubes": [
+						{"origin": [-2, 3.5, -15], "size": [1, 1, 11], "pivot": [-1.5, 4, -4], "rotation": [0, 0, -180], "uv": [0, 0]}
+					]
+				},
+				{
+					"name": "arm3",
+					"parent": "limbs",
+					"pivot": [-1, 2.5, -4],
+					"cubes": [
+						{"origin": [-0.5, 1, -14.5], "size": [1, 1, 11], "pivot": [0, 2.5, -3.5], "rotation": [0, 0, 90], "uv": [0, 0]}
+					]
+				},
+				{
+					"name": "arm4",
+					"parent": "limbs",
+					"pivot": [0, 2.5, -4],
+					"cubes": [
+						{"origin": [-0.5, 2, -14.5], "size": [1, 1, 11], "pivot": [0, 2.5, -4], "rotation": [0, 0, 90], "uv": [0, 0]}
+					]
+				},
+				{
+					"name": "arm5",
+					"parent": "limbs",
+					"pivot": [1, 2.5, -4],
+					"cubes": [
+						{"origin": [0, 2.5, -14.5], "size": [1, 1, 11], "pivot": [0.5, 2.5, -4], "rotation": [0, 0, 90], "uv": [0, 0]}
+					]
+				},
+				{
+					"name": "arm6",
+					"parent": "limbs",
+					"pivot": [1.5, 4, -4],
+					"cubes": [
+						{"origin": [1, 3.5, -15], "size": [1, 1, 11], "uv": [0, 0]}
+					]
+				},
+				{
+					"name": "arm7",
+					"parent": "limbs",
+					"pivot": [1.5, 5.5, -4],
+					"cubes": [
+						{"origin": [1, 5, -15], "size": [1, 1, 11], "pivot": [1.5, 5.5, -4], "rotation": [0, 0, -90], "uv": [0, 0]}
+					]
+				},
+				{
+					"name": "arm8",
+					"parent": "limbs",
+					"pivot": [0, 5, -4],
+					"cubes": [
+						{"origin": [-0.5, 4.5, -15], "size": [1, 1, 11], "pivot": [0, 5, -4], "rotation": [0, 0, -90], "uv": [0, 0]}
+					]
+				},
+				{
+					"name": "tentacleL",
+					"parent": "limbs",
+					"pivot": [0.5, 4, -4],
+					"cubes": [
+						{"origin": [0.5, 3, -3.5], "size": [28, 1, 0], "pivot": [0.5, 4, -3.5], "rotation": [0, 90, 0], "uv": [0, 18]}
+					]
+				},
+				{
+					"name": "tentacleR",
+					"parent": "limbs",
+					"pivot": [-0.5, 4, -4],
+					"cubes": [
+						{"origin": [-29.5, 3, -28.5], "size": [28, 1, 0], "pivot": [-2.5, 4, -30.5], "rotation": [0, 90, 0], "uv": [0, 18]}
+					]
+				}
+			]
+		}
+	]
+}

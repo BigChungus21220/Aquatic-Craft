@@ -1,0 +1,16 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.sea_lemon.idle": {
+			"loop": true,
+			"bones": {
+				"gills": {
+					"rotation": ["Math.sin(query.anim_time * 25 + 10) * 5", 0, "Math.sin(query.anim_time * 25 + 10) * 5"]
+				},
+				"stalks": {
+					"rotation": [0, 0, "Math.sin(query.anim_time * 25 + 10) * 5"]
+				}
+			}
+		}
+	}
+}

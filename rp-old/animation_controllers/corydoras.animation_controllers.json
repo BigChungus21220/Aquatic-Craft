@@ -1,0 +1,26 @@
+{
+	"format_version" : "1.10.0",
+	"animation_controllers" : {
+		"controller.animation.corydoras.swim_controller": {
+			"initial_state" : "swim",
+			"states" : {
+				"swim" : {
+					"animations": ["swim"],
+					"transitions" : [
+						{
+							"bottom_swim" : "query.skin_id == 1"
+						}
+					]
+				},
+				"bottom_swim" : {
+					"animations": ["bottom_swim"],
+					"transitions" : [
+						{
+							"swim" : "query.skin_id == 0"
+						}
+					]
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,28 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "aqua:manowar",
+      "materials": { "default": "entity_alphatest" },
+      "textures": {
+        "default": "textures/entity/manowar"
+      },
+      "geometry": {
+        "default": "geometry.manowar"
+      },
+      "animations": {
+        "swim": "animation.manowar.swim"
+      },
+      "scripts": {
+        "animate": [
+          "swim"
+        ]
+      },
+      "render_controllers": [ "controller.render.squid" ],
+      "spawn_egg": {
+        "texture": "deep_egg",
+        "texture_index": 3
+      }
+    }
+  }
+}

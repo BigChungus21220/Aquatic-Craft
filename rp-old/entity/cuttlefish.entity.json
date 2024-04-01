@@ -1,0 +1,30 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "aqua:cuttlefish",
+      "materials": { "default": "entity_alphatest" },
+      "textures": {
+        "black_gold": "textures/entity/cuttlefish/black_gold",
+	"brown": "textures/entity/cuttlefish/brown",
+	"pink": "textures/entity/cuttlefish/pink"
+      },
+      "geometry": {
+        "default": "geometry.cuttlefish"
+      },
+      "animations": {
+        "idle": "animation.cuttlefish.idle"
+      },
+      "scripts": {
+        "animate": [
+          "idle"
+        ]
+      },
+      "render_controllers": [ "controller.render.cuttlefish" ],
+      "spawn_egg": {
+        "texture": "mollusc_egg",
+        "texture_index": 1
+      }
+    }
+  }
+}

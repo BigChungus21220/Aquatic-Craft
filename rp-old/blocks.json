@@ -1,0 +1,161 @@
+{
+	"format_version": [1,1,0],
+	"sand_castle" : {
+		"sound" : "sand"
+ 	},
+	"clam_shell": {
+		"sound" : "deepslate"
+	},
+	"urchin_skeleton": {
+		"sound" : "deepslate"
+	},
+	"abalone_shell": {
+		"sound" : "deepslate"
+	},
+	"moon_snail_shell": {
+		"sound" : "deepslate"
+	},
+	"cone_shell" : {
+		"sound" : "deepslate"
+ 	},
+	"cowrie_shell" : {
+		"sound" : "deepslate"
+ 	},
+	"shark_tooth" : {
+		"sound" : "deepslate"
+ 	},
+	"top_shell" : {
+		"sound" : "deepslate"
+ 	},
+	"whelk_shell" : {
+		"sound" : "deepslate"
+ 	},
+	"coconut" : {
+		"sound" : "wood"
+ 	},
+	"sea_urchin" : {
+		"sound" : "deepslate"
+ 	},
+	"banded_urchin" : {
+		"sound" : "deepslate"
+ 	},
+	"green_urchin" : {
+		"sound" : "deepslate"
+ 	},
+	"purple_urchin" : {
+		"sound" : "deepslate"
+ 	},
+	"collector_urchin" : {
+		"sound" : "deepslate"
+ 	},
+	"helmet_urchin" : {
+		"sound" : "deepslate"
+ 	},
+	"pencil_urchin" : {
+		"sound" : "deepslate"
+ 	},
+	"rock_urchin" : {
+		"sound" : "deepslate"
+ 	},
+	"sand_dollar" : {
+		"sound" : "deepslate"
+ 	},
+	"limpet" : {
+		"sound" : "deepslate"
+ 	},
+	"barnacle" : {
+		"sound" : "deepslate"
+ 	},
+	"georgian_pink" : {
+		"sound" : "deepslate"
+ 	},
+	"georgian_purple" : {
+		"sound" : "deepslate"
+ 	},
+	"georgian_yellow" : {
+		"sound" : "deepslate"
+ 	},
+	"giant_anemone_stalk" : {
+		"sound" : "wood",
+        "textures": "giant_anemone_stalk"
+ 	},
+	"giant_anemone_tentacle" : {
+		"sound" : "slime",
+        "textures": "giant_anemone_tentacle",
+		"isotropic" : true
+ 	},
+	"giant_sponge_stalk" : {
+		"sound" : "wood",
+        "textures": "giant_sponge_stalk",
+		"isotropic" : true
+ 	},
+	"giant_sponge_head" : {
+		"sound" : "slime",
+        "textures": "giant_sponge_head",
+		"isotropic" : true
+ 	},
+	"stalk_sponge" : {
+		"sound" : "slime"
+ 	},
+	"harp_sponge" : {
+		"sound" : "slime"
+ 	},
+	"deep_sponge" : {
+		"sound" : "slime"
+ 	},	
+	"deep_coral" : {
+		"sound" : "slime"
+ 	},
+	"lava_rock" : {
+		"sound" : "basalt",
+		"textures": "lava_rock",
+        "isotropic" : true
+ 	},
+	"black_sand" : {
+		"sound" : "sand",
+		"textures": "black_sand",
+    	"isotropic" : true
+ 	},
+	"frogbit" : {
+		"sound" : "grass"
+ 	},
+	"mosaic_plant" : {
+		"sound" : "grass"
+ 	},
+	"water_lettuce" : {
+		"sound" : "grass"
+ 	},
+	 "cattail_bottom" : {
+		"sound" : "grass"
+ 	},
+	"papyrus_top" : {
+		"sound" : "grass"
+ 	},
+	"papyrus_bottom" : {
+		"sound" : "grass"
+ 	},
+	"amazon_sword" : {
+		"sound" : "grass"
+ 	},
+	"horsetail" : {
+		"sound" : "grass"
+ 	},
+	"horsetail_top" : {
+		"sound" : "grass"
+ 	},
+	"crinoid" : {
+		"sound" : "stone"
+ 	},
+	"anenome" : {
+		"sound" : "slime"
+ 	},
+	"victoria_lily_center": {
+		"sound" : "grass"
+	},
+	"victoria_lily_corner": {
+		"sound" : "grass"
+	},
+	"victoria_lily_side": {
+		"sound" : "grass"
+	}
+}

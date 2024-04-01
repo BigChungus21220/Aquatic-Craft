@@ -1,0 +1,82 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.pacific_octopus.idle": {
+			"loop": true,
+			"bones": {
+				"mantle": {
+					"rotation": [0, 0, 0]
+				},
+				"arms": {
+					"position": [0, 0, 0]
+				},
+				"arm1": {
+					"rotation": [0, 0, "-20"]
+				},
+				"arm2": {
+					"rotation": ["20", 0, "-0.5*20"]
+				},
+				"arm3": {
+					"rotation": ["20", 0, 0]
+				},
+				"arm4": {
+					"rotation": ["20", 0, "0.5*20"]
+				},
+				"arm5": {
+					"rotation": [0, 0, "20"]
+				},
+				"arm6": {
+					"rotation": ["-20", 0, "0.5*20"]
+				},
+				"arm7": {
+					"rotation": ["-20", 0, 0]
+				},
+				"arm8": {
+					"rotation": ["-20", 0, "-0.5*20"]
+				}
+			}
+		},
+		"animation.pacific_octopus.move": {
+			"loop": true,
+			"bones": {
+				"head": {
+					"rotation": [12.5, 0, 0]
+				},
+				"mantle": {
+					"rotation": [-17.5, 0, 0]
+				},
+				"eye": {
+					"rotation": [-17.5, 0, 0]
+				},
+				"arms": {
+					"rotation": ["math.sin(query.anim_time*100)*5", 0, 0],
+					"position": [0, 0, 0]
+				},
+				"arm1": {
+					"rotation": [75, 70, -22.5]
+				},
+				"arm2": {
+					"rotation": [160, 30, 0]
+				},
+				"arm3": {
+					"rotation": [165, 0, 0]
+				},
+				"arm4": {
+					"rotation": [160, -30, 0]
+				},
+				"arm5": {
+					"rotation": [75, -70, 22.5]
+				},
+				"arm6": {
+					"rotation": [0, -35, 0]
+				},
+				"arm7": {
+					"rotation": [7.5, 0, 0]
+				},
+				"arm8": {
+					"rotation": [0, 35, 0]
+				}
+			}
+		}
+	}
+}

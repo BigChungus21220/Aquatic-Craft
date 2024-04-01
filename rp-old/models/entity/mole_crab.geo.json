@@ -1,0 +1,69 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.mole_crab",
+				"texture_width": 32,
+				"texture_height": 32,
+				"visible_bounds_width": 2,
+				"visible_bounds_height": 1.5,
+				"visible_bounds_offset": [0, 0.25, 0]
+			},
+			"bones": [
+				{
+					"name": "bb_main",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{"origin": [-2, 1, -3], "size": [5, 3, 6], "uv": [0, 0]},
+						{"origin": [-1, 1, 3], "size": [3, 2, 1], "uv": [16, 2]}
+					]
+				},
+				{
+					"name": "eyes",
+					"parent": "bb_main",
+					"pivot": [0, 4, -3],
+					"rotation": [42.5, 0, 0],
+					"cubes": [
+						{"origin": [1, 4, -3], "size": [1, 2, 0], "uv": [16, 0]},
+						{"origin": [-1, 4, -3], "size": [1, 2, 0], "uv": [16, 0]}
+					]
+				},
+				{
+					"name": "antenae",
+					"parent": "bb_main",
+					"pivot": [0, 4, -3],
+					"cubes": [
+						{"origin": [0, 3, -6], "size": [0, 1, 3], "pivot": [0, 3, -3], "rotation": [0, 12.5, 0], "uv": [14, 6]},
+						{"origin": [1, 3, -6], "size": [0, 1, 3], "pivot": [0, 3, -3], "rotation": [0, -12.5, 0], "uv": [14, 6]}
+					]
+				},
+				{
+					"name": "legs",
+					"parent": "bb_main",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{"origin": [-1, 0, -1], "size": [0, 1, 4], "uv": [0, 5]},
+						{"origin": [2, 0, -1], "size": [0, 1, 4], "uv": [0, 5]}
+					]
+				},
+				{
+					"name": "leg",
+					"parent": "legs",
+					"pivot": [3, 1, -1],
+					"cubes": [
+						{"origin": [3, 0, -4], "size": [0, 1, 3], "uv": [8, 6]}
+					]
+				},
+				{
+					"name": "leg2",
+					"parent": "legs",
+					"pivot": [-2, 1, -1],
+					"cubes": [
+						{"origin": [-2, 0, -4], "size": [0, 1, 3], "uv": [8, 6]}
+					]
+				}
+			]
+		}
+	]
+}

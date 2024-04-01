@@ -1,0 +1,28 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "aqua:sea_pig",
+      "materials": { "default": "entity_alphatest" },
+      "textures": {
+        "default": "textures/entity/sea_pig"
+      },
+      "animations": {
+        "walk": "animation.sea_pig.walk"
+      },
+      "scripts": {
+        "animate": [
+          "walk"
+        ]
+      },
+      "geometry": {
+        "default": "geometry.sea_pig"
+      },
+      "render_controllers": [ "controller.render.squid" ],
+      "spawn_egg": {
+        "texture": "misc_egg",
+        "texture_index": 2
+      }
+    }
+  }
+}

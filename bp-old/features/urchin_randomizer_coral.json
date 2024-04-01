@@ -1,0 +1,16 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:weighted_random_feature": {
+    "description": {
+      "identifier": "aqua:urchin_randomizer_coral"
+    },
+    "features": [
+      [ "aqua:urchin_0", 1 ],
+      [ "aqua:urchin_1", 1 ],
+      [ "aqua:urchin_2", 1 ],
+      [ "aqua:urchin_3", 1 ],
+      [ "aqua:urchin_4", 1 ],
+      [ "aqua:urchin_5", 1 ]
+    ]
+  }
+}

@@ -1,0 +1,94 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:block": {
+      "description": {
+          "identifier": "aqua:horsetail_top",
+          "properties": {
+            "aqua:can_grow": [ true, false ]
+          }
+      },
+      "components": {
+        "minecraft:loot": "loot_tables/blocks/horsetail.json",
+        "minecraft:geometry": "geometry.horsetail",
+        "minecraft:selection_box": {
+          "origin": [-7, 0, -7],
+          "size": [14, 16, 14]
+        },
+        "minecraft:material_instances": {
+          "*": {
+            "texture": "horsetail_top",
+            "render_method": "alpha_test"
+          }
+        },
+        "minecraft:block_light_filter" : 0,
+        "minecraft:light_emission" : 0,
+        "minecraft:random_ticking": {
+          "on_tick": {
+            "event": "grow",
+            "condition": "query.block_property('aqua:can_grow') == true"
+          }
+        },
+        "minecraft:placement_filter": {
+          "conditions": [
+            {
+              "block_filter": [
+                "minecraft:grass",
+                "minecraft:dirt",
+                "minecraft:podzol",
+                "aqua:horsetail",
+                "aqua:horsetail_top"
+              ],
+              "allowed_faces": ["up"]
+            }
+          ]
+        },
+        "minecraft:on_interact": {
+          "condition": "query.is_item_name_any('slot.weapon.mainhand','minecraft:bone_meal')",
+          "event": "grow_bonemealed"
+        },
+        "minecraft:on_placed": {
+          "event": "set_growths"
+        },
+        //"minecraft:breakonpush": true,
+        "minecraft:block_collision": false
+      },
+      "events": {
+        "set_growths": {
+          "run_command": {
+            "command": "fill ~ ~-1 ~ ~ ~-1 ~ aqua:horsetail 0 replace aqua:horsetail_top"
+          }
+        },
+        "grow": {
+          "randomize": [
+            {
+              "weight": 1,
+              "set_block_property": {
+                "aqua:can_grow": false
+              }
+            },
+            {
+              "weight": 1,
+              "trigger": {
+                "event": "grow_passed"
+                }
+            }
+          ]
+        },
+        "grow_bonemealed": {
+          "decrement_stack": {},
+          "trigger": {
+            "event": "grow_passed"
+          }
+        },
+        "grow_passed": {
+          "condition": "query.block_property('aqua:can_grow') == true",
+          "run_command": {
+            "command": [
+              "fill ~ ~1 ~ ~ ~1 ~ aqua:horsetail_top 0 replace air",
+              "fill ~ ~ ~ ~ ~ ~ aqua:horsetail 0"
+            ]
+          }
+        }
+      }
+  }
+}

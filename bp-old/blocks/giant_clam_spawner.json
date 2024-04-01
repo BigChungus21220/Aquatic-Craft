@@ -1,0 +1,29 @@
+{
+  "format_version": "1.16.100",
+  "minecraft:block": {
+    "description": {
+      "identifier": "aqua:giant_clam_spawner"
+    },
+    "components": {
+      "minecraft:ticking": {
+        "looping": true,
+        "range": [0.1, 0.1],
+        "on_tick": {
+          "event": "spawn_clam",
+          "target": "self"
+        }
+      }
+    },
+    "events": {
+      "spawn_clam": {
+        "run_command": {
+          "command": ["summon aqua:giant_clam ~ ~-0.5 ~"]
+        },
+        "set_block_at_pos": {
+          "block_type": "minecraft:water",
+          "block_offset": [0, 0, 0]
+        }
+      }
+    }
+  }
+}

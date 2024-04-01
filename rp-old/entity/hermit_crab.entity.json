@@ -1,0 +1,38 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "aqua:hermit_crab",
+      "materials": { "default": "entity_alphatest" },
+      "textures": {
+        "brown": "textures/entity/hermit_crab/0",
+        "dark_blue": "textures/entity/hermit_crab/1",
+        "red": "textures/entity/hermit_crab/2",
+        "blue": "textures/entity/hermit_crab/3",
+        "tan": "textures/entity/hermit_crab/4",
+        "blue_2": "textures/entity/hermit_crab/5",
+        "orange": "textures/entity/hermit_crab/6"
+      },
+      "geometry": {
+        "default": "geometry.hermit_crab"
+      },
+      "animations": {
+        "walk": "animation.hermit_crab.walk",
+        "hide": "animation.hermit_crab.hide",
+        "emerge": "animation.hermit_crab.hide"
+      },
+      "animation_controllers": [
+        {
+          "hermit_crab": "controller.animation.hermit_crab"
+        }
+      ],
+      "render_controllers": [ 
+        "controller.render.hermit_crab"
+      ],
+      "spawn_egg": {
+        "texture": "crustacean_egg",
+        "texture_index": 7
+      }
+    }
+  }
+}

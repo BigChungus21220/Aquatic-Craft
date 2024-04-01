@@ -1,0 +1,48 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:biome": {
+    "description": {
+      "identifier": "island"
+    },
+    "components": {
+      "minecraft:climate": {
+        "downfall": 0.5,
+        "snow_accumulation": [ 0.0, 0.125 ],
+        "temperature": 0.5
+      },
+      "minecraft:overworld_height": {
+        "noise_type": "extreme"
+      },
+      "minecraft:surface_parameters": {
+        "sea_floor_depth": 7,
+        "sea_floor_material": "minecraft:gravel",
+        "foundation_material": "minecraft:stone",
+        "mid_material": "aqua:lava_rock",
+        "top_material": "aqua:lava_rock",
+        "sea_material": "minecraft:water"
+      },
+      "minecraft:surface_material_adjustments": {
+        "adjustments": [
+          {
+            "materials": {
+              "top_material": "minecraft:grass",
+              "mid_material": "minecraft:dirt",
+              "foundation_material": "minecraft:stone"
+            },
+            "noise_frequency_scale": 0.625,
+            "noise_range": [ 0.121, 1.0 ]
+          }
+        ]
+      },
+
+      "minecraft:overworld_generation_rules": {
+        "shore_transformation": "beach"
+      },
+
+      "monster": {},
+      "island": {},
+      "savanna": {},
+      "overworld": {}
+    }
+  }
+}

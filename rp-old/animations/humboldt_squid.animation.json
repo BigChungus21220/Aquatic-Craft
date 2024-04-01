@@ -1,0 +1,40 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.humboldt_squid.idle": {
+			"loop": true,
+			"bones": {
+				"arm1": {
+					"rotation": ["variable.arm_movement_corner", "-variable.arm_movement_corner", 0]
+				},
+				"arm2": {
+					"rotation": [0, "-variable.arm_movement_side", 0]
+				},
+				"arm3": {
+					"rotation": ["-variable.arm_movement_corner", "-variable.arm_movement_corner", 0]
+				},
+				"arm4": {
+					"rotation": ["-variable.arm_movement_side", 0, 0]
+				},
+				"arm5": {
+					"rotation": ["-variable.arm_movement_corner", "variable.arm_movement_corner", 0]
+				},
+				"arm6": {
+					"rotation": [0, "variable.arm_movement_side", 0]
+				},
+				"arm7": {
+					"rotation": ["variable.arm_movement_corner", "variable.arm_movement_corner", 0]
+				},
+				"arm8": {
+					"rotation": ["variable.arm_movement_side", 0, 0]
+				},
+				"tentacleL": {
+					"rotation": [0, "variable.arm_movement_side/10", 0]
+				},
+				"tentacleR": {
+					"rotation": [0, "-variable.arm_movement_side/10", 0]
+				}
+			}
+		}
+	}
+}

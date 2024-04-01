@@ -1,0 +1,62 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:block": {
+      "description": {
+          "identifier": "aqua:water_lettuce_helper",
+          "properties": {
+            "aqua:rotation": [ 0, 1, 2, 3 ]
+          }
+      },
+      "components": {
+        "minecraft:geometry": "geometry.water_lettuce",
+        "minecraft:selection_box": {
+          "origin": [-5, 0, -7],
+          "size": [12, 6, 12]
+        },      
+        "minecraft:block_light_filter" : 0,
+        "minecraft:light_emission" : 0,
+        "minecraft:material_instances": {
+          "*": {
+            "texture": "water_letuce_side",
+            "render_method": "alpha_test"
+          },
+          "up": {
+            "texture": "water_letuce_top",
+            "render_method": "alpha_test"
+          },
+          "down": {
+            "texture": "water_letuce_bottom",
+            "render_method": "alpha_test"
+          }
+        },
+        "minecraft:placement_filter": {
+          "conditions": [
+            {
+              "block_filter": [
+                "minecraft:water",
+                "minecraft:flowing_water"
+              ],
+              "allowed_faces": ["up"]
+            }
+          ]
+        },
+        "minecraft:on_placed": {
+          "event": "place_plant"
+        },
+        "minecraft:block_collision": {
+          "origin": [-5, 0, -7],
+          "size": [12, 6, 12]
+        }
+      },
+      "events": {
+        "place_plant": {
+          "run_command": {
+            "command": [
+              "fill ~ ~1 ~ ~ ~1 ~ aqua:water_lettuce 0 replace air",
+              "fill ~ ~ ~ ~ ~ ~ water"
+            ]
+          }
+        }
+      }
+  }
+}

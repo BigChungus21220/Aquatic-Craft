@@ -1,0 +1,20 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:scatter_feature": {
+    "description": {
+      "identifier": "aqua:horsetail_scatter"
+    },
+    "places_feature": "aqua:horsetail_feature",
+    "iterations": 10,
+    "scatter_chance": 50.0,
+    "x": {
+      "distribution": "uniform",
+      "extent": [ 0, 15 ]
+    },
+    "y": 0,
+    "z": {
+      "distribution": "uniform",
+      "extent": [ 0, 15 ]
+    }
+  }
+}

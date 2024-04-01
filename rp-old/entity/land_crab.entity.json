@@ -1,0 +1,28 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "aqua:land_crab",
+      "materials": { "default": "entity_alphatest" },
+      "textures": {
+        "default": "textures/entity/land_crab"
+      },
+      "geometry": {
+        "default": "geometry.land_crab"
+      },
+      "animations": {
+        "idle": "animation.land_crab.idle"
+      },
+      "scripts": {
+        "animate": [
+          "idle"
+        ]
+      },
+      "render_controllers": [ "controller.render.squid" ],
+      "spawn_egg": {
+        "texture": "crustacean_egg",
+        "texture_index": 13
+      }
+    }
+  }
+}

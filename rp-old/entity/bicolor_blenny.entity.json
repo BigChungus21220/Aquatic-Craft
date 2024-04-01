@@ -1,0 +1,28 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "aqua:bicolor_blenny",
+      "materials": { "default": "entity_alphatest" },
+      "textures": {
+        "default": "textures/entity/bicolor_blenny"
+      },
+      "geometry": {
+        "default": "geometry.bicolor_blenny"
+      },
+      "animations": {
+        "swim": "animation.bicolor_blenny.swim"
+      },
+      "scripts": {
+        "animate": [
+          "swim"
+        ]
+      },
+      "render_controllers": [ "controller.render.squid" ],
+      "spawn_egg": {
+        "texture": "fish_egg",
+        "texture_index": 10
+      }
+    }
+  }
+}

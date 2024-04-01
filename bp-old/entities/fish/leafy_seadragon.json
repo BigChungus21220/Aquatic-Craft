@@ -1,0 +1,212 @@
+{
+  "format_version": "1.16.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "aqua:leafy_seadragon",
+      "is_spawnable": true,
+      "is_summonable": true,
+      "is_experimental": false
+    },
+    "component_groups": {
+      "kill_entity": {
+        "minecraft:transformation": {
+          "begin_transform_sound": "bucket.fill_fish",
+          "into": "aqua:dummy"
+        }
+      },
+      "has_grav": {
+        "minecraft:physics": {
+          "has_gravity": true
+        }
+      },
+      "not_has_grav": {
+        "minecraft:physics": {
+          "has_gravity": false
+        }
+      }
+    },
+    "components": {
+      "minecraft:nameable": {},
+      "minecraft:balloonable": {},
+      "minecraft:leashable": {
+        "soft_distance": 4.0,
+        "hard_distance": 6.0,
+        "max_distance": 10.0
+      },
+      "minecraft:interact": {
+        "interactions": [
+          {
+            "on_interact": {
+              "filters": {
+                "any_of": [
+                  {
+                    "all_of": [
+                      {
+                        "test": "has_equipment",
+                        "subject": "other",
+                        "domain": "hand",
+                        "value": "bucket"
+                      },
+                      {
+                        "test": "in_water",
+                        "subject": "self",
+                        "value": true
+                      }
+                    ]
+                  },
+                  {
+                    "test": "has_equipment",
+                    "subject": "other",
+                    "domain": "hand",
+                    "value": "water_bucket"
+                  }
+                ]
+              },
+              "event": "aqua:bucketed"
+            },
+            "use_item": true
+          }
+        ]
+      },
+      "minecraft:experience_reward": {
+        "on_death": "query.last_hit_by_player ? Math.Random(1,3) : 0"
+      },
+      "minecraft:type_family": {
+        "family": [
+          "leafy_seadragon",
+          "fish",
+          "neutral",
+          "aquatic",
+          "small",
+          "saltwater"
+        ]
+      },
+      "minecraft:collision_box": {
+        "width": 0.6,
+        "height": 0.3
+      },
+      "minecraft:health": {
+        "value": 6,
+        "max": 6
+      },
+      "minecraft:hurt_on_condition": {
+        "damage_conditions": [
+          {
+            "filters": {
+              "test": "in_lava",
+              "subject": "self",
+              "operator": "==",
+              "value": true
+            },
+            "cause": "lava",
+            "damage_per_tick": 4
+          }
+        ]
+      },
+      "minecraft:scale": {
+        "value": 0.25
+      },
+      "minecraft:breathable": {
+        "total_supply": 15,
+        "suffocate_time": 0,
+        "breathes_air": false,
+        "breathes_water": true
+      },
+      "minecraft:movement": {
+        "value": 0.005
+      },
+      "minecraft:underwater_movement": {
+        "value": 0.005
+      },
+      "minecraft:water_movement": {},
+      "minecraft:navigation.swim": { // Allows the mob to go through water
+        "can_swim": true,
+        "can_walk": false,
+        "can_path_over_water": true,
+        "can_path_from_air": true
+      },
+      "minecraft:physics": {
+        "has_gravity": false
+      },
+      "minecraft:timer": {
+        "looping": true,
+        "time": 1,
+        "time_down_event": {
+          "event": "in_water"
+        }
+      },
+      "minecraft:pushable": {
+        "is_pushable": true,
+        "is_pushable_by_piston": true
+      },
+      "minecraft:despawn": {
+        "despawn_from_distance": {
+          "min_distance": 32,
+          "max_distance": 40
+        }
+      },
+      "minecraft:movement.generic": {
+        "max_turn": 30
+      },
+      "minecraft:behavior.swim_idle": {
+        "priority": 3,
+        "idle_time": 0.1,
+        "success_rate": 0.05
+      },
+      "minecraft:behavior.random_swim": {
+        "avoid_surface": true,
+        "priority": 3,
+        "speed_multiplier": 0.1, //has to be set lower than it should
+        "xz_dist": 16,
+        "y_dist": 4,
+        "interval": 5
+      },
+      "minecraft:behavior.swim_wander": {
+        "priority": 4,
+        "interval": 0.1,
+        "look_ahead": 2.0,
+        "speed_multiplier": 1.0,
+        "wander_time": 5.0
+      },
+      "minecraft:conditional_bandwidth_optimization": {}
+    },
+    "events": {
+      "in_water": {
+        "sequence": [
+          {
+            "filters": {
+              "test": "in_water"
+            },
+            "add": {
+              "component_groups": [
+                "not_has_grav"
+              ]
+            }
+          },
+          {
+            "filters": {
+              "test": "in_water",
+              "operator": "!="
+            },
+            "add": {
+              "component_groups": [
+                "has_grav"
+              ]
+            }
+          }
+        ]
+      },
+      "aqua:bucketed": {
+        "add": {
+          "component_groups": [
+            "kill_entity"
+          ]
+        },
+        "run_command": {
+          "command": "tag @s add bucketer",
+          "target": "other"
+        }
+      }
+    }
+  }
+}

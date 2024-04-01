@@ -1,0 +1,56 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.spiny_lobster.idle": {
+                        "anim_time_update": "query.modified_distance_moved*5",
+			"loop": true,
+			"bones": {
+				"bone2": {
+					"rotation": [0, "-math.sin((query.anim_time+0.5)*100)*13", 0]
+				},
+				"bone4": {
+					"rotation": [0, "math.sin((query.anim_time+0.5)*100)*13", 0]
+				},
+				"bone1": {
+					"rotation": [0, "math.sin((query.anim_time+0)*100)*13", "30+math.sin((query.anim_time+0)*100)*13"]
+				},
+				"bone3": {
+					"rotation": [0, "math.sin((query.anim_time+0.5)*100)*13", 0]
+				},
+				"bone8": {
+					"rotation": [0, 0, "math.sin((query.anim_time+0.75)*100)*13"]
+				},
+				"bone7": {
+					"rotation": [0, "math.sin((query.anim_time+0.5)*100)*13", 0]
+				},
+				"bone5": {
+					"rotation": [0, "math.sin((query.anim_time+0.5)*100)*13", 0]
+				},
+				"bone6": {
+					"rotation": [0, "-math.sin((query.anim_time+0.5)*100)*13", 0]
+				},
+				"bone9": {
+					"rotation": ["math.sin((query.anim_time+0.75)*100)*1", 32.5, 17.5]
+				},
+				"bone10": {
+					"rotation": ["-math.sin((query.anim_time+0.75)*100)*1", -32.5, -12.5]
+				},
+				"bone11": {
+					"rotation": [0, 50, 107.5]
+				},
+				"bone12": {
+					"rotation": [0, -50, -105]
+				},
+				"tail": {
+					"rotation": [-5, 0, 0]
+				},
+				"legs3": {
+					"rotation": [0, 0, -15]
+				},
+				"legs2": {
+					"rotation": [0, 0, 15]
+				}
+			}
+		}
+	}
+}

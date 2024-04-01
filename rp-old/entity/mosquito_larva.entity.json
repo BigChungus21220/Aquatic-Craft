@@ -1,0 +1,39 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "aqua:mosquito_larva",
+      "materials": { 
+        "default": "bat" 
+      },
+      "textures": {
+        "default": "textures/misc/missing_texture"
+      },
+      "particle_effects": {
+				"larva": "aqua:mosquito_larva_particle"
+			},
+      "geometry": {
+        "default": "geometry.mosquito_larva"
+      },
+      "animations": {
+        "timer": "animation.mosquito_larva.timer",
+        "mosquito_larva_controller": "controller.animation.mosquito_larva"
+      },
+      "scripts": {
+        "initialize": [
+          "v.anim_offset = math.random(0, 4);"
+        ],
+        "animate": [
+          {
+            "mosquito_larva_controller": "q.life_time >= v.anim_offset"
+          }
+        ]
+      },
+      "render_controllers": [ "controller.render.bat" ],
+      "spawn_egg": {
+        "texture": "fish_egg",
+        "texture_index": 15
+      }
+    }
+  }
+}

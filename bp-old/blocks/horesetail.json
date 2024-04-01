@@ -1,0 +1,60 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:block": {
+      "description": {
+          "identifier": "aqua:horsetail"
+      },
+      "components": {
+        "minecraft:loot": "loot_tables/blocks/horsetail.json",
+        "minecraft:geometry": "geometry.horsetail",
+        "minecraft:selection_box": {
+          "origin": [-7, 0, -7],
+          "size": [14, 16, 14]
+        },
+        "minecraft:material_instances": {
+          "*": {
+            "texture": "horsetail",
+            "render_method": "alpha_test"
+          }
+        },
+        "minecraft:block_light_filter" : 0,
+        "minecraft:light_emission" : 0,
+        "minecraft:random_ticking": {
+          "on_tick": {
+            "event": "grow"
+          }
+        },
+        "minecraft:placement_filter": {
+          "conditions": [
+            {
+              "block_filter": [
+                "minecraft:grass",
+                "minecraft:dirt",
+                "minecraft:podzol",
+                "aqua:horsetail",
+                "aqua:horsetail_top"
+              ],
+              "allowed_faces": ["up"]
+            }
+          ]
+        },
+        "minecraft:on_placed": {
+          "event": "set_growths"
+        },
+        //"minecraft:breakonpush": true,
+        "minecraft:block_collision": false
+      },
+      "events": {
+        "set_growths": {
+          "run_command": {
+            "command": "fill ~ ~-1 ~ ~ ~-1 ~ aqua:horsetail 0 replace aqua:horsetail_top"
+          }
+        },
+        "grow": {
+          "run_command": {
+            "command": "fill ~ ~1 ~ ~ ~1 ~ aqua:horsetail_top 0 replace air"
+          }
+        }
+      }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "aqua:silver_moony",
+      "materials": { "default": "entity_alphatest" },
+      "textures": {
+        "default": "textures/entity/silver_moony"
+      },
+      "geometry": {
+        "default": "geometry.silver_moony"
+      },
+      "animations": {
+        "swim": "animation.silver_moony.swim"
+      },
+      "scripts": {
+        "animate": [
+          "swim"
+        ]
+      },
+      "render_controllers": [ "controller.render.squid" ],
+      "spawn_egg": {
+        "texture": "deep_egg",
+        "texture_index": 0
+      }
+    }
+  }
+}

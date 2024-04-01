@@ -1,0 +1,19 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:single_block_feature": {
+    "description": {
+      "identifier": "aqua:water_lettuce_feature"
+    },
+    "places_block": "aqua:water_lettuce",
+    "enforce_placement_rules": true,
+    "enforce_survivability_rules": true,
+    "may_attach_to": {
+      "bottom":[
+        "minecraft:water"
+      ]
+    },
+    "may_replace": [
+      "minecraft:air"
+    ]
+  }
+}

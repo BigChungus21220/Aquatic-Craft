@@ -1,0 +1,43 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "aqua:aquarium_slime",
+      "materials": {
+        "default": "entity_alphatest",
+        "outer": "entity_alphablend"
+      },
+      "textures": {
+        "default": "textures/entity/aquarium_slime"
+      },
+      "geometry": {
+        "default": "geometry.aquarium_slime",
+        "armor": "geometry.aquarium_slime_armor"
+      },
+      "animations": {
+        "idle": "animation.aquarium_slime.idle"
+      },
+      "scripts": {
+        "pre_animation": [
+          "variable.squish_factor = query.previous_squish_value + (query.current_squish_value - query.previous_squish_value) * query.frame_alpha+1;",
+          "variable.internal_squish_factor = (query.previous_squish_value + (query.current_squish_value - query.previous_squish_value) * query.frame_alpha)*1.25+1;",
+          "variable.internal_squish_factor_width = 1+(-variable.internal_squish_factor/5);",
+          "variable.internal_intertia = -query.previous_squish_value*10;",
+          "variable.goldfish_rot = query.anim_time*100;",
+          "variable.goldfish_tail = math.sin(query.anim_time*500)*10;"
+        ],
+        "animate": [
+          "idle"
+        ]
+      },
+      "render_controllers": [
+        "controller.render.slime",
+        "controller.render.slime_armor"
+      ],
+      "spawn_egg": {
+        "texture": "spawn_egg",
+        "texture_index": 10
+      }
+    }
+  }
+}

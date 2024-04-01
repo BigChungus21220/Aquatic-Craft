@@ -1,0 +1,87 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.bowhead_whale",
+				"texture_width": 512,
+				"texture_height": 512,
+				"visible_bounds_width": 25,
+				"visible_bounds_height": 5,
+				"visible_bounds_offset": [0, 1.5, 0]
+			},
+			"bones": [
+				{
+					"name": "body",
+					"pivot": [0, 35, 6],
+					"cubes": [
+						{"origin": [-17, 0, -46], "size": [34, 54, 101], "uv": [0, 0]}
+					]
+				},
+				{
+					"name": "head",
+					"parent": "body",
+					"pivot": [0, 31, -46],
+					"cubes": [
+						{"origin": [-12, 31, -57], "size": [24, 21, 11], "uv": [0, 25]},
+						{"origin": [-12, 46, -97], "size": [24, 9, 40], "uv": [230, 115]},
+						{"origin": [8, 21, -111], "size": [0, 25, 54], "uv": [116, 427]},
+						{"origin": [-8, 21, -111], "size": [0, 25, 54], "uv": [116, 427], "mirror": true},
+						{"origin": [-12, 42, -113], "size": [24, 9, 16], "uv": [0, 0]}
+					]
+				},
+				{
+					"name": "lower",
+					"parent": "head",
+					"pivot": [0, 31, -46],
+					"cubes": [
+						{"origin": [-12, 10, -78], "size": [24, 36, 32], "uv": [196, 187]},
+						{"origin": [-12, 16, -113], "size": [24, 30, 35], "uv": [111, 279]}
+					]
+				},
+				{
+					"name": "tail0",
+					"parent": "body",
+					"pivot": [0, 35, 55],
+					"cubes": [
+						{"origin": [-13, 11, 55], "size": [26, 39, 50], "uv": [169, 0]}
+					]
+				},
+				{
+					"name": "tail1",
+					"parent": "tail0",
+					"pivot": [0, 34, 105],
+					"cubes": [
+						{"origin": [-10, 22, 105], "size": [20, 24, 70], "uv": [0, 155]}
+					]
+				},
+				{
+					"name": "tail2",
+					"parent": "tail1",
+					"pivot": [0, 34, 167],
+					"cubes": [
+						{"origin": [-24, 31, 167], "size": [48, 6, 24], "uv": [0, 249]}
+					]
+				},
+				{
+					"name": "arm0",
+					"parent": "body",
+					"pivot": [-17, 11, -33],
+					"rotation": [-20.44582, -11.73507, 4.3361],
+					"cubes": [
+						{"origin": [-20, -1, -36], "size": [6, 22, 40], "uv": [50, 338]}
+					]
+				},
+				{
+					"name": "arm1",
+					"parent": "body",
+					"pivot": [17, 11, -33],
+					"rotation": [-20.44582, 11.73507, -4.3361],
+					"cubes": [
+						{"origin": [14, -1, -36], "size": [6, 22, 40], "uv": [50, 338], "mirror": true}
+					]
+				}
+			]
+		}
+	]
+}

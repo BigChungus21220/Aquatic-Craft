@@ -1,0 +1,158 @@
+{
+  "format_version": "1.16.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "aqua:sea_lemon",
+      "is_spawnable": true,
+      "is_summonable": true,
+      "is_experimental": false
+    },
+
+    "component_groups":{
+      "kill_entity": {
+        "minecraft:transformation": {
+          "begin_transform_sound": "bucket.fill_fish",
+          "into": "aqua:dummy"
+        }
+      }
+    },
+    
+    "components": {
+      "minecraft:nameable": {},
+      "minecraft:balloonable": {},
+        "minecraft:leashable": {
+          "soft_distance": 4.0,
+          "hard_distance": 6.0,
+          "max_distance": 10.0
+        },
+      "minecraft:experience_reward": {
+        "on_death": "query.last_hit_by_player ? Math.Random(1,3) : 0"
+      },
+      "minecraft:type_family": {
+        "family": [ "sea_lemon", "nudibranch", "mollusc", "neutral", "aquatic", "small", "saltwater" ]
+      },
+      "minecraft:collision_box": {
+        "width": 0.3,
+        "height": 0.3
+      },
+      "minecraft:health": {
+        "value": 6,
+        "max": 6
+      },
+      "minecraft:hurt_on_condition": {
+        "damage_conditions": [
+          {
+            "filters": { "test": "in_lava", "subject": "self", "operator": "==", "value": true },
+            "cause": "lava",
+            "damage_per_tick": 4
+          }
+        ]
+      },
+      "minecraft:interact": {
+        "interactions": [
+          {
+            "on_interact": {
+              "filters": {
+                "any_of": [
+                  {
+                    "all_of": [
+                      {
+                        "test": "has_equipment",
+                        "subject": "other",
+                        "domain": "hand",
+                        "value": "bucket"
+                      },
+                      {
+                        "test": "in_water",
+                        "subject": "self",
+                        "value": true
+                      }
+                    ]
+                  },
+                  {
+                    "test": "has_equipment",
+                    "subject": "other",
+                    "domain": "hand",
+                    "value": "water_bucket"
+                  }
+                ]
+              },
+              "event": "aqua:bucketed"
+            },
+            "use_item": true
+          }
+        ]
+      },
+      "minecraft:scale": {
+        "value": 1.0
+      },
+      "minecraft:breathable": {
+        "total_supply": 15,
+        "suffocate_time": 0,
+        "breathes_air": false,
+        "breathes_water": true
+      },
+      "minecraft:movement": {
+        "value": 0.1
+      },
+      "minecraft:navigation.walk": {
+        "is_amphibious": true,
+        "avoid_water": true
+      },
+      "minecraft:movement.basic": {
+      },
+      "minecraft:jump.static": {
+      },
+      "minecraft:can_climb": {},
+      "minecraft:despawn": {
+        "despawn_from_distance": { 
+          "min_distance": 32,
+          "max_distance": 40
+        }
+      },
+      "minecraft:behavior.random_stroll": {
+        "priority": 1,
+        "speed_multiplier": 1
+      },
+      "minecraft:behavior.run_around_like_crazy": {},
+      "minecraft:behavior.avoid_mob_type": {
+        "priority": 3,
+        "entity_types": [
+          {
+            "filters": {
+              "test": "is_family",
+              "subject": "other",
+              "value": "player"
+            },
+            "max_dist": 6,
+            "walk_speed_multiplier": 1.0,
+            "sprint_speed_multiplier": 1.0
+          }
+        ]
+      },
+      "minecraft:conditional_bandwidth_optimization": {
+      },
+      "minecraft:physics": {
+        "has_gravity": true
+      },
+      "minecraft:pushable": {
+        "is_pushable": true,
+        "is_pushable_by_piston": true
+      }
+    },
+    
+    "events":{
+      "aqua:bucketed": {
+        "add": {
+          "component_groups": [
+            "kill_entity"
+          ]
+        },
+        "run_command": {
+          "command": "tag @s add bucketer",
+          "target": "other"
+        }
+      }
+    }
+  }
+}

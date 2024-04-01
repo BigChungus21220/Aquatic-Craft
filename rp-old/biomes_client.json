@@ -1,0 +1,10 @@
+{
+   "biomes" : {
+      "cracked_reef" : {
+         "fog_identifier" : "minecraft:fog_deep_warm_ocean",
+         "water_fog_color" : "#32A598",
+         "water_fog_distance" : 60,
+         "water_surface_color" : "#32A598"
+      }
+   }
+}

@@ -1,0 +1,38 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "aqua:cane_toad",
+      "materials": { "default": "entity_alphatest" },
+      "textures": {
+        "default": "textures/entity/cane_toad"
+      },
+      "sound_effects": {
+        "croak": "aqua.cane_toad.croak"
+      },
+      "geometry": {
+        "default": "geometry.cane_toad"
+      },
+      "animations": {
+        "hop": "animation.cane_toad.hop",
+        "croak": "animation.cane_toad.croak",
+        "swim": "animation.cane_toad.swim",
+        "hop_controller": "controller.animation.cane_toad.hop",
+        "croak_controller": "controller.animation.cane_toad.croak",
+        "swim_controller": "controller.animation.cane_toad.swim"
+      },
+      "scripts": {
+        "animate": [
+          "hop_controller",
+          "croak_controller",
+          "swim_controller"
+        ]
+      },
+      "render_controllers": [ "controller.render.squid" ],
+      "spawn_egg": {
+        "texture": "misc_egg",
+        "texture_index": 1
+      }
+    }
+  }
+}

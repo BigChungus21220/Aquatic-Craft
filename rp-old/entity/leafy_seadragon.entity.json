@@ -1,0 +1,20 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "aqua:leafy_seadragon",
+      "materials": { "default": "entity_alphatest" },
+      "textures": {
+        "default": "textures/entity/leafy_seadragon"
+      },
+      "geometry": {
+        "default": "geometry.leafy_seadragon"
+      },
+      "render_controllers": [ "controller.render.squid" ],
+      "spawn_egg": {
+        "texture": "fish_egg",
+        "texture_index": 23
+      }
+    }
+  }
+}

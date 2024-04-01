@@ -1,0 +1,83 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:block": {
+      "description": {
+          "identifier": "aqua:clam_shell",
+          "menu_category": {
+            "category": "commands"
+          },
+          "properties": {
+            "aqua:is_waterlogged": [ false, true ],
+            "aqua:rotation": [ 1, 2, 3, 4, 5 ]
+          }
+      },
+      "components": {
+        "minecraft:geometry": "geometry.clam_shell",
+        "minecraft:selection_box": {
+          "origin": [-2, 0, -3],
+          "size": [5, 1, 6]
+        },
+        "minecraft:loot": "loot_tables/items/clam_shell.json",
+        "minecraft:material_instances": {
+          "*": {
+            "texture": "clam_shell",
+            "render_method": "alpha_test"
+          }
+        },
+        "minecraft:on_interact": {
+          //"condition": "query.is_item_name_any('slot.weapon.mainhand','minecraft:bone_meal')",
+          "event": "drop_item"
+        },
+        "minecraft:destroy_time": 0.5,
+        "minecraft:block_light_filter" : 0,
+        "minecraft:light_emission" : 0,
+        "minecraft:block_collision": {
+          "origin": [-2, 0, -3],
+          "size": [5, 1, 6]
+        },
+        "minecraft:on_player_placing": {
+          "event": "rotate"
+        }
+      },
+      "events": {
+        "rotate": {
+          "set_block_property": {
+            "aqua:rotation": "query.cardinal_facing_2d"
+          }
+        },
+        "drop_item": {
+          "run_command": {
+            "command": [
+              "setblock ~ ~ ~ air 0 destroy"
+            ]
+          }
+        }
+      },
+      "permutations": [
+          {
+            "condition": "query.block_property('aqua:rotation') == 2",
+            "components": {
+              "minecraft:rotation": [0, 0, 0]
+            }
+          },
+          {
+            "condition": "query.block_property('aqua:rotation') == 3",
+            "components": {
+              "minecraft:rotation": [0, 180, 0]
+            }
+          },
+          {
+            "condition": "query.block_property('aqua:rotation') == 4",
+            "components": {
+              "minecraft:rotation": [0, 90, 0]
+            }
+          },
+          {
+            "condition": "query.block_property('aqua:rotation') == 5",
+            "components": {
+              "minecraft:rotation": [0, 270, 0]
+            }
+          }
+        ]
+  }
+}

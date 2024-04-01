@@ -1,0 +1,35 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.box_crab.idle": {
+                        "anim_time_update": "query.modified_distance_moved*2",
+			"loop": true,
+			"bones": {
+				"claw": {
+					"rotation": [0, -7.5, 0]
+				},
+				"claw2": {
+					"rotation": [0, 7.5, 0]
+				},
+				"leg": {
+					"rotation": [0, 0, "-math.cos(query.anim_time*100)*10"]
+				},
+				"leg2": {
+					"rotation": [0, 0, "-math.sin(query.anim_time*100)*10"]
+				},
+				"leg3": {
+					"rotation": [0, 0, "-math.sin(query.anim_time*100)*10"]
+				},
+				"leg4": {
+					"rotation": [0, 0, "-math.cos(query.anim_time*100)*10"]
+				},
+				"leg5": {
+					"rotation": [0, 0, "math.sin(query.anim_time*100)*10"]
+				},
+				"leg6": {
+					"rotation": [0, 0, "math.sin(query.anim_time*100)*10"]
+				}
+			}
+		}
+	}
+}

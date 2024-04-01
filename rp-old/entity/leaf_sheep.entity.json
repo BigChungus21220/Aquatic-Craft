@@ -1,0 +1,28 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "aqua:leaf_sheep",
+      "materials": { "default": "entity_alphatest" },
+      "textures": {
+        "default": "textures/entity/leaf_sheep"
+      },
+      "geometry": {
+        "default": "geometry.leaf_sheep"
+      },
+      "animations": {
+        "idle": "animation.leaf_sheep.idle"
+      },
+      "scripts": {
+        "animate": [
+          "idle"
+        ]
+      },
+      "render_controllers": [ "controller.render.squid" ],
+      "spawn_egg": {
+        "texture": "mollusc_egg",
+        "texture_index": 13
+      }
+    }
+  }
+}

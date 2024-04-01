@@ -1,0 +1,25 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "aqua:shark_tooth_club"
+    },
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      " XX",
+      "X#X",
+      "#X "
+    ],
+    "key": {
+      "X": {
+        "item": "aqua:shark_tooth_item"
+      },
+      "#": {
+        "item": "minecraft:stick"
+      }
+    },
+    "result": {
+      "item": "aqua:shark_tooth_club"
+    }
+  }
+}

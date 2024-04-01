@@ -1,0 +1,63 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.alligator_gar",
+				"texture_width": 128,
+				"texture_height": 128,
+				"visible_bounds_width": 7,
+				"visible_bounds_height": 3,
+				"visible_bounds_offset": [0, 0.5, 0]
+			},
+			"bones": [
+				{
+					"name": "body",
+					"pivot": [0, 0, -1],
+					"cubes": [
+						{"origin": [0, -11, 2], "size": [0, 11, 19], "uv": [0, 32]},
+						{"origin": [-5, 0, -14], "size": [10, 8, 30], "uv": [0, 0]},
+						{"origin": [5, 0, -14], "size": [11, 0, 7], "pivot": [5, 0, -13], "rotation": [0, -15, 42.5], "uv": [43, 15]},
+						{"origin": [-16, 0, -14], "size": [11, 0, 7], "pivot": [-5, 0, -13], "rotation": [0, 15, -42.5], "uv": [43, 15], "mirror": true},
+						{"origin": [5, 0, 6], "size": [11, 0, 7], "pivot": [5, 0, 8], "rotation": [0, -7.5, 37.5], "uv": [0, 0]},
+						{"origin": [-16, 0, 6], "size": [11, 0, 7], "pivot": [-5, 0, 8], "rotation": [0, 7.5, -37.5], "uv": [0, 0], "mirror": true},
+						{"origin": [0, 8, 2], "size": [0, 11, 19], "uv": [0, 21]}
+					]
+				},
+				{
+					"name": "tail",
+					"parent": "body",
+					"pivot": [0, 3, 16],
+					"cubes": [
+						{"origin": [-4, 1, 16], "size": [8, 6, 12], "uv": [38, 40]}
+					]
+				},
+				{
+					"name": "tail_tip",
+					"parent": "tail",
+					"pivot": [0, 3, 28],
+					"cubes": [
+						{"origin": [0, -2, 28], "size": [0, 14, 12], "uv": [0, 0]}
+					]
+				},
+				{
+					"name": "head",
+					"parent": "body",
+					"pivot": [0, 4, -14],
+					"cubes": [
+						{"origin": [-4, 1, -21], "size": [8, 6, 7], "uv": [50, 0]},
+						{"origin": [-2, 3, -32], "size": [4, 2, 11], "uv": [61, 15]}
+					]
+				},
+				{
+					"name": "jaw",
+					"parent": "head",
+					"pivot": [0, 3, -21],
+					"cubes": [
+						{"origin": [-2, 2, -32], "size": [4, 1, 11], "uv": [27, 61]}
+					]
+				}
+			]
+		}
+	]
+}

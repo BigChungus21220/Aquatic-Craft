@@ -1,0 +1,13 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.mosquito_larva.timer": {
+			"animation_length": 5,
+			"bones": {
+				"root": {
+					"rotation": [0, 0, 0]
+				}
+			}
+		}
+	}
+}

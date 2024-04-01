@@ -1,0 +1,28 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "aqua:banded_shrimp",
+      "materials": { "default": "entity_alphatest" },
+      "textures": {
+        "default": "textures/entity/banded_shrimp"
+      },
+      "geometry": {
+        "default": "geometry.banded_shrimp"
+      },
+      "animations": {
+        "idle": "animation.banded_shrimp.idle"
+      },
+      "scripts": {
+        "animate": [
+          "idle"
+        ]
+      },
+      "render_controllers": [ "controller.render.squid" ],
+      "spawn_egg": {
+        "texture": "crustacean_egg",
+        "texture_index": 2
+      }
+    }
+  }
+}

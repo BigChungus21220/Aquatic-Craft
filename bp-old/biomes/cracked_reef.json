@@ -1,0 +1,32 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:biome": {
+    "description": {
+      "identifier": "cracked_reef"
+    },
+    "components": {
+      "minecraft:climate": {
+        "downfall": 0.5,
+        "snow_accumulation": [ 0.0, 0.125 ],
+        "temperature": 0.5
+      },
+      "minecraft:overworld_height": {
+        "noise_type": "ocean"
+      },
+      "minecraft:surface_parameters": {
+        "sea_floor_depth": 3,
+        "sea_floor_material": "aqua:black_sand",
+        "foundation_material": "minecraft:stone",
+        "mid_material": "aqua:black_sand",
+        "top_material": "aqua:black_sand",
+        "sea_material": "minecraft:water"
+      },
+
+      "warm": {},
+      "cracked_reef": {},
+      "ocean": {},
+      "monster": {},
+      "overworld": {}
+    }
+  }
+}

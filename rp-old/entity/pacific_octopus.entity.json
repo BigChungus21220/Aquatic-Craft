@@ -1,0 +1,29 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "aqua:pacific_octopus",
+      "materials": { "default": "entity_alphatest" },
+      "textures": {
+        "default": "textures/entity/pacific_octopus"
+      },
+      "geometry": {
+        "default": "geometry.pacific_octopus"
+      },
+      "animations": {
+        "idle": "animation.pacific_octopus.idle",
+        "move": "animation.pacific_octopus.move"
+      },
+      "animation_controllers": [
+        {
+          "octopus": "controller.animation.pacific_octopus"
+        }
+      ],
+      "render_controllers": [ "controller.render.squid" ],
+      "spawn_egg": {
+        "texture": "mollusc_egg",
+        "texture_index": 15
+      }
+    }
+  }
+}

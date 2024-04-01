@@ -1,0 +1,52 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.bowhead_whale.beached": {
+			"loop": true,
+			"bones": {
+				"body": {
+					"rotation": [0, 0, 87.5],
+					"position": [0, -16, 0]
+				},
+				"neck": {
+					"rotation": ["25-math.sin(query.anim_time*100)*5", -17.5, 0]
+				},
+				"head": {
+					"rotation": ["2.5+math.cos(query.anim_time*100)*2.5", -10, 0]
+				},
+				"tail0": {
+					"rotation": [-7.5, 0, -2.5]
+				},
+				"tail1": {
+					"rotation": [-10, 0, -25]
+				},
+				"tail2": {
+					"rotation": [-5, 0, -42.5]
+				},
+				"tail3": {
+					"rotation": [-20, -2.5, -17.5]
+				},
+				"fin2": {
+					"rotation": [35, 0, -52.5]
+				},
+				"fin0": {
+					"rotation": [35, 0, -65],
+					"position": [-2, -2, 0]
+				},
+				"fin1": {
+					"rotation": [35, 0, 40]
+				},
+				"fin3": {
+					"rotation": [35, 0, 27.5]
+				},
+				"arm0": {
+					"rotation": [0, -7.5, -32.5]
+				},
+				"arm1": {
+					"rotation": [-20, 0, 30],
+					"position": [-1, 0, 0]
+				}
+			}
+		}
+	}
+}

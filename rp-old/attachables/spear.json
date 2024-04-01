@@ -1,0 +1,41 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:attachable": {
+		"description": {
+			"identifier": "ac:spear",
+			"materials": {
+				"default": "entity_alphatest", //This is needed because we are using the item_default render controller
+				"enchanted": "entity_alphatest_glint"
+			},
+			"textures": {
+				"default": "textures/entity/spear",
+				"enchanted": "textures/misc/enchanted_item_glint"
+			},
+			"geometry": {
+				"default": "geometry.spear"
+			},
+			"scripts": {
+				"pre_animation": [
+					"v.main_hand = c.item_slot == 'main_hand';",
+                    "v.first_person = c.is_first_person;",
+                    "v.charging = query.main_hand_item_use_duration / query.main_hand_item_max_duration > 0.1;"
+				],
+				"animate": [
+					{"thirdperson": "v.main_hand && !v.first_person && !v.charging"},
+					{"firstperson": "v.main_hand && v.first_person && !v.charging"},
+                    {"thirdperson_charge": "v.main_hand && !v.first_person && v.charging"},
+					{"firstperson_charge": "v.main_hand && v.first_person && v.charging"}
+				]
+			},
+			"animations": {
+				"thirdperson": "animation.spear.thirdperson_main_hand",
+				"firstperson": "animation.spear.firstperson_main_hand",
+                "thirdperson_charge": "animation.spear.thirdperson_main_hand_charging",
+				"firstperson_charge": "animation.spear.firstperson_main_hand_charging"
+			},
+			"render_controllers": [
+				"controller.render.item_default"
+			]
+		}
+	}
+}

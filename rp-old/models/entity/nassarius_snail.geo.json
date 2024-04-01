@@ -1,0 +1,52 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.nassarius_snail",
+				"texture_width": 32,
+				"texture_height": 32,
+				"visible_bounds_width": 2,
+				"visible_bounds_height": 1.5,
+				"visible_bounds_offset": [0, 0.25, 0]
+			},
+			"bones": [
+				{
+					"name": "foot",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{"origin": [-1.5, 0, 3], "size": [3, 0, 4], "uv": [4, 0]},
+						{"origin": [-1.5, 0, -5], "size": [3, 1, 8], "uv": [9, 3]},
+						{"origin": [-0.5, 1, -2], "size": [1, 2, 3], "uv": [23, 26]}
+					]
+				},
+				{
+					"name": "tube",
+					"parent": "foot",
+					"pivot": [0, 0, -3.5],
+					"cubes": [
+						{"origin": [-0.5, 0.5, -4], "size": [1, 6, 1], "pivot": [0, 0, -3.5], "rotation": [7.5, 0, 0], "uv": [0, 4]}
+					]
+				},
+				{
+					"name": "face",
+					"parent": "foot",
+					"pivot": [0, 1, -5],
+					"cubes": [
+						{"origin": [-1.5, 0, -6], "size": [3, 3, 1], "uv": [24, 0]}
+					]
+				},
+				{
+					"name": "shell",
+					"parent": "foot",
+					"pivot": [0, 1.25, -1],
+					"cubes": [
+						{"origin": [-0.5, 3.105, 2.75], "size": [1, 1, 1], "pivot": [0, 3.25, 3], "rotation": [12.5, 0, 0], "uv": [0, 0]},
+						{"origin": [-2.5, 1, -3], "size": [5, 3, 5], "pivot": [0, 1.25, -3], "rotation": [10, 0, 0], "uv": [0, 12]},
+						{"origin": [-1.5, 1.9, 1.79341], "size": [3, 3, 1], "pivot": [0, 3, 2], "rotation": [10, 0, 0], "uv": [0, 0]}
+					]
+				}
+			]
+		}
+	]
+}

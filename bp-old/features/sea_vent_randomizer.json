@@ -1,0 +1,13 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:weighted_random_feature": {
+    "description": {
+      "identifier": "aqua:sea_vent_randomizer"
+    },
+    "features": [
+      [ "aqua:sea_vent_1", 1 ],
+      [ "aqua:sea_vent_2", 5 ],
+      [ "aqua:sea_vent_3", 1 ]
+    ]
+  }
+}

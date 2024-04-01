@@ -1,0 +1,60 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:biome": {
+    "description": {
+      "identifier": "desert_beach"
+    },
+    "components": {
+      "minecraft:climate": {
+        "downfall": 0.4,
+        "snow_accumulation": [ 0.0, 0.125 ],
+        "temperature": 0.8
+      },
+      "minecraft:overworld_height": {
+        "noise_type": "swamp"
+      },
+      "minecraft:surface_parameters": {
+        "sea_floor_depth": 7,
+        "sea_floor_material": "minecraft:gravel",
+        "foundation_material": "minecraft:stone",
+        "mid_material": "minecraft:dirt",
+        "top_material": "minecraft:grass",
+        "sea_material": "minecraft:water"
+      },
+      "minecraft:surface_material_adjustments": {
+        "adjustments": [
+          {
+            "materials": {
+              "top_material": {
+                "name": "minecraft:dirt",
+                "states": {
+                  "dirt_type": "coarse"
+                }
+              },
+              "mid_material": "minecraft:dirt",
+              "foundation_material": "minecraft:stone"
+            },
+            "noise_frequency_scale": 0.6,
+            "noise_range": [ 0.0, 0.5 ]
+          },
+          {
+            "materials": {
+              "top_material": "minecraft:sand",
+              "mid_material": "minecraft:dirt",
+              "foundation_material": "minecraft:stone"
+            },
+            "noise_frequency_scale": 0.6,
+            "noise_range": [ 0.5, 1.0 ]
+          }
+        ]
+      },
+
+      "desert_beach": {},
+      "savanna": {},
+      "desert": {},
+      "monster": {},
+      "overworld": {},
+      "warm": {}
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "format_version": "1.8.0",
+  "render_controllers": {
+    "controller.render.goldfish": {
+      "arrays": {
+        "textures": {
+          "Array.skins": [
+            "Texture.orange",
+            "Texture.spot_1",
+            "Texture.spot_2",
+            "Texture.spot_3",
+            "Texture.spot_4",
+            "Texture.yellow",
+            "Texture.black",
+            "Texture.black_white"
+          ]
+        }
+      },
+      "geometry": "Geometry.default",
+      "materials": [ { "*": "Material.default" } ],
+      "textures": [ "Array.skins[query.variant]" ]
+    }
+  }
+}

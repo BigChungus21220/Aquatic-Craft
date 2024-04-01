@@ -1,0 +1,29 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "aqua:tripod_fish",
+      "materials": { "default": "entity_alphatest" },
+      "textures": {
+        "default": "textures/entity/tripod_fish"
+      },
+      "geometry": {
+        "default": "geometry.tripod_fish"
+      },
+      "animations": {
+        "stand": "animation.tripod_fish.stand",
+        "swim": "animation.tripod_fish.swim"
+      },
+      "animation_controllers": [
+        {
+          "tripod_fish": "controller.animation.tripod_fish"
+        }
+      ],
+      "render_controllers": [ "controller.render.squid" ],
+      "spawn_egg": {
+        "texture": "fish_egg",
+        "texture_index": 4
+      }
+    }
+  }
+}

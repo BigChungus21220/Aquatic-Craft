@@ -1,0 +1,17 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:scatter_feature": {
+    "description": {
+      "identifier": "aqua:cracked_reef_stack"
+    },
+    "places_feature": "aqua:cracked_reef_shape",
+    "iterations": "t.is_stack = 1; return 27;",
+    "scatter_chance": 100.0,
+    "x": "t.length = t.length + math.random_integer(-2, 2); return math.random_integer(0, 1);", //width
+    "y": {
+      "distribution": "fixed_grid",
+      "extent": [-40, 0]
+    }, //height
+    "z": "return math.random_integer(0, 1);" //length
+  }
+}

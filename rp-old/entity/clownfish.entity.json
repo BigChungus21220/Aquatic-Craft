@@ -1,0 +1,39 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "aqua:clownfish",
+      "materials": { "default": "entity_alphatest" },
+      "textures": {
+        "black_white": "textures/entity/clown/0",
+        "yellow_red": "textures/entity/clown/1",
+        "white_orange": "textures/entity/clown/2",
+        "white_pink": "textures/entity/clown/3",
+        "yellow_white": "textures/entity/clown/4",
+        "orange": "textures/entity/clown/5",
+        "barber": "textures/entity/clown/6",
+        "clarkii": "textures/entity/clown/7",
+        "skunk": "textures/entity/clown/8",
+        "thielle": "textures/entity/clown/9",
+        "white_bonnet": "textures/entity/clown/10",
+        "whitesnout": "textures/entity/clown/11"
+      },
+      "geometry": {
+        "default": "geometry.clownfish"
+      },
+      "animations": {
+        "swim": "animation.clownfish.swim"
+      },
+      "scripts": {
+        "animate": [
+          "swim"
+        ]
+      },
+      "render_controllers": [ "controller.render.clownfish" ],
+      "spawn_egg": {
+        "texture": "fish_egg",
+        "texture_index": 1
+      }
+    }
+  }
+}

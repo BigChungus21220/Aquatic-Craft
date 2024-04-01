@@ -1,0 +1,28 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "aqua:alligator_gar",
+      "materials": { "default": "entity_alphatest" },
+      "textures": {
+        "default": "textures/entity/alligator_gar"
+      },
+      "geometry": {
+        "default": "geometry.alligator_gar"
+      },
+      "animations": {
+        "swim": "animation.alligator_gar.swim"
+      },
+      "scripts": {
+        "animate": [
+          "swim"
+        ]
+      },
+      "render_controllers": [ "controller.render.squid" ],
+      "spawn_egg": {
+        "texture": "fish_egg",
+        "texture_index": 21
+      }
+    }
+  }
+}

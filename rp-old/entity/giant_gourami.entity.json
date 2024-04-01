@@ -1,0 +1,32 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "aqua:giant_gourami",
+      "materials": { "default": "entity_alphatest" },
+      "textures": {
+        "grey_0": "textures/entity/giant_gourami/0",
+        "grey_1": "textures/entity/giant_gourami/1",
+        "blue_0": "textures/entity/giant_gourami/2",
+        "blue_1": "textures/entity/giant_gourami/3",
+        "grey_2": "textures/entity/giant_gourami/4"
+      },
+      "geometry": {
+        "default": "geometry.giant_gourami"
+      },
+      "animations": {
+        "swim": "animation.giant_gourami.swim"
+      },
+      "scripts": {
+        "animate": [
+          "swim"
+        ]
+      },
+      "render_controllers": [ "controller.render.giant_gourami" ],
+      "spawn_egg": {
+        "texture": "fish_egg",
+        "texture_index": 8
+      }
+    }
+  }
+}

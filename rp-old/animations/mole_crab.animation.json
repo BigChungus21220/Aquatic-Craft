@@ -1,0 +1,36 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.mole_crab.bury": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 1.04,
+			"bones": {
+				"bb_main": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"1.04": [-17.5, 0, 0]
+					},
+					"position": {
+						"0.0": [0, 0, 0],
+						"1.04": [0, -4, 0]
+					}
+				}
+			}
+		},
+		"animation.mole_crab.idle": {
+			"loop": true,
+			"anim_time_update": "query.modified_distance_moved*2",
+			"bones": {
+				"leg": {
+					"rotation": [5, "math.sin(query.anim_time*200)*10", 0]
+				},
+				"leg2": {
+					"rotation": [5, "-math.sin(query.anim_time*200)*10", 0]
+				},
+				"bb_main": {
+					"rotation": [0, 0, 0]
+				}
+			}
+		}
+	}
+}

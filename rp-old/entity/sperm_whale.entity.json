@@ -1,0 +1,40 @@
+{
+   "format_version": "1.10.0",
+   "minecraft:client_entity": {
+      "description": {
+         "identifier": "aqua:sperm_whale",
+         "spawn_egg": {
+            "texture": "fish_egg",
+            "texture_index": 9
+         },
+         "render_controllers": [
+            "controller.render.sperm_whale"
+         ],
+         "geometry": {
+            "default": "geometry.sperm_whale"
+         },
+         "textures": {
+            "young": "textures/entity/sperm_whale",
+            "old": "textures/entity/sperm_whale_old"
+         },
+         "materials": {
+            "default": "skeleton"
+         },
+         "scripts": {
+            "animate": [
+               "root"
+            ]
+         },
+         "animations": {
+            "root": "controller.animation.sperm_whale.root",
+            "move": "animation.sperm_whale.beached",
+            "swim_idle": "animation.sperm_whale.idle",
+            "swim_move": "animation.sperm_whale.move",
+            "default": "animation.sperm_whale.beached",
+            "death": "animation.sperm_whale.sleep",
+            "roar": "animation.sperm_whale.tailattack",
+            "attack": "animation.sperm_whale.bite"
+         }
+      }
+   }
+}

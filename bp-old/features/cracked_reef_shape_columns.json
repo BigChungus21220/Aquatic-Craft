@@ -1,0 +1,17 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:scatter_feature": {
+    "description": {
+      "identifier": "aqua:cracked_reef_shape_columns"
+    },
+    "places_feature": "aqua:lava_rock_block",
+    "iterations": 5,
+    "scatter_chance": 100.0,
+    "x": 0, //width
+    "y": {
+      "distribution": "fixed_grid",
+      "extent": [0, "t.is_stack == 1 ? { return 0.1; } : { return ((query.noise(v.worldx / t.noise_smoothing, v.worldz / t.noise_smoothing)+1) * 1) + (query.noise(v.worldx / t.noise_smoothing_2, v.worldz / t.noise_smoothing_2)+1); };"]
+    },
+    "z": 0 //length
+  }
+}

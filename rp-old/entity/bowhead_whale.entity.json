@@ -1,0 +1,39 @@
+{
+   "format_version": "1.10.0",
+   "minecraft:client_entity": {
+      "description": {
+         "identifier": "aqua:bowhead_whale",
+         "spawn_egg": {
+            "texture": "fish_egg",
+            "texture_index": 9
+         },
+         "render_controllers": [
+            "controller.render.cow"
+         ],
+         "geometry": {
+            "default": "geometry.bowhead_whale"
+         },
+         "textures": {
+            "default": "textures/entity/bowhead_whale"
+         },
+         "materials": {
+            "default": "skeleton"
+         },
+         "scripts": {
+            "animate": [
+               "root"
+            ]
+         },
+         "animations": {
+            "root": "controller.animation.sperm_whale.root",
+            "move": "animation.bowhead_whale.beached",
+            "swim_idle": "animation.sperm_whale.idle",
+            "swim_move": "animation.sperm_whale.move",
+            "default": "animation.bowhead_whale.beached",
+            "death": "animation.sperm_whale.sleep",
+            "roar": "animation.sperm_whale.tailattack",
+            "attack": "animation.sperm_whale.bite"
+         }
+      }
+   }
+}

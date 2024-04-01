@@ -1,0 +1,29 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.coconut_crab.idle": {
+                        "anim_time_update": "query.modified_distance_moved*2",
+			"loop": true,
+			"bones": {
+				"armL": {
+					"rotation": ["-12.5+(math.sin((query.anim_time-math.pi)*50)-0.5)*10", "65-math.sin((query.anim_time-math.pi)*50)*20", 0]
+				},
+				"leg1": {
+					"rotation": [0, "-12.5-math.sin(query.anim_time*50)*10", 15]
+				},
+				"leg2": {
+					"rotation": [0, "12.5+math.sin(query.anim_time*50)*10", 15]
+				},
+				"leg3": {
+					"rotation": [0, "-12.5+math.sin(query.anim_time*50)*10", -15]
+				},
+				"leg4": {
+					"rotation": [0, "12.5-math.sin(query.anim_time*50)*10", -15]
+				},
+				"armR": {
+					"rotation": ["-12.5+(math.sin(query.anim_time*50)-0.5)*10", "-65+math.sin(query.anim_time*50)*20", 0]
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,17 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:scatter_feature": {
+    "description": {
+      "identifier": "aqua:cracked_reef_shape_rows"
+    },
+    "places_feature": "aqua:cracked_reef_shape_columns",
+    "iterations": "t.offset = t.row_length / 2; return t.row_length;", //intitailzes, return value is loop count
+    "scatter_chance": 100.0,
+    "x": 0, //width
+    "y": 0,
+    "z": {
+      "distribution": "fixed_grid",
+      "extent": ["-t.offset", "t.row_length"]
+    } //length
+  }
+}

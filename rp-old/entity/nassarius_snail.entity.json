@@ -1,0 +1,28 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "aqua:nassarius_snail",
+      "materials": { "default": "entity_alphatest" },
+      "textures": {
+        "default": "textures/entity/nassarius_snail"
+      },
+      "geometry": {
+        "default": "geometry.nassarius_snail"
+      },
+      "animations": {
+        "idle": "animation.nassarius_snail.idle"
+      },
+      "scripts": {
+        "animate": [
+          "idle"
+        ]
+      },
+      "render_controllers": [ "controller.render.squid" ],
+      "spawn_egg": {
+        "texture": "mollusc_egg",
+        "texture_index": 14
+      }
+    }
+  }
+}

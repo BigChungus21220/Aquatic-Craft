@@ -1,0 +1,11 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:weighted_random_feature": {
+    "description": {
+      "identifier": "aqua:urchin_randomizer_sandy"
+    },
+    "features": [
+      [ "aqua:urchin_4", 1 ]
+    ]
+  }
+}

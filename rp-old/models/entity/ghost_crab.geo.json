@@ -1,0 +1,83 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.ghost_crab",
+				"texture_width": 32,
+				"texture_height": 16,
+				"visible_bounds_width": 2,
+				"visible_bounds_height": 1.5,
+				"visible_bounds_offset": [0, 0.25, 0]
+			},
+			"bones": [
+				{
+					"name": "root",
+					"pivot": [0, 0, 0],
+					"rotation": [0, -90, 0],
+					"cubes": [
+						{"origin": [1, 6, 1], "size": [1, 2, 0], "uv": [10, 9]},
+						{"origin": [-3, 1, -1], "size": [6, 3, 4], "uv": [0, 0]},
+						{"origin": [1, 4, 0], "size": [1, 2, 1], "uv": [0, 0]},
+						{"origin": [-2, 4, 0], "size": [1, 2, 1], "uv": [0, 0]},
+						{"origin": [-2, 6, 1], "size": [1, 2, 0], "uv": [10, 9]}
+					]
+				},
+				{
+					"name": "clawL",
+					"parent": "root",
+					"pivot": [3, 2, -1],
+					"rotation": [0, -90, 0],
+					"cubes": [
+						{"origin": [-1.5, 2.5, -2.5], "size": [2, 1, 1], "uv": [10, 7]},
+						{"origin": [0.5, 1, -3], "size": [3, 3, 2], "uv": [0, 7]},
+						{"origin": [-1.5, 1.5, -2.5], "size": [2, 1, 1], "uv": [10, 7]}
+					]
+				},
+				{
+					"name": "clawR",
+					"parent": "root",
+					"pivot": [-3, 2, -1],
+					"rotation": [0, 90, 0],
+					"cubes": [
+						{"origin": [-3.5, 1, -3], "size": [2, 2, 2], "uv": [10, 9]},
+						{"origin": [-1.5, 2, -2.5], "size": [2, 1, 1], "uv": [10, 7]},
+						{"origin": [-1.5, 1, -2.5], "size": [2, 1, 1], "uv": [10, 7]}
+					]
+				},
+				{
+					"name": "leg2",
+					"parent": "root",
+					"pivot": [-3, 2, 2.5],
+					"cubes": [
+						{"origin": [-6, 2, 2], "size": [3, 0, 1], "pivot": [-3, 2, 0.5], "rotation": [0, 0, -40], "uv": [0, 12], "mirror": true}
+					]
+				},
+				{
+					"name": "leg",
+					"parent": "root",
+					"pivot": [-3, 2, 0.5],
+					"cubes": [
+						{"origin": [-6, 2, 0], "size": [3, 0, 1], "pivot": [-3, 2, 0.4], "rotation": [0, 0, -40], "uv": [0, 12], "mirror": true}
+					]
+				},
+				{
+					"name": "leg3",
+					"parent": "root",
+					"pivot": [3, 2, 2.5],
+					"cubes": [
+						{"origin": [3, 2, 2], "size": [3, 0, 1], "pivot": [3, 2, 0.4], "rotation": [0, 0, 40], "uv": [0, 12]}
+					]
+				},
+				{
+					"name": "leg4",
+					"parent": "root",
+					"pivot": [3, 2, 0.5],
+					"cubes": [
+						{"origin": [3, 2, 0], "size": [3, 0, 1], "pivot": [3, 2, 0.4], "rotation": [0, 0, 40], "uv": [0, 12]}
+					]
+				}
+			]
+		}
+	]
+}

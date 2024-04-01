@@ -1,0 +1,28 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "aqua:porcelain_crab",
+      "materials": { "default": "entity_alphatest" },
+      "textures": {
+        "default": "textures/entity/porcelain_crab"
+      },
+      "geometry": {
+        "default": "geometry.porcelain_crab"
+      },
+      "animations": {
+        "idle": "animation.porcelain_crab.idle"
+      },
+      "scripts": {
+        "animate": [
+          "idle"
+        ]
+      },
+      "render_controllers": [ "controller.render.squid" ],
+      "spawn_egg": {
+        "texture": "crustacean_egg",
+        "texture_index": 10
+      }
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "aqua:mole_crab",
+      "materials": { "default": "entity_alphatest" },
+      "textures": {
+        "default": "textures/entity/mole_crab"
+      },
+      "geometry": {
+        "default": "geometry.mole_crab"
+      },
+      "animations": {
+        "idle": "animation.mole_crab.idle",
+        "bury": "animation.mole_crab.bury"
+      },
+      "scripts": {
+        "animate": [
+          "idle",
+          {
+            "bury": "query.skin_id == 1"
+          }
+        ]
+      },
+      "render_controllers": [ "controller.render.squid" ],
+      "spawn_egg": {
+        "texture": "crustacean_egg",
+        "texture_index": 11
+      }
+    }
+  }
+}

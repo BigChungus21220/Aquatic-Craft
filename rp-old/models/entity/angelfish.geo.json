@@ -1,0 +1,85 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.angelfish",
+				"texture_width": 16,
+				"texture_height": 16,
+				"visible_bounds_width": 2,
+				"visible_bounds_height": 1.5,
+				"visible_bounds_offset": [0, 0.25, 0]
+			},
+			"bones": [
+				{
+					"name": "body",
+					"pivot": [0, 2, -3],
+					"cubes": [
+						{"origin": [0, 0.25, -2.8], "size": [0, 3, 5], "uv": [10, -4]},
+						{"origin": [-0.5, 2, -5.3], "size": [1, 4, 4], "inflate": 0.001, "uv": [0, 0]},
+						{"origin": [0, 4.75, -4.8], "size": [0, 3, 7], "uv": [0, 5]}
+					]
+				},
+				{
+					"name": "pectoral2",
+					"parent": "body",
+					"pivot": [0.5, 4, -3.25],
+					"rotation": [0, 27.5, 0],
+					"cubes": [
+						{"origin": [0.5, 2.5, -3.25], "size": [0, 2, 2], "uv": [0, 0]}
+					]
+				},
+				{
+					"name": "pectoral1",
+					"parent": "body",
+					"pivot": [-0.5, 3.5, -3.25],
+					"rotation": [0, -27.5, 0],
+					"cubes": [
+						{"origin": [-0.5, 2.5, -3.25], "size": [0, 2, 2], "uv": [0, 0]}
+					]
+				},
+				{
+					"name": "pelvic1",
+					"parent": "body",
+					"pivot": [0, 2, -3],
+					"rotation": [0, 0, -22.5],
+					"cubes": [
+						{"origin": [1, 0, -4], "size": [0, 3, 2], "pivot": [0, 4, 0], "rotation": [0, 0, 35], "uv": [6, -1]}
+					]
+				},
+				{
+					"name": "pelvic2",
+					"parent": "body",
+					"pivot": [0, 2, -3],
+					"cubes": [
+						{"origin": [1.5, -0.5, -4], "size": [0, 3, 2], "pivot": [0, -4, 0], "rotation": [0, 0, -12.5], "uv": [6, -1], "mirror": true}
+					]
+				},
+				{
+					"name": "tail3",
+					"parent": "body",
+					"pivot": [0, 4, -2],
+					"cubes": [
+						{"origin": [-0.5, 2, -2.3], "size": [1, 4, 3], "uv": [7, 5]}
+					]
+				},
+				{
+					"name": "tail2",
+					"parent": "tail3",
+					"pivot": [0, 4, 0.7],
+					"cubes": [
+						{"origin": [-0.5, 3.5, 0.7], "size": [1, 1, 1], "uv": [0, 0]}
+					]
+				},
+				{
+					"name": "tailfin",
+					"parent": "tail2",
+					"pivot": [0, 4, 1.5],
+					"cubes": [
+						{"origin": [0, 2.5, 1.2], "size": [0, 3, 3], "uv": [0, 5]}
+					]
+				}
+			]
+		}
+	]
+}

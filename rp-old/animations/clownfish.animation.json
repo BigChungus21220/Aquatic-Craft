@@ -1,0 +1,20 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.clownfish.swim": {
+			"anim_time_update": "query.modified_distance_moved",
+			"loop": true,
+			"bones": {
+				"tail": {
+					"rotation": [0, "math.sin(query.anim_time*200) * 20", 0]
+				},
+				"fin": {
+					"rotation": [0, "-math.sin(query.anim_time*200) * 40", 0]
+				},
+				"fin2": {
+					"rotation": [0, "-math.sin(query.anim_time*200) * 40", 0]
+				}
+			}
+		}
+	}
+}

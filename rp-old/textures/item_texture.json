@@ -1,0 +1,369 @@
+{
+	"resource_pack_name": "molluscs",
+	"texture_name": "atlas.items",
+	"texture_data": {
+		"hermit_crab": {
+			"textures": "textures/items/hermit_crab_shell"
+		},
+		"abalone": {
+			"textures": "textures/items/abalone"
+		},
+		"beach_bucket": {
+			"textures": "textures/items/beach_bucket"
+		},
+		"clam_chowder": {
+			"textures": "textures/items/clam_chowder"
+		},
+		"clam": {
+			"textures": "textures/items/clam"
+		},
+		"clam_shell": {
+			"textures": "textures/items/clam_shell"
+		},
+		"coconut": {
+			"textures": "textures/items/coconut"
+		},
+		"cone_shell": {
+			"textures": "textures/items/cone_shell"
+		},
+		"cooked_fillet": {
+			"textures": "textures/items/cooked_fillet"
+		},
+		"cowrie_shell": {
+			"textures": "textures/items/cowrie_shell"
+		},
+		"fillet": {
+			"textures": "textures/items/fillet"
+		},
+		"moon_snail_shell": {
+			"textures": "textures/items/moon_snail_shell"
+		},
+		"sand_dollar": {
+			"textures": "textures/items/sand_dollar"
+		},
+		"shark_tooth": {
+			"textures": "textures/items/shark_tooth"
+		},
+		"shark_tooth_club": {
+			"textures": "textures/items/shark_tooth_club"
+		},
+		"top_shell": {
+			"textures": "textures/items/top_shell"
+		},
+		"urchin_skeleton": {
+			"textures": "textures/items/urchin_skeleton"
+		},
+		"whelk_shell": {
+			"textures": "textures/items/whelk_shell"
+		},
+		"spear": {
+			"textures": "textures/items/spear"
+		},
+		"bucket_missing": {
+			"textures": "textures/items/bucket_missing"
+		},
+		"bucket_archerfish": {
+			"textures": "textures/items/bucket_missing"
+		},
+		"bucket_corydoras": {
+			"textures": "textures/items/bucket_corydoras"
+		},
+		"bucket_pistol_shrimp": {
+			"textures": "textures/items/bucket_pistol_shrimp"
+		},
+		"bucket_channel_catfish": {
+			"textures": "textures/items/bucket_channel_catfish"
+		},
+		"bucket_frogfish": {
+			"textures": "textures/items/bucket_frogfish"
+		},
+		"bucket_sea_pig": {
+			"textures": "textures/items/bucket_sea_pig"
+		},
+		"bucket_tripod_fish": {
+			"textures": "textures/items/bucket_tripod_fish"
+		},
+		"bucket_bluegreen_chromis": {
+			"textures": "textures/items/bucket_bluegreen_chromis"
+		},
+		"bucket_blue_ray": {
+			"textures": "textures/items/bucket_blue_ray"
+		},
+		"bucket_cane_toad_tadpole": {
+			"textures": "textures/items/bucket_cane_toad_tadpole"
+		},
+		"bucket_cownose_ray": {
+			"textures": "textures/items/bucket_cownose_ray"
+		},
+		"bucket_tang": {
+			"textures": "textures/items/bucket_tang"
+		},
+		"bucket_orchid_dottyback": {
+			"textures": "textures/items/bucket_orchid_dottyback"
+		},
+		"bucket_pea_puffer": {
+			"textures": "textures/items/bucket_pea_puffer"
+		},
+		"bucket_green_puffer": {
+			"textures": "textures/items/bucket_green_puffer"
+		},
+		"bucket_eyespot_puffer": {
+			"textures": "textures/items/bucket_eyespot_puffer"
+		},
+		"bucket_dojo_loach": {
+			"textures": "textures/items/bucket_dojo_loach"
+		},
+		"bucket_cardinal_fish": {
+			"textures": "textures/items/bucket_cardinal_fish"
+		},
+		"bucket_bicolor_blenny": {
+			"textures": "textures/items/bucket_bicolor_blenny"
+		},
+		"bucket_damselfish": {
+			"textures": "textures/items/bucket_damselfish"
+		},
+		"bucket_angelfish": {
+			"textures": "textures/items/bucket_angelfish"
+		},
+		"bucket_clownfish": {
+			"textures": "textures/items/bucket_clownfish"
+		},
+		"bucket_goldfish": {
+			"textures": "textures/items/bucket_goldfish"
+		},
+		"bucket_giant_gourami": {
+			"textures": "textures/items/bucket_giant_gourami"
+		},
+		"bucket_koi": {
+			"textures": "textures/items/bucket_koi"
+		},
+		"bucket_brittle_star": {
+			"textures": "textures/items/bucket_brittle_star"
+		},
+		"bucket_leafy_seadragon": {
+			"textures": "textures/items/bucket_leafy_seadragon"
+		},
+		"bucket_bichir": {
+			"textures": "textures/items/bucket_bichir"
+		},
+		"bucket_angler": {
+			"textures": "textures/items/bucket_angler"
+		},
+		"bucket_comb_jelly": {
+			"textures": "textures/items/bucket_comb_jelly"
+		},
+		"bucket_feather_star": {
+			"textures": "textures/items/bucket_feather_star"
+		},
+		"bucket_jellyfish": {
+			"textures": "textures/items/bucket_jellyfish"
+		},
+		"bucket_sea_cucumber": {
+			"textures": "textures/items/bucket_sea_cucumber"
+		},
+		"bucket_sea_star": {
+			"textures": "textures/items/bucket_sea_star"
+		},
+		"bucket_crayfish": {
+			"textures": "textures/items/bucket_crayfish"
+		},
+		"bucket_spiny_lobster": {
+			"textures": "textures/items/bucket_spiny_lobster"
+		},
+		"bucket_slipper_lobster": {
+			"textures": "textures/items/bucket_slipper_lobster"
+		},
+		"bucket_porcelain_crab": {
+			"textures": "textures/items/bucket_porcelain_crab"
+		},
+		"bucket_spanner_crab": {
+			"textures": "textures/items/bucket_spanner_crab"
+		},
+		"bucket_box_crab": {
+			"textures": "textures/items/bucket_box_crab"
+		},
+		"bucket_mantis_shrimp": {
+			"textures": "textures/items/bucket_mantis_shrimp"
+		},
+		"bucket_banded_shrimp": {
+			"textures": "textures/items/bucket_banded_shrimp"
+		},
+		"bucket_giant_isopod": {
+			"textures": "textures/items/bucket_giant_isopod"
+		},
+		"bucket_cuttlefish": {
+			"textures": "textures/items/bucket_cuttlefish"
+		},
+		"bucket_nautilus": {
+			"textures": "textures/items/bucket_nautilus"
+		},
+		"bucket_nassarius_snail": {
+			"textures": "textures/items/bucket_nassarius_snail"
+		},
+		"bucket_dumbo_octopus": {
+			"textures": "textures/items/bucket_dumbo_octopus"
+		},
+		"bucket_european_squid": {
+			"textures": "textures/items/bucket_european_squid"
+		},
+		"bucket_nudibranch": {
+			"textures": "textures/items/bucket_nudibranch"
+		},
+		"bucket_sea_lemon": {
+			"textures": "textures/items/bucket_sea_lemon"
+		},
+		"bucket_sea_hare": {
+			"textures": "textures/items/bucket_sea_hare"
+		},
+		"bucket_queen_conch": {
+			"textures": "textures/items/bucket_queen_conch"
+		},
+		"bucket_leaf_sheep": {
+			"textures": "textures/items/bucket_leaf_sheep"
+		},
+		"bucket_ramshorn": {
+			"textures": "textures/items/bucket_ramshorn"
+		},
+		"bucket_squid": {
+			"textures": "textures/items/bucket_squid"
+		},
+		"bucket_glow_squid": {
+			"textures": "textures/items/bucket_glow_squid"
+		},
+		"bucket_humboldt_squid": {
+			"textures": "textures/items/bucket_humboldt_squid"
+		},
+		"bucket_flamboyant_cuttlefish": {
+			"textures": "textures/items/bucket_flamboyant_cuttlefish"
+		},
+		"pearl": {
+			"textures": "textures/items/pearl"
+		},
+		"frogbit": {
+			"textures": "textures/items/frogbit"
+		},
+		"water_lettuce": {
+			"textures": "textures/items/water_lettuce"
+		},
+		"mosaic_plant": {
+			"textures": "textures/items/mosaic_plant"
+		},
+		"horsetail": {
+			"textures": "textures/items/horsetail"
+		},
+		"cattail": {
+			"textures": "textures/items/cattail"
+		},
+		"papyrus": {
+			"textures": "textures/items/papyrus"
+		},
+		"amazon_sword": {
+			"textures": "textures/items/amazon_sword"
+		},
+		"mollusc_egg": {
+			"textures": [
+				"textures/items/spawn_null", //0
+				"textures/items/spawn_cuttlefish", //1
+				"textures/items/spawn_flamboyant_cuttlefish", //2
+				"textures/items/spawn_null", //3
+				"textures/items/spawn_nautilus", //4
+				"textures/items/spawn_nudibranch", //5
+				"textures/items/spawn_ramshorn", //6
+				"textures/items/spawn_sea_hare", //7
+                "textures/items/spawn_giant_clam", //8
+				"textures/items/spawn_dumbo_octopus", //9
+				"textures/items/spawn_european_squid", //10
+				"textures/items/spawn_giant_squid", //11
+				"textures/items/spawn_humboldt_squid", //12
+				"textures/items/spawn_leaf_sheep", //13
+				"textures/items/spawn_nassarius_snail", //14
+				"textures/items/spawn_pacific_octopus", //15
+				"textures/items/spawn_queen_conch", //16
+				"textures/items/spawn_sea_lemon", //17
+				"textures/items/spawn_scallop" //18
+			]
+		},
+		"crustacean_egg": {
+			"textures": [
+				"textures/items/spawn_crayfish", //0
+				"textures/items/spawn_giant_isopod", //1
+				"textures/items/spawn_banded_shrimp", //2
+				"textures/items/spawn_spiny_lobster", //3
+				"textures/items/spawn_spider_crab", //4
+				"textures/items/spawn_coconut_crab", //5
+				"textures/items/spawn_ghost_crab", //6
+				"textures/items/spawn_hermit_crab", //7
+				"textures/items/spawn_mantis_shrimp", //8
+				"textures/items/spawn_spanner_crab", //9
+				"textures/items/spawn_porcelain_crab", //10
+				"textures/items/spawn_mole_crab", //11
+				"textures/items/spawn_null", //12
+				"textures/items/spawn_land_crab", //13
+				"textures/items/spawn_soldier_crab", //14
+				"textures/items/spawn_horseshoe_crab", //15
+				"textures/items/spawn_box_crab", //16
+				"textures/items/spawn_slipper_lobster", //17
+				"textures/items/spawn_tasmanian_crab", //18
+				"textures/items/spawn_pistol_shrimp" //19
+			]
+		},
+		"deep_egg": {
+			"textures": [
+				"textures/items/spawn_angler", //0
+				"textures/items/spawn_comb_jelly", //1
+				"textures/items/spawn_feather_star", //2
+				"textures/items/spawn_jellyfish", //3
+				"textures/items/spawn_sea_cucumber", //4
+				"textures/items/spawn_sea_star", //5
+				"textures/items/spawn_brittle_star" //6
+			]
+		},
+		"misc_egg": {
+			"textures": [
+				"textures/items/spawn_frog", //0
+				"textures/items/spawn_cane_toad", //1
+				"textures/items/spawn_sea_pig", //2
+				"textures/items/spawn_brittle_star", //3
+				"textures/items/spawn_manowar" //4
+			]
+		},
+		"fish_egg": {
+			"textures": [
+				"textures/items/spawn_goldfish", //0
+				"textures/items/spawn_clownfish", //1
+				"textures/items/spawn_snowflake_moray", //2
+				"textures/items/spawn_freshwater_stingray", //3
+				"textures/items/spawn_tripod_fish", //4
+				"textures/items/spawn_blue_ray", //5
+				"textures/items/spawn_cownose_ray", //6
+				"textures/items/spawn_bluegreen_chromis", //7
+				"textures/items/spawn_giant_gourami", //8
+				"textures/items/spawn_american_paddlefish", //9
+				"textures/items/spawn_bicolor_blenny", //10
+				"textures/items/spawn_cardinal_fish", //11
+				"textures/items/spawn_damselfish", //12
+				"textures/items/spawn_dojo_loach", //13
+				"textures/items/spawn_eyespot_puffer", //14
+				"textures/items/spawn_green_puffer", //15
+				"textures/items/spawn_orchid_dottyback", //16
+				"textures/items/spawn_narwhal", //17
+				"textures/items/spawn_pea_puffer", //18
+				"textures/items/spawn_tang", //19
+				"textures/items/spawn_oarfish", //20
+				"textures/items/spawn_alligator_gar", //21
+				"textures/items/spawn_koi", //22
+				"textures/items/spawn_leafy_seadragon", //23
+				"textures/items/spawn_ocean_sunfish", //24
+				"textures/items/spawn_sharp_sunfish", //25
+				"textures/items/spawn_lungfish", //26
+				"textures/items/spawn_bichir", //27
+				"textures/items/spawn_arowana", //28
+				"textures/items/spawn_coelacanth", //29
+				"textures/items/spawn_channel_catfish", //30
+				"textures/items/spawn_frogfish", //31
+				"textures/items/spawn_corydoras", //32
+				"textures/items/spawn_garden_eel" //33
+			]
+		}
+	}
+}

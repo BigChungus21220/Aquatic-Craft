@@ -1,0 +1,40 @@
+{
+	"format_version" : "1.10.0",
+	"animation_controllers" : {
+		"controller.animation.hermit_crab": {
+			"initial_state" : "walk",
+			"states" : {
+				"hide" : {
+					"animations": ["hide"],
+					"transitions" : [
+						{
+							"emerge" : "query.skin_id == 0 && query.all_animations_finished"
+						}
+					],
+					
+					"blend_transition": 0
+				},
+				"emerge" : {
+					"animations": ["emerge"],
+					"transitions" : [
+						{
+							"walk" : "query.all_animations_finished"
+						}
+					],
+					
+					"blend_transition": 0
+				},
+				"walk" : {
+					"animations": ["walk"],
+					"transitions" : [
+						{
+							"hide" : "query.skin_id == 1"
+						}
+					],
+
+					"blend_transition": 0
+				}
+			}
+		}
+	}
+}

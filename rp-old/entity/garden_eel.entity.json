@@ -1,0 +1,30 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "aqua:garden_eel",
+      "materials": { "default": "entity_alphatest" },
+      "textures": {
+        "default": "textures/entity/garden_eel"
+      },
+      "geometry": {
+        "default": "geometry.garden_eel"
+      },
+      "animations": {
+        "idle": "animation.garden_eel.idle",
+        "hide": "animation.garden_eel.hide",
+        "emerge": "animation.garden_eel.emerge"
+      },
+      "animation_controllers": [
+        {
+          "garden_eel": "controller.animation.garden_eel"
+        }
+      ],
+      "render_controllers": [ "controller.render.squid" ],
+      "spawn_egg": {
+        "texture": "fish_egg",
+        "texture_index": 15
+      }
+    }
+  }
+}

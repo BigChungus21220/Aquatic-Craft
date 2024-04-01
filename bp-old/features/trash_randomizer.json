@@ -1,0 +1,14 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:weighted_random_feature": {
+    "description": {
+      "identifier": "aqua:trash_randomizer"
+    },
+    "features": [
+      [ "aqua:trash_1", 3 ],
+      [ "aqua:trash_2", 1 ],
+      [ "aqua:trash_3", 1 ],
+      [ "aqua:trash_4", 1 ]
+    ]
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "aqua:frogfish",
+      "materials": { "default": "entity_alphatest" },
+      "textures": {
+        "longlure": "textures/entity/frogfish/0",
+        "giant": "textures/entity/frogfish/1",
+        "freckeled": "textures/entity/frogfish/2",
+        "sargassum": "textures/entity/frogfish/3",
+        "hairy": "textures/entity/frogfish/4",
+        "weedy": "textures/entity/frogfish/5"
+      },
+      "geometry": {
+        "default": "geometry.frogfish"
+      },
+      "animations": {
+        "idle": "animation.frogfish.idle",
+        "walk": "animation.frogfish.walk",
+        "munch": "animation.frogfish.munch",
+        "wiggle": "controller.animation.frogfish.wiggle",
+        "bite": "controller.animation.frogfish.bite"
+      },
+      "scripts": {
+        "animate": [
+          "walk",
+          "wiggle",
+          "bite"
+        ]
+      },
+      "render_controllers": [ "controller.render.frogfish" ],
+      "spawn_egg": {
+        "texture": "fish_egg",
+        "texture_index": 4
+      }
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+   "format_version": "1.10.0",
+   "minecraft:client_entity": {
+      "description": {
+         "identifier": "aqua:humpback_whale",
+         "spawn_egg": {
+            "texture": "fish_egg",
+            "texture_index": 9
+         },
+         "render_controllers": [
+            "controller.render.humpback_whale"
+         ],
+         "geometry": {
+            "default": "geometry.humpback_whale"
+         },
+         "textures": {
+            "young": "textures/entity/humpback_whale",
+            "old": "textures/entity/humpback_whale_old",
+            "endless": "textures/entity/harbinger"
+         },
+         "materials": {
+            "default": "skeleton"
+         },
+         "scripts": {
+            "animate": [
+               "root"
+            ]
+         },
+         "animations": {
+            "root": "controller.animation.sperm_whale.root",
+            "move": "animation.humpback_whale.beached",
+            "swim_idle": "animation.sperm_whale.idle",
+            "swim_move": "animation.sperm_whale.move",
+            "default": "animation.humpback_whale.beached",
+            "death": "animation.sperm_whale.sleep",
+            "roar": "animation.sperm_whale.tailattack",
+            "attack": "animation.sperm_whale.bite"
+         }
+      }
+   }
+}

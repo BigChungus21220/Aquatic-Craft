@@ -1,0 +1,28 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "aqua:nudibranch",
+      "materials": { "default": "entity_alphatest" },
+      "textures": {
+        "default": "textures/entity/nudibranch"
+      },
+      "geometry": {
+        "default": "geometry.nudibranch"
+      },
+      "animations": {
+        "idle": "animation.nudibranch.idle"
+      },
+      "scripts": {
+        "animate": [
+          "idle"
+        ]
+      },
+      "render_controllers": [ "controller.render.squid" ],
+      "spawn_egg": {
+        "texture": "mollusc_egg",
+        "texture_index": 5
+      }
+    }
+  }
+}

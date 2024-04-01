@@ -1,0 +1,37 @@
+{
+	"format_version": 2,
+	"header": {
+		"name": "Aquatic Craft 1.0",
+		"description": "release 1",
+		"uuid": "ce83ce75-b066-4274-b73c-3ddf52981459",
+		"version": [1, 0, 0],
+		"min_engine_version": [1, 19, 50]
+	},
+	"modules": [
+		{
+			"type": "data",
+			"uuid": "e3bd81a2-2573-4fb5-821c-01e822b5289e",
+			"version": [1, 0, 0]
+		},
+		{
+            "type": "script",
+            "language": "javascript",
+            "uuid": "cf082cff-3f3c-48c4-b17e-a2cfe1f4fa61",
+            "version": [0, 0, 1],
+            "entry": "scripts/Main.js"
+        }
+	],
+	"dependencies": [
+		//rp
+		{
+			"version": [1, 0, 0],
+			"uuid": "1a1be826-9fa6-4ba8-a256-24d13013596f"
+		},
+		//big blocks
+        { "uuid": "f6714cfd-23bc-459f-8b91-af73d940ddfb", "version": [0, 0, 1] },
+        { "uuid": "008f2e56-7e74-48b4-8f6b-457208e24e63", "version": [0, 0, 1] },  
+		//gametest  
+		{ "module_name": "@minecraft/server",  "version": "1.1.0-beta" },
+		{ "module_name": "@minecraft/server-gametest", "version": "1.0.0-beta" }
+	]
+}

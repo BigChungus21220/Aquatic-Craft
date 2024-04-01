@@ -1,0 +1,28 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "aqua:dojo_loach",
+      "materials": { "default": "entity_alphatest" },
+      "textures": {
+        "default": "textures/entity/dojo_loach"
+      },
+      "geometry": {
+        "default": "geometry.dojo_loach"
+      },
+      "animations": {
+        "swim": "animation.dojo_loach.swim"
+      },
+      "scripts": {
+        "animate": [
+          "swim"
+        ]
+      },
+      "render_controllers": [ "controller.render.squid" ],
+      "spawn_egg": {
+        "texture": "fish_egg",
+        "texture_index": 13
+      }
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.green_puffer.swim": {
+			"anim_time_update": "query.modified_distance_moved",
+			"loop": true,
+			"bones": {
+				"root": {
+					"rotation": [0, "math.sin(query.anim_time*400) * 3", 0]
+				},
+				"tail": {
+					"rotation": [0, "-math.sin(query.anim_time*400) * 60", 0]
+				}
+			}
+		}
+	}
+}

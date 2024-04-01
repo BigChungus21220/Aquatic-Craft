@@ -1,0 +1,28 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "aqua:giant_isopod",
+      "materials": { "default": "entity_alphatest" },
+      "textures": {
+        "default": "textures/entity/giant_isopod"
+      },
+      "geometry": {
+        "default": "geometry.giant_isopod"
+      },
+      "animations": {
+        "idle": "animation.giant_isopod.idle"
+      },
+      "scripts": {
+        "animate": [
+          "idle"
+        ]
+      },
+      "render_controllers": [ "controller.render.squid" ],
+      "spawn_egg": {
+        "texture": "crustacean_egg",
+        "texture_index": 1
+      }
+    }
+  }
+}

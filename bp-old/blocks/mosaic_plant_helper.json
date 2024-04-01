@@ -1,0 +1,51 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:block": {
+      "description": {
+          "identifier": "aqua:mosaic_plant_helper"
+      },
+      "components": {
+        "minecraft:geometry": "geometry.frogbit",
+        "minecraft:selection_box": {
+          "origin": [-8, 0.1, -8],
+          "size": [16, 0.2, 16]
+        },
+        "minecraft:material_instances": {
+          "*": {
+            "texture": "mosaic_plant",
+            "render_method": "alpha_test"
+          }
+        },
+        "minecraft:block_light_filter" : 0,
+        "minecraft:light_emission" : 0,
+        "minecraft:placement_filter": {
+          "conditions": [
+            {
+              "block_filter": [
+                "minecraft:water",
+                "minecraft:flowing_water"
+              ],
+              "allowed_faces": ["up"]
+            }
+          ]
+        },
+        "minecraft:on_placed": {
+          "event": "place_plant"
+        },
+        "minecraft:block_collision": {
+          "origin": [-8, 0.1, -8],
+          "size": [16, 0.2, 16]
+        }
+      },
+      "events": {
+        "place_plant": {
+          "run_command": {
+            "command": [
+              "fill ~ ~1 ~ ~ ~1 ~ aqua:mosaic_plant 0 replace air",
+              "fill ~ ~ ~ ~ ~ ~ water"
+            ]
+          }
+        }
+      }
+  }
+}

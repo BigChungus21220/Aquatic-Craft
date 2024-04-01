@@ -1,0 +1,53 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:block": {
+      "description": {
+          "identifier": "aqua:cattail_bottom",
+          "properties": {
+            "aqua:is_waterlogged": [ false, true ]
+          }
+      },
+      "components": {
+        "minecraft:loot": "loot_tables/blocks/cattail.json",
+        "minecraft:geometry": "geometry.cattail",
+        "minecraft:selection_box": {
+          "origin": [-3, 0, -3],
+          "size": [6, 16, 6]
+        },
+        "minecraft:material_instances": {
+          "*": {
+            "texture": "cattail3",
+            "render_method": "alpha_test"
+          }
+        },
+        "minecraft:block_light_filter" : 0,
+        "minecraft:light_emission" : 0,
+        "minecraft:placement_filter": {
+          "conditions": [
+            {
+              "block_filter": [
+                "minecraft:grass",
+                "minecraft:dirt",
+                "minecraft:podzol"
+              ],
+              "allowed_faces": ["up"]
+            }
+          ]
+        },
+        "minecraft:on_placed": {
+          "event": "place_top"
+        },
+        //"minecraft:breakonpush": true,
+        "minecraft:block_collision": false
+      },
+      "events": {
+        "place_top": {
+          "run_command": {
+            "command": [
+              "fill ~ ~1 ~ ~ ~1 ~ aqua:cattail_middle 0 replace air"
+            ]
+          }
+        }
+      }
+  }
+}

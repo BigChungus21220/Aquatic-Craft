@@ -1,0 +1,53 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.giant_isopod.idle": {
+                        "anim_time_update": "query.modified_distance_moved*2",
+			"loop": true,
+			"bones": {
+				"bone": {
+					"rotation": [0, "math.sin(query.anim_time*200)*5", 0]
+				},
+				"bone5": {
+					"rotation": [0, "math.sin(query.anim_time*200)*5", 0]
+				},
+				"bone2": {
+					"rotation": [0, "-math.sin(query.anim_time*200)*5", 0]
+				},
+				"bone3": {
+					"rotation": [0, "math.sin(query.anim_time*200)*5", 0]
+				},
+				"bone4": {
+					"rotation": [0, "-math.sin(query.anim_time*200)*5", 0]
+				},
+				"bone6": {
+					"rotation": [0, "math.sin(query.anim_time*200)*5", 0]
+				},
+				"bone7": {
+					"rotation": [0, "-math.sin(query.anim_time*200)*5", 0]
+				},
+				"bone8": {
+					"rotation": [0, "math.sin(query.anim_time*200)*5", 0]
+				},
+				"bone9": {
+					"rotation": [0, "-math.sin(query.anim_time*200)*5", 0]
+				},
+				"bone10": {
+					"rotation": [0, "math.sin(query.anim_time*200)*5", 0]
+				},
+				"bone11": {
+					"rotation": [0, "-math.sin(query.anim_time*200)*5", 0]
+				},
+				"bone12": {
+					"rotation": [0, "math.sin(query.anim_time*200)*5", 0]
+				},
+				"bone13": {
+					"rotation": [0, "-math.sin(query.anim_time*200)*5", 0]
+				},
+				"bone15": {
+					"rotation": [0, "-math.sin(query.anim_time*200)*5", 0]
+				}
+			}
+		}
+	}
+}

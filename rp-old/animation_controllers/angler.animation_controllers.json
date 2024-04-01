@@ -1,0 +1,26 @@
+{
+	"format_version" : "1.10.0",
+	"animation_controllers" : {
+		"controller.animation.angler.attack": {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"animations": ["idle"],
+					"transitions" : [
+						{
+							"attack" : "query.is_delayed_attacking == 1"
+						}
+					]
+				},
+				"attack" : {
+					"animations": ["attack"],
+					"transitions" : [
+						{
+							"default" : "query.any_animation_finished == 1"
+						}
+					]
+				}
+			}
+		}
+	}
+}

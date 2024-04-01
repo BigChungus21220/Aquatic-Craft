@@ -1,0 +1,36 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:block": {
+      "description": {
+          "identifier": "aqua:barnacle",
+          "menu_category": {
+            "category": "nature",
+            "group": "itemGroup.name.urchins"
+          },
+          "properties": {
+            "aqua:is_waterlogged": [ false, true ]
+          }
+      },
+      "components": {
+        "minecraft:geometry": "geometry.barnacle",
+        "minecraft:selection_box": {
+          "origin": [-1, 0, -1],
+          "size": [2, 1, 2]
+        },
+        "minecraft:material_instances": {
+          "*": {
+            "texture": "barnacle",
+            "render_method": "alpha_test"
+          }
+        },
+        "minecraft:destroy_time": 0.5,
+        "minecraft:block_light_filter" : 0,
+        "minecraft:light_emission" : 0.1,
+        //"minecraft:breakonpush": true,
+        "minecraft:block_collision": {
+          "origin": [-1, 0, -1],
+          "size": [2, 1, 2]
+        }
+      }
+  }
+}

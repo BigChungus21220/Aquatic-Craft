@@ -1,0 +1,151 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:block": {
+      "description": {
+          "identifier": "aqua:anenome",
+          "menu_category": {
+            "category": "nature",
+            "group": "itemGroup.name.anemone"
+          },
+          "properties": {
+            "aqua:is_waterlogged": [ false, true ],
+            "aqua:variant": [4,0,1,2]
+          }
+      },
+      "components": {
+        "minecraft:geometry": "geometry.anenome",
+        "minecraft:selection_box": {
+          "origin": [-2.5, 0, -2.5],
+          "size": [5, 5, 5]
+        },
+        "minecraft:material_instances": {
+          "*": {
+            "texture": "anenome_0",
+            "render_method": "alpha_test"
+          }
+        },
+        "minecraft:on_placed": {
+          "event": "waterlog"
+        },
+        "minecraft:on_interact": {
+          "condition": "query.is_item_name_any('slot.weapon.mainhand','minecraft:bone_meal')",
+          "event": "bonemeal"
+        },
+        "minecraft:destroy_time": 0.5,
+        "minecraft:block_light_filter" : 0,
+        "minecraft:light_emission" : 0,
+        //"minecraft:breakonpush": true,
+        "minecraft:block_collision": {
+          "origin": [-2.5, 0, -2.5],
+          "size": [5, 5, 5]
+        }
+      },
+      "events": {
+        "bonemeal": {
+          "randomize": [
+            {
+              "run_command": {
+                "command": [
+                  "setblock ~ ~ ~ water",
+                  "structure load mystructure:giant_anemone_0 ~-5 ~ ~-4"
+                ]
+              }
+            },
+            {
+              "run_command": {
+                "command": [
+                  "setblock ~ ~ ~ water",
+                  "structure load mystructure:giant_anemone_1 ~-5 ~ ~-4"
+                ]
+              }
+            },
+            {
+              "run_command": {
+                "command": [
+                  "setblock ~ ~ ~ water",
+                  "structure load mystructure:giant_anemone_2 ~-5 ~ ~-4"
+                ]
+              }
+            },
+            {
+              "run_command": {
+                "command": ["particle minecraft:crop_growth_emitter ~ ~ ~"]
+              },
+              "weight": 20
+            }
+          ],
+          "run_command": {
+            "command": ["particle minecraft:crop_growth_emitter ~ ~ ~"]
+          },
+          "decrement_stack": {}
+        },
+        "waterlog": {
+          "sequence": [
+            {
+              "condition": "query.block_property('aqua:is_waterlogged') != true",
+              "run_command":{
+                "command": [
+                  "structure load mystructure:anenome ~ ~ ~"
+                ]
+              }
+            },
+            {
+              "condition": "query.block_property('aqua:is_waterlogged') == true",
+              "randomize": [
+                { 
+                  "set_block_property": {
+                    "aqua:variant": 0
+                  }
+                },
+                {
+                  "set_block_property": {
+                    "aqua:variant": 1
+                  }
+                },
+                {
+                  "set_block_property": {
+                    "aqua:variant": 2
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "permutations": [
+        {
+          "condition": "query.block_property('aqua:variant') == 0",
+          "components": {
+            "minecraft:material_instances": {
+              "*": {
+                "texture": "anenome_0",
+                "render_method": "alpha_test"
+              }
+            }
+          }
+        },
+        {
+          "condition": "query.block_property('aqua:variant') == 1",
+          "components": {
+            "minecraft:material_instances": {
+              "*": {
+                "texture": "anenome_1",
+                "render_method": "alpha_test"
+              }
+            }
+          }
+        },
+        {
+          "condition": "query.block_property('aqua:variant') == 2",
+          "components": {
+            "minecraft:material_instances": {
+              "*": {
+                "texture": "anenome_2",
+                "render_method": "alpha_test"
+              }
+            }
+          }
+        }
+      ]
+  }
+}

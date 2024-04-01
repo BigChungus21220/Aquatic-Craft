@@ -1,0 +1,20 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "aqua:brittle_star",
+      "materials": { "default": "entity_alphatest" },
+      "textures": {
+        "default": "textures/entity/brittle_star"
+      },
+      "geometry": {
+        "default": "geometry.brittle_star"
+      },
+      "render_controllers": [ "controller.render.squid" ],
+      "spawn_egg": {
+        "texture": "deep_egg",
+        "texture_index": 3
+      }
+    }
+  }
+}

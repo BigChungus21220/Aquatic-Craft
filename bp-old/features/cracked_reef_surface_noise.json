@@ -1,0 +1,14 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:scatter_feature": {
+    "description": {
+      "identifier": "aqua:cracked_reef_surface_noise"
+    },
+    "places_feature": "aqua:cracked_reef_shape",
+    "iterations": "t.is_stack = 0; t.noise_smoothing = 16; t.noise_smoothing_2 = 4; return 1;", 
+    "scatter_chance": 100.0,
+    "x": 0,
+    "y": -15,
+    "z": 0 
+  }
+}

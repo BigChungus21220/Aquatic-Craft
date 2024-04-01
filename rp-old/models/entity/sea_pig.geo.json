@@ -1,0 +1,67 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.sea_pig",
+				"texture_width": 32,
+				"texture_height": 32,
+				"visible_bounds_width": 2,
+				"visible_bounds_height": 2.5,
+				"visible_bounds_offset": [0, 0.75, 0]
+			},
+			"bones": [
+				{
+					"name": "root",
+					"pivot": [-1.5, 6, -4],
+					"cubes": [
+						{"origin": [-2.5, 1, -5], "size": [5, 5, 9], "uv": [0, 0]},
+						{"origin": [-1.5, 0, -7], "size": [3, 4, 2], "uv": [0, 14]},
+						{"origin": [0.5, 0, 4], "size": [1, 2, 0], "pivot": [2, 1.8, 5], "rotation": [25, 0, 0], "uv": [0, 14]},
+						{"origin": [-1.5, 0, 4], "size": [1, 2, 0], "pivot": [-1, 1.8, 5], "rotation": [25, 0, 0], "uv": [6, 7]}
+					]
+				},
+				{
+					"name": "legs",
+					"parent": "root",
+					"pivot": [2.5, 1.9, 0.5],
+					"cubes": [
+						{"origin": [1.5, 0, 3], "size": [0, 3, 1], "pivot": [2.5, 2.9, 2.5], "rotation": [0, 0, -42.5], "uv": [2, 4], "mirror": true},
+						{"origin": [1.5, 0, 1], "size": [0, 3, 1], "pivot": [2.5, 2.9, 2.5], "rotation": [0, 0, -42.5], "uv": [10, 13], "mirror": true},
+						{"origin": [1.5, 0, -1], "size": [0, 3, 1], "pivot": [2.5, 2.9, 2.5], "rotation": [0, 0, -42.5], "uv": [6, 3], "mirror": true},
+						{"origin": [1.5, 0, -3], "size": [0, 3, 1], "pivot": [2.5, 2.9, 2.5], "rotation": [0, 0, -42.5], "uv": [10, 16], "mirror": true}
+					]
+				},
+				{
+					"name": "legs2",
+					"parent": "root",
+					"pivot": [-2.5, 1.9, -0.5],
+					"cubes": [
+						{"origin": [-1.5, 0, -1], "size": [0, 3, 1], "pivot": [-2.5, 2.9, 2.5], "rotation": [0, 0, 42.5], "uv": [6, 3]},
+						{"origin": [-1.5, 0, -3], "size": [0, 3, 1], "pivot": [-2.5, 2.9, 2.5], "rotation": [0, 0, 42.5], "uv": [10, 16]},
+						{"origin": [-1.5, 0, 1], "size": [0, 3, 1], "pivot": [-2.5, 2.9, 2.5], "rotation": [0, 0, 42.5], "uv": [10, 13]},
+						{"origin": [-1.5, 0, 3], "size": [0, 3, 1], "pivot": [-2.5, 2.9, 2.5], "rotation": [0, 0, 42.5], "uv": [2, 4]}
+					]
+				},
+				{
+					"name": "reartentacles",
+					"parent": "root",
+					"pivot": [-0.25, 6, 4],
+					"cubes": [
+						{"origin": [1.5, 5, 4], "size": [0, 4, 1], "pivot": [-1.5, 6, 4], "rotation": [-45, 0, 0], "uv": [2, 0]},
+						{"origin": [-1.5, 5, 4], "size": [0, 4, 1], "pivot": [-1.5, 6, 4], "rotation": [-45, 0, 0], "uv": [4, 0]}
+					]
+				},
+				{
+					"name": "fronttentacles",
+					"parent": "root",
+					"pivot": [0, 6, -4],
+					"cubes": [
+						{"origin": [1.5, 6, -5], "size": [0, 4, 1], "pivot": [-1.5, 6, -4], "rotation": [45, 0, 0], "uv": [0, 4]},
+						{"origin": [-1.5, 6, -5], "size": [0, 4, 1], "pivot": [-1.5, 6, -4], "rotation": [45, 0, 0], "uv": [0, 0]}
+					]
+				}
+			]
+		}
+	]
+}

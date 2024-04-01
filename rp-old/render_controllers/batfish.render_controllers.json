@@ -1,0 +1,26 @@
+{
+    "format_version": "1.8.0",
+    "render_controllers": {
+        "controller.render.batfish": {
+            "arrays": {
+                "textures": {
+                    "Array.skins": [
+                        "texture.pinnate",
+                        "texture.orbicular",
+                        "texture.teira",
+                        "texture.golden"
+                    ]
+                }
+            },
+            "geometry": "Geometry.default",
+            "materials": [
+                {
+                    "*": "Material.default"
+                }
+            ],
+            "textures": [
+                "Array.skins[query.variant]"
+            ]
+        }
+    }
+}

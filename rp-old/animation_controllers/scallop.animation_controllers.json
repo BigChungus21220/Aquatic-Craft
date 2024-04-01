@@ -1,0 +1,32 @@
+{
+	"format_version" : "1.10.0",
+	"animation_controllers" : {
+		"controller.animation.scallop": {
+			"initial_state" : "idle",
+			"states" : {
+				"idle" : {
+					"animations": ["idle"],
+					"transitions" : [
+						{
+							"swim" : "query.skin_id == 0"
+						}
+					],
+					
+					"blend_transition": 1,
+					"blend_via_shortest_path": true
+				},
+				"swim" : {
+					"animations": ["swim"],
+					"transitions" : [
+						{
+							"idle" : "query.skin_id == 1"
+						}
+					],
+					
+					"blend_transition": 1,
+					"blend_via_shortest_path": true
+				}
+			}
+		}
+	}
+}

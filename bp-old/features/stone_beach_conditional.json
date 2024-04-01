@@ -1,0 +1,19 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:conditional_list" : {
+    "description": {
+      "identifier": "aqua:stone_beach_conditional"
+    },
+    "conditional_features" : [
+      { 
+        "places_feature" : "aqua:black_sand_stack",
+        "condition" : "v.noise = q.noise(v.worldx/16, v.worldz/16); return v.noise <= 0.7 && v.noise > -0.5;"
+      },
+      { 
+        "places_feature" : "aqua:lava_rock_stack",
+        "condition" : "v.noise > 0.7"
+      }
+    ],
+    "early_out_scheme": "placement_success"
+  }
+}

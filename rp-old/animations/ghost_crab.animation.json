@@ -1,0 +1,29 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.ghost_crab.idle": {
+			"loop": true,
+                        "anim_time_update": "query.modified_distance_moved*2",
+			"bones": {
+				"clawL": {
+					"rotation": [0, 27.5, 0]
+				},
+				"clawR": {
+					"rotation": [0, -27.5, 0]
+				},
+				"leg": {
+					"rotation": [0, 0, "math.sin(query.anim_time*1000)*10"]
+				},
+				"leg2": {
+					"rotation": [0, 0, "-math.sin(query.anim_time*1000)*10"]
+				},
+				"leg3": {
+					"rotation": [0, 0, "-math.sin(query.anim_time*1000)*10"]
+				},
+				"leg4": {
+					"rotation": [0, "math.sin(query.anim_time*500)", "math.sin(query.anim_time*1000)*10"]
+				}
+			}
+		}
+	}
+}

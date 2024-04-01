@@ -1,0 +1,22 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:structure_template_feature": {
+    "description": {
+      "identifier": "aqua:giant_sponge_2"
+    },
+    "structure_name": "mystructure:giant_sponge_2",
+    "adjustment_radius": 0,
+    "facing_direction": "south",
+    "constraints": {
+      "block_intersection": {
+        "block_allowlist": [
+          "minecraft:water",
+          "minecraft:seagrass",
+          "minecraft:kelp",
+          "minecraft:air",
+          "minecraft:flowing_water"
+        ]
+      }
+    }
+  }
+}

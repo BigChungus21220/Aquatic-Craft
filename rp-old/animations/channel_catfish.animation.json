@@ -1,0 +1,23 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.channel_catfish.swim": {
+			"loop": true,
+			"anim_time_update": "query.modified_distance_moved/2",
+			"bones": {
+				"bone": {
+					"rotation": [0, "-math.sin(query.anim_time*100)*5", 0]
+				},
+				"bone2": {
+					"rotation": [0, "math.sin(query.anim_time*100)*30", 0]
+				},
+				"bone3": {
+					"rotation": [0, "5-math.sin(query.anim_time*250)*10", 0]
+				},
+				"bone4": {
+					"rotation": [0, "-5+math.sin(query.anim_time*250)*10", 0]
+				}
+			}
+		}
+	}
+}

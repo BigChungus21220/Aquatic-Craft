@@ -1,0 +1,42 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:block": {
+      "description": {
+        "identifier": "aqua:black_sand",
+        "menu_category": {
+          "category": "nature",
+          "group": "itemGroup.name.null"
+        }
+      },
+      "components": {
+        "minecraft:destroy_time": 1,
+        "minecraft:ticking": {
+          "looping": true,
+          "range": [0.5, 0.5],
+          "on_tick": {
+            "event": "test_pos"
+          }
+        },
+        "minecraft:on_player_destroyed": {
+          "event": "kill_checks"
+        }
+      },
+      "events": {
+        "kill_checks": {
+          "run_command": {
+            "command": [
+              "kill @e[type=aqua:black_sand_grav_tester, r=0.1]",
+              "kill @e[type=aqua:falling_black_sand, r=0.1]"
+            ]
+          }
+        },
+        "test_pos": {
+          "run_command": {
+            "command": [
+              "summon aqua:black_sand_grav_tester ~ ~-0.5 ~"
+            ]
+          }
+        }
+      }
+    }
+}

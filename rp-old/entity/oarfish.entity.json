@@ -1,0 +1,28 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "aqua:oarfish",
+      "materials": { "default": "entity_alphatest" },
+      "textures": {
+        "default": "textures/entity/oarfish"
+      },
+      "geometry": {
+        "default": "geometry.oarfish"
+      },
+      "animations": {
+        "swim": "animation.oarfish.swim"
+      },
+      "scripts": {
+        "animate": [
+          "swim"
+        ]
+      },
+      "render_controllers": [ "controller.render.squid" ],
+      "spawn_egg": {
+        "texture": "fish_egg",
+        "texture_index": 20
+      }
+    }
+  }
+}

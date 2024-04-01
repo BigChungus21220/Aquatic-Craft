@@ -1,0 +1,41 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.oarfish.swim": {
+			"anim_time_update": "query.modified_distance_moved/4",
+			"loop": true,
+			"bones": {
+				"body": {
+					"rotation": [0, "Math.sin((2*Math.pi*query.anim_time+0.0)*50)*5", 0]
+				},
+				"bottomthingy": {
+					"rotation": ["-Math.sin(2*Math.pi*query.anim_time*50)", "-Math.sin(2*Math.pi*query.anim_time*50)*5", 0]
+				},
+				"bottomthingy2": {
+					"rotation": ["Math.sin(2*Math.pi*query.anim_time*50)", "-Math.sin(2*Math.pi*query.anim_time*50)*5", 0]
+				},
+				"head": {
+					"position": ["-Math.sin(2*Math.pi*query.anim_time*50)", 0, 0]
+				},
+				"tail": {
+					"rotation": [0, "Math.sin((2*Math.pi*query.anim_time+0.5)*50)*5", 0]
+				},
+				"tail2": {
+					"rotation": [0, "Math.sin((2*Math.pi*query.anim_time+1.0)*50)*5", 0]
+				},
+				"tail3": {
+					"rotation": [0, "Math.sin((2*Math.pi*query.anim_time+1.5)*50)*5", 0]
+				},
+				"tail4": {
+					"rotation": [0, "Math.sin((2*Math.pi*query.anim_time+2.0)*50)*5", 0]
+				},
+				"tailtip": {
+					"rotation": [0, "Math.sin((2*Math.pi*query.anim_time+2.5)*50)*5", 0]
+				},
+				"topthings": {
+					"rotation": ["Math.sin(2*Math.pi*query.anim_time*50)", 0, 0]
+				}
+			}
+		}
+	}
+}

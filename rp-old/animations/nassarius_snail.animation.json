@@ -1,0 +1,19 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.nassarius_snail.idle": {
+			"loop": true,
+			"bones": {
+				"tube": {
+					"rotation": [0, 0, "Math.sin(query.anim_time*30)*10"]
+				},
+				"face": {
+					"rotation": ["Math.sin(query.anim_time*40)*10", 0, 0]
+				},
+				"shell": {
+					"rotation": [0, 0, "Math.sin(query.anim_time*40)*5"]
+				}
+			}
+		}
+	}
+}

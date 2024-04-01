@@ -1,0 +1,20 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "aqua:sea_cucumber",
+      "materials": { "default": "entity_alphatest" },
+      "textures": {
+        "default": "textures/entity/sea_cucumber"
+      },
+      "geometry": {
+        "default": "geometry.sea_cucumber"
+      },
+      "render_controllers": [ "controller.render.squid" ],
+      "spawn_egg": {
+        "texture": "deep_egg",
+        "texture_index": 4
+      }
+    }
+  }
+}

@@ -1,0 +1,319 @@
+item.spawn_egg.entity.aqua:scat=Spawn Scat
+entity.aqua:scat.name=Scat
+
+item.spawn_egg.entity.aqua:batfish=Spawn Batfish
+entity.aqua:batfish.name=Batfish
+
+entity.aqua:pistol_shrimp.name=Pistol Shrimp
+item.spawn_egg.entity.aqua:pistol_shrimp.name=Spawn Pistol Shrimp
+
+item.ac:spear=Spear
+
+entity.aqua:channel_catfish.name=Channel Catfish
+item.spawn_egg.entity.aqua:channel_catfish.name=Spawn Channel Catfish
+
+entity.aqua:manowar.name=Man o'War
+item.spawn_egg.entity.aqua:manowar.name=Spawn Man o'War
+
+entity.aqua:archerfish.name=Archerfish
+item.spawn_egg.entity.aqua:archerfish.name=Spawn Archerfish
+
+item.aqua:hermit_crab_item=Hermit Crab
+item.aqua:hermit_crab_brown_item=Purple-Armed Hermit Crab
+item.aqua:hermit_crab_dark_blue_item=dark blue Hermit Crab //rename
+item.aqua:hermit_crab_red_item=Red Hermit Crab //rename
+item.aqua:hermit_crab_blue_item=Pink Clawed Hermit Crab
+item.aqua:hermit_crab_tan_item=Philip's Hermit Crab
+item.aqua:hermit_crab_blue_2_item=Bug-Eyed Hermit Crab
+item.aqua:hermit_crab_orange_item=Orange Hermit Crab //rename
+
+entity.aqua:cuttlefish.name=Cuttlefish
+entity.aqua:flamboyant_cuttlefish.name=Flamboyant Cuttlefish
+entity.aqua:nautilus.name=Nautilus
+entity.aqua:nudibranch.name=Nudibranch
+entity.aqua:ramshorn.name=Ramshorn Snail
+entity.aqua:sea_hare.name=Sea Hare
+entity.aqua:giant_clam.name=Giant Clam
+entity.aqua:dumbo_octopus.name=Dumbo Octopus
+entity.aqua:european_squid.name=European Squid
+entity.aqua:giant_squid.name=Giant Squid
+entity.aqua:humboldt_squid.name=Humboldt Squid
+entity.aqua:nassarius_snail.name=Nassarius Snail
+entity.aqua:pacific_octopus.name=Pacific Octopus
+entity.aqua:queen_conch.name=Queen Conch
+entity.aqua:leaf_sheep.name=Leaf Sheep
+entity.aqua:sea_lemon.name=Sea Lemon
+
+entity.aqua:crayfish.name=Crayfish
+entity.aqua:giant_isopod.name=Giant Isopod
+entity.aqua:banded_shrimp.name=Banded Shrimp
+entity.aqua:mantis_shrimp.name=Mantis Shrimp
+entity.aqua:spiny_lobster.name=Spiny Lobster
+entity.aqua:spider_crab.name=Spider Crab
+entity.aqua:coconut_crab.name=Coconut Crab
+entity.aqua:ghost_crab.name=Ghost Crab
+entity.aqua:hermit_crab.name=Hermit Crab
+entity.aqua:box_crab.name=Box Crab
+entity.aqua:soldier_crab.name=Soldier Crab
+entity.aqua:land_crab.name=Land Crab
+entity.aqua:spanner_crab.name=Spanner Crab
+entity.aqua:tasmanian_crab.name=Tasmanian Crab
+entity.aqua:porcelain_crab.name=Porcelain Crab
+entity.aqua:mole_crab.name=Mole Crab
+entity.aqua:horseshoe_crab.name=Horseshoe Crab
+entity.aqua:slipper_lobster.name=Slipper Lobster
+
+entity.aqua:corydoras.name=Corydoras
+item.spawn_egg.entity.aqua:corydoras.name=Spawn Corydoras
+
+entity.aqua:comb_jelly.name=Comb Jelly
+entity.aqua:sea_star.name=Sea Star
+entity.aqua:sea_cucumber.name=Sea Cucumber
+entity.aqua:feather_star.name=Feather star
+entity.aqua:jellyfish.name=Jellyfish
+entity.aqua:angler.name=Anglerfish
+entity.aqua:sharptail_sunfish.name=Sharptail Sunfish
+entity.aqua:scallop.name=Scallop
+
+item.spawn_egg.entity.aqua:cuttlefish.name=Spawn Cuttlefish
+item.spawn_egg.entity.aqua:flamboyant_cuttlefish.name=Spawn Flamboyant Cuttlefish
+item.spawn_egg.entity.aqua:nautilus.name=Spawn Nautilus
+item.spawn_egg.entity.aqua:nudibranch.name=Spawn Nudibranch
+item.spawn_egg.entity.aqua:ramshorn.name=Spawn Ramshorn Snail
+item.spawn_egg.entity.aqua:sea_hare.name=Spawn Sea Hare
+item.spawn_egg.entity.aqua:giant_clam.name=Spawn Giant Clam
+item.spawn_egg.entity.aqua:dumbo_octopus.name=Spawn Dumbo Octopus
+item.spawn_egg.entity.aqua:european_squid.name=Spawn European Squid
+item.spawn_egg.entity.aqua:giant_squid.name=Spawn Giant Squid
+item.spawn_egg.entity.aqua:humboldt_squid.name=Spawn Humboldt Squid
+item.spawn_egg.entity.aqua:nassarius_snail.name=Spawn Nassarius Snail
+item.spawn_egg.entity.aqua:pacific_octopus.name=Spawn Pacific Octopus
+item.spawn_egg.entity.aqua:queen_conch.name=Spawn Queen Conch
+item.spawn_egg.entity.aqua:leaf_sheep.name=Spawn Leaf Sheep
+item.spawn_egg.entity.aqua:sea_lemon.name=Spawn Sea Lemon
+item.spawn_egg.entity.aqua:crayfish.name=Spawn Crayfish
+item.spawn_egg.entity.aqua:giant_isopod.name=Spawn Giant Isopod
+item.spawn_egg.entity.aqua:banded_shrimp.name=Spawn Banded Shrimp
+item.spawn_egg.entity.aqua:mantis_shrimp.name=Spawn Mantis Shrimp
+item.spawn_egg.entity.aqua:spiny_lobster.name=Spawn Spiny Lobster
+item.spawn_egg.entity.aqua:spider_crab.name=Spawn Spider Crab
+item.spawn_egg.entity.aqua:coconut_crab.name=Spawn Coconut Crab
+item.spawn_egg.entity.aqua:ghost_crab.name=Spawn Ghost Crab
+item.spawn_egg.entity.aqua:hermit_crab.name=Spawn Hermit Crab
+item.spawn_egg.entity.aqua:box_crab.name=Spawn Box Crab
+item.spawn_egg.entity.aqua:soldier_crab.name=Spawn Soldier Crab
+item.spawn_egg.entity.aqua:land_crab.name=Spawn Land Crab
+item.spawn_egg.entity.aqua:spanner_crab.name=Spawn Spanner Crab
+item.spawn_egg.entity.aqua:tasmanian_crab.name=Spawn Tasmanian Crab
+item.spawn_egg.entity.aqua:porcelain_crab.name=Spawn Porcelain Crab
+item.spawn_egg.entity.aqua:mole_crab.name=Spawn Mole Crab
+item.spawn_egg.entity.aqua:horseshoe_crab.name=Spawn Horseshoe Crab
+item.spawn_egg.entity.aqua:slipper_lobster.name=Spawn Slipper Lobster
+item.spawn_egg.entity.aqua:comb_jelly.name=Spawn Comb Jelly
+item.spawn_egg.entity.aqua:sea_star.name=Spawn Sea Star
+item.spawn_egg.entity.aqua:sea_cucumber.name=Spawn Sea Cucumber
+item.spawn_egg.entity.aqua:feather_star.name=Spawn Feather star
+item.spawn_egg.entity.aqua:jellyfish.name=Spawn Jellyfish
+item.spawn_egg.entity.aqua:angler.name=Spawn Anglerfish
+item.spawn_egg.entity.aqua:ocean_sunfish.name=Spawn Ocean Sunfish
+item.spawn_egg.entity.aqua:sharptail_sunfish.name=Spawn Sharptail Sunfish
+item.spawn_egg.entity.aqua:scallop.name=Spawn Scallop
+
+
+tile.aqua:crinoid.name=Crinoid
+tile.aqua:anenome.name=Anemone
+tile.aqua:victoria_lily_corner.name=Giant Lily Corner
+tile.aqua:victoria_lily_center.name=Giant Lily Center
+tile.aqua:victoria_lily_side.name=Giant Lily Side
+tile.aqua:frogbit.name=Frogbit
+tile.aqua:mosaic_plant.name=Mosaic Plant
+tile.aqua:water_lettuce.name=Water Lettuce
+tile.aqua:papyrus_top.name=Papyrus
+tile.aqua:papyrus_bottom.name=Papyrus
+tile.aqua:cattail_top.name=Cattail
+tile.aqua:cattail_middle.name=Cattail
+tile.aqua:cattail_bottom.name=Cattail
+tile.aqua:horsetail.name=Horsetail
+tile.aqua:horsetail_top.name=Horsetail
+tile.aqua:black_sand.name=Black Sand
+tile.aqua:lava_rock.name=Lava Rock
+tile.aqua:amazon_sword.name=Amazon Sword
+tile.aqua:giant_sponge_head.name=Giant Sponge Head
+tile.aqua:giant_sponge_stalk.name=Giant Sponge Stalk
+tile.aqua:giant_anemone_tentacle.name=Giant Anemone Tentacle
+tile.aqua:giant_anemone_stalk.name=Giant Anemone Stalk
+tile.aqua:sea_urchin.name=Sea Urchin
+tile.aqua:deep_sponge.name=Glass Sponge
+tile.aqua:harp_sponge.name=Harp Sponge
+tile.aqua:stalk_sponge.name=Stalk Sponge
+tile.aqua:sand_dollar.name=Sand Dollar
+tile.aqua:limpet.name=Limpet
+tile.aqua:helmet_urchin.name=Helmet Urchin
+tile.aqua:coconut.name=Coconut
+tile.aqua:collector_urchin.name=Collector Urchin
+tile.aqua:barnacle.name=Barnacle
+tile.aqua:banded_urchin.name=Banded Urchin
+tile.aqua:green_urchin.name=Green Urchin
+tile.aqua:rock_urchin.name=Rock Urchin
+tile.aqua:purple_urchin.name=Purple Urchin
+tile.aqua:pencil_urchin.name=Pencil Urchin
+tile.aqua:georgian_purple.name=Purple Georgian
+tile.aqua:georgian_yellow.name=Yellow Georgian
+tile.aqua:georgian_pink.name=Pink Georgian
+tile.aqua:sand_castle.name=Sand Castle
+
+item.aqua:pearl=Pearl
+item.aqua:clam_item=Clam
+item.aqua:clam_chowder=Clam Chowder
+item.aqua:clam_shell_item=Clam Shell
+item.aqua:coconut_item=Coconut
+item.aqua:cooked_fillet=Cooked Fillet
+item.aqua:cowrie_shell_item=Cowrie Shell
+item.aqua:fillet=Fillet
+item.aqua:moon_snail_shell_item=Moon Snail Shell
+item.aqua:sand_dollar_item=Sand Dollar
+item.aqua:shark_tooth_item=Shark Tooth
+item.aqua:shark_tooth_club=Shark Tooth Club
+item.aqua:cone_shell_item=Cone Shell
+item.aqua:top_shell_item=Top Shell
+item.aqua:urchin_skeleton_item=Urchin Skeleton
+item.aqua:whelk_shell_item=Whelk Shell
+item.aqua:abalone_item=Abalone Shell
+item.aqua:beach_bucket=Beach Bucket
+item.aqua:frogbit_item=Frogbit
+item.aqua:mosaic_plant_item=Mosaic Plant
+item.aqua:water_lettuce_item=Water Lettuce
+item.aqua:horsetail_item=Horsetail
+item.aqua:cattail_item=Cattail
+item.aqua:papyrus_item=Papyrus
+item.aqua:amazon_sword_item=Amazon Sword
+
+
+entity.aqua:goldfish.name=Goldfish
+item.spawn_egg.entity.aqua:goldfish.name=Spawn Goldfish
+
+entity.aqua:frogfish.name=Frogfish
+item.spawn_egg.entity.aqua:frogfish.name=Spawn Frogfish
+
+entity.aqua:clownfish.name=Clownfish
+item.spawn_egg.entity.aqua:clownfish.name=Spawn Clownfish
+
+entity.aqua:snowflake_moray.name=Snowflake Moray
+item.spawn_egg.entity.aqua:snowflake_moray.name=Spawn Snowflake Moray
+
+entity.aqua:freshwater_stingray.name=Freshwater Stingray
+item.spawn_egg.entity.aqua:freshwater_stingray.name=Spawn Freshwater Stingray
+
+entity.aqua:tripod_fish.name=Tripod Fish
+item.spawn_egg.entity.aqua:tripod_fish.name=Spawn Tripod Fish
+
+entity.aqua:blue_ray.name=Blue Ray
+item.spawn_egg.entity.aqua:blue_ray.name=Spawn Blue Ray
+
+entity.aqua:cownose_ray.name=Cownose Ray
+item.spawn_egg.entity.aqua:cownose_ray.name=Spawn Cownose Ray
+
+entity.aqua:bluegreen_chromis.name=Bluegreen Chromis
+item.spawn_egg.entity.aqua:bluegreen_chromis.name=Spawn Bluegreen Chromis
+
+entity.aqua:giant_gourami.name=Giant Gourami
+item.spawn_egg.entity.aqua:giant_gourami.name=Spawn Giant Gourami
+
+entity.aqua:cane_toad.name=Cane Toad
+item.spawn_egg.entity.aqua:cane_toad.name=Spawn Cane Toad
+
+entity.aqua:american_paddlefish.name=American Paddlefish
+item.spawn_egg.entity.aqua:american_paddlefish.name=Spawn American Paddlefish
+
+entity.aqua:bicolor_blenny.name=Bicolor Blenny
+item.spawn_egg.entity.aqua:bicolor_blenny.name=Spawn Bicolor Blenny
+
+entity.aqua:cardinal_fish.name=Banggai Cardinalfish
+item.spawn_egg.entity.aqua:cardinal_fish.name=Spawn Banggai Cardinalfish
+
+entity.aqua:damselfish.name=Damselfish
+item.spawn_egg.entity.aqua:damselfish.name=Spawn Damselfish
+
+entity.aqua:dojo_loach.name=Dojo Loach
+item.spawn_egg.entity.aqua:dojo_loach.name=Spawn Dojo Loach
+
+entity.aqua:eyespot_puffer.name=Eyespot Puffer
+item.spawn_egg.entity.aqua:eyespot_puffer.name=Spawn Eyespot Puffer
+
+entity.aqua:green_puffer.name=Green Puffer
+item.spawn_egg.entity.aqua:green_puffer.name=Spawn Green Puffer
+
+entity.aqua:orchid_dottyback.name=Orchid Dottyback
+item.spawn_egg.entity.aqua:orchid_dottyback.name=Spawn Orchid Dottyback
+
+entity.aqua:narwhal.name=Narwhal
+item.spawn_egg.entity.aqua:narwhal.name=Spawn Narwhal
+
+entity.aqua:pea_puffer.name=Pea Puffer
+item.spawn_egg.entity.aqua:pea_puffer.name=Spawn Pea Puffer
+
+entity.aqua:sea_pig.name=Sea Pig
+item.spawn_egg.entity.aqua:sea_pig.name=Spawn Sea Pig
+
+entity.aqua:tang.name=Tang
+item.spawn_egg.entity.aqua:tang.name=Spawn Tang
+
+entity.aqua:oarfish.name=Oarfish
+item.spawn_egg.entity.aqua:oarfish.name=Spawn Oarfish
+
+entity.aqua:alligator_gar.name=Aligator Gar
+item.spawn_egg.entity.aqua:alligator_gar.name=Spawn Aligator Gar
+
+entity.aqua:koi.name=Koi
+item.spawn_egg.entity.aqua:koi.name=Spawn Koi
+
+entity.aqua:brittle_star.name=Brittle Star
+item.spawn_egg.entity.aqua:brittle_star.name=Spawn Brittle Star
+
+entity.aqua:leafy_seadragon.name=Leafy Seadragon
+item.spawn_egg.entity.aqua:leafy_seadragon.name=Spawn Leafy Seadragon
+
+entity.aqua:ocean_sunfish.name=Ocean Sunfish
+item.spawn_egg.entity.aqua:ocean sunfish.name=Spawn Ocean Sunfish
+
+entity.aqua:sharp sunfish.name=Sharptail Sunfish
+item.spawn_egg.entity.aqua:sharp_sunfish.name=Spawn Sharptail Sunfish
+
+entity.aqua:lungfish.name=Lungfish
+item.spawn_egg.entity.aqua:lungfish.name=Spawn Lungfish
+
+entity.aqua:bichir.name=Bichir
+item.spawn_egg.entity.aqua:bichir.name=Spawn Bichir
+
+entity.aqua:arowana.name=Arowana
+item.spawn_egg.entity.aqua:arowana.name=Spawn Arowana
+
+entity.aqua:coelacanth.name=Coelacanth
+item.spawn_egg.entity.aqua:coelacanth.name=Spawn Coelacanth
+
+entity.aqua:frog.name=Frog
+item.spawn_egg.entity.aqua:frog.name=Spawn Frog
+
+entity.aqua:cane_toad_tadpole.name=Cane Toad Tadpole
+item.spawn_egg.entity.aqua:cane_toad_tadpole.name=Spawn Cane Toad Tadpole
+
+entity.aqua:frog_tadpole.name=Frog Tadpole
+item.spawn_egg.entity.aqua:frog_tadpole.name=Spawn Frog Tadpole
+
+item.spawn_egg.entity.aqua:angelfish.name=Spawn Angelfish
+entity.aqua:angelfish.name=Angelfish
+
+entity.aqua:garden_eel.name=Garden Eel
+item.spawn_egg.entity.aqua:garden_eel.name=Spawn Garden Eel
+
+entity.aqua:sperm_whale.name=Sperm Whale
+item.spawn_egg.entity.aqua:sperm_whale.name=Spawn Sperm Whale
+
+entity.aqua:humpback_whale.name=humpback_whale Whale
+item.spawn_egg.entity.aqua:humpback_whale.name=Spawn humpback_whale Whale
+
+entity.aqua:bowhead_whale.name=Bow Head Whale
+item.spawn_egg.entity.aqua:bowhead_whale.name=Spawn Bow Head Whale
+
+entity.aqua:grey_whale.name=Grey Whale
+item.spawn_egg.entity.aqua:grey_whale.name=Spawn Grey Whale

@@ -1,0 +1,14 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:weighted_random_feature": {
+    "description": {
+      "identifier": "aqua:cypress_randomizer"
+    },
+    "features": [
+      [ "aqua:cypress_1", 1 ],
+      [ "aqua:cypress_2", 1 ],
+      [ "aqua:cypress_3", 1 ],
+      [ "aqua:cypress_4", 1 ]
+    ]
+  }
+}

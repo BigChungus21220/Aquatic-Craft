@@ -1,0 +1,13 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:aggregate_feature": {
+    "description": {
+      "identifier": "aqua:victoria_lily_aggregate"
+    },
+    "features": [
+      "aqua:victoria_lily_tester",
+      "aqua:victoria_lily_randomizer"
+    ],
+    "early_out": "first_failure"
+  }
+}

@@ -1,0 +1,13 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.cuttlefish.idle": {
+			"loop": true,
+			"bones": {
+				"skirt": {
+					"rotation": ["Math.sin(query.anim_time * 100) * 3", 0, 0]
+				}
+			}
+		}
+	}
+}

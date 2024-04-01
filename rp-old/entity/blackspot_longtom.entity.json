@@ -1,0 +1,28 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "aqua:blackspot_longtom",
+      "materials": { "default": "entity_alphatest" },
+      "textures": {
+        "default": "textures/entity/blackspot_longtom"
+      },
+      "geometry": {
+        "default": "geometry.blackspot_longtom"
+      },
+      "animations": {
+        "swim": "animation.blackspot_longtom.swim"
+      },
+      "scripts": {
+        "animate": [
+          "swim"
+        ]
+      },
+      "render_controllers": [ "controller.render.squid" ],
+      "spawn_egg": {
+        "texture": "deep_egg",
+        "texture_index": 0
+      }
+    }
+  }
+}

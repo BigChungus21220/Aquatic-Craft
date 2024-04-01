@@ -1,0 +1,23 @@
+{
+  "format_version": "1.8.0",
+  "render_controllers": {
+    "controller.render.koi": {
+      "arrays": {
+        "textures": {
+          "Array.skins": [
+            "Texture.yellow",
+            "Texture.black",
+            "Texture.white",
+            "Texture.white_spot",
+            "Texture.orange",
+            "Texture.white_orange",
+            "Texture.white_orange2"
+          ]
+        }
+      },
+      "geometry": "Geometry.default",
+      "materials": [ { "*": "Material.default" } ],
+      "textures": [ "Array.skins[query.variant]" ]
+    }
+  }
+}

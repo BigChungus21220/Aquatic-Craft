@@ -1,0 +1,118 @@
+{
+   "format_version": "1.10.0",
+   "animation_controllers": {
+      "controller.animation.sperm_whale.root": {
+         "initial_state": "default",
+         "states": {
+            "default": {
+               "animations": [
+                  "default",
+                  {
+                     "move": "query.modified_move_speed"
+                  }
+               ],
+               "transitions": [
+                  {
+                     "roar": "query.is_roaring"
+                  },
+                  {
+                     "swim_idle": "query.is_in_water"
+                  },
+                  {
+                     "swim_move": "query.is_swimming"
+                  },
+                  {
+                     "death": "query.is_playing_dead"
+                  }
+               ],
+               "blend_transition": 0.85
+            },
+            "roar": {
+               "animations": [
+                  "roar"
+               ],
+               "transitions": [
+                  {
+                     "default": "!query.is_roaring"
+                  }
+               ],
+               "blend_transition": 0.2
+            },
+            "attack": {
+               "animations": [
+                  "attack",
+                  {
+                     "move": "query.modified_move_speed"
+                  },
+                  {
+                     "swim_idle": "query.is_in_water"
+                  },
+                  {
+                     "swim_move": "query.is_swimming"
+                  }
+               ],
+               "transitions": [
+                  {
+                     "swim_idle": "!variable.attack_time > 0.01"
+                  },
+                  {
+                     "swim_move": "!variable.attack_time > 0.01"
+                  }
+               ],
+               "blend_transition": 0.2
+            },
+            "swim_idle": {
+               "animations": [
+                  "swim_idle"
+               ],
+               "transitions": [
+                  {
+                     "default": "!query.is_in_water"
+                  },
+                  {
+                     "swim_move": "query.is_swimming"
+                  },
+                  {
+                     "death": "query.is_playing_dead"
+                  },
+                  {
+                     "attack": "variable.attack_time > 0.01"
+                  }
+               ],
+               "blend_transition": 0.2
+            },
+            "swim_move": {
+               "animations": [
+                  "swim_move"
+               ],
+               "transitions": [
+                  {
+                     "swim_idle": "!query.is_swimming"
+                  },
+                  {
+                     "death": "query.is_playing_dead"
+                  },
+                  {
+                     "attack": "variable.attack_time > 0.01"
+                  }
+               ],
+               "blend_transition": 0.2
+            },
+            "death": {
+               "animations": [
+                  "death"
+               ],
+               "transitions": [
+                  {
+                     "swim_idle": "!query.is_playing_dead"
+                  },
+                  {
+                     "swim_move": "!query.is_playing_dead"
+                  }
+               ],
+               "blend_transition": 0.2
+            }
+         }
+      }
+   }
+}

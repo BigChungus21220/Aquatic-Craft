@@ -1,0 +1,29 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:spawn_rules": {
+    "description": {
+      "identifier": "aqua:alligator_gar",
+      "population_control": "water_animal"
+    },
+    "conditions": [
+      {
+        "minecraft:spawns_on_surface": {},
+        "minecraft:spawns_underwater": {},
+        "minecraft:weight": {
+          "default": 10
+        },
+        "minecraft:density_limit": {
+          "surface": 8
+        },
+        "minecraft:biome_filter": [
+          {
+            "any_of": [
+              { "test": "has_biome_tag","operator": "==", "value": "swamp" },
+              { "test": "has_biome_tag","operator": "==", "value": "jungle_lake" }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

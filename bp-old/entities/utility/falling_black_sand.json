@@ -1,0 +1,109 @@
+{
+  "format_version": "1.16.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "aqua:falling_black_sand",
+      "is_spawnable": false,
+      "is_summonable": true,
+      "is_experimental": false
+    },
+
+    "component_groups":{
+      "despawn": {
+        "minecraft:instant_despawn": {}
+      },
+      "drop": {
+        "minecraft:timer": {
+          "looping": false,
+          "time": 0.1,
+          "time_down_event": {
+            "event": "drop"
+          }
+        }
+      }
+    },
+
+    "components": {
+      "minecraft:is_stackable": {},
+      "minecraft:push_through": {
+        "value": 1
+      },
+      "minecraft:loot": {
+        "table": "loot_tables/blocks/black_sand.json"
+      },
+      "minecraft:timer": {
+        "looping": true,
+        "time": 0.5,
+        "time_down_event": {
+          "event": "set_sand"
+        }
+      },
+      "minecraft:physics": {},
+      "minecraft:pushable": {
+        "is_pushable": false,
+        "is_pushable_by_piston": false
+      },
+      "minecraft:custom_hit_test": {
+        "hitboxes": [
+          {
+            "pivot": [ 0, 100, 0 ],
+            "width": 0,
+            "height": 0
+          }
+        ]
+      },
+      "minecraft:damage_sensor": {
+        "triggers": {
+          "cause": "any",
+          "deals_damage": false
+        }
+      }
+    },
+    "events": {
+      "set_sand": {
+        "sequence": [
+          {
+            "filters": {"test": "on_ground"},
+            "run_command": {
+              "command": [
+                "fill ~ ~ ~ ~ ~ ~ aqua:black_sand 0 replace air",
+                "fill ~ ~ ~ ~ ~ ~ aqua:black_sand 0 replace water",
+                "fill ~ ~ ~ ~ ~ ~ aqua:black_sand 0 replace flowing_water",
+                "fill ~ ~ ~ ~ ~ ~ aqua:black_sand 0 replace lava",
+                "fill ~ ~ ~ ~ ~ ~ aqua:black_sand 0 replace flowing_water",
+                "execute as @s if block ~ ~ ~ aqua:black_sand -1 run event entity @s despawn",
+                "event entity @s drop_despawn"
+              ]
+            }
+          }
+        ]
+      },
+      "drop": {
+        "run_command": {
+          "command": [
+            "kill"
+          ]
+        },
+        "add": {
+          "component_groups": [
+            "despawn"
+          ]
+        }
+      },
+      "drop_despawn": {
+        "add": {
+          "component_groups": [
+            "drop"
+          ]
+        }
+      },
+      "despawn": {
+        "add": {
+          "component_groups": [
+            "despawn"
+          ]
+        }
+      }
+    }
+  }
+}

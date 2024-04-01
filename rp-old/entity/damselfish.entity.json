@@ -1,0 +1,29 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "aqua:damselfish",
+      "materials": { "default": "entity_alphatest" },
+      "textures": {
+        "light_blue": "textures/entity/damselfish/0",
+        "blue": "textures/entity/damselfish/1"
+      },
+      "geometry": {
+        "default": "geometry.damselfish"
+      },
+      "animations": {
+        "swim": "animation.damselfish.swim"
+      },
+      "scripts": {
+        "animate": [
+          "swim"
+        ]
+      },
+      "render_controllers": [ "controller.render.damselfish" ],
+      "spawn_egg": {
+        "texture": "fish_egg",
+        "texture_index": 12
+      }
+    }
+  }
+}

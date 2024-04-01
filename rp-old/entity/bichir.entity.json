@@ -1,0 +1,28 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "aqua:bichir",
+      "materials": { "default": "entity_alphatest" },
+      "textures": {
+        "default": "textures/entity/bichir"
+      },
+      "geometry": {
+        "default": "geometry.bichir"
+      },
+      "animations": {
+        "swim": "animation.bichir.swim"
+      },
+      "scripts": {
+        "animate": [
+          "swim"
+        ]
+      },
+      "render_controllers": [ "controller.render.squid" ],
+      "spawn_egg": {
+        "texture": "fish_egg",
+        "texture_index": 27
+      }
+    }
+  }
+}

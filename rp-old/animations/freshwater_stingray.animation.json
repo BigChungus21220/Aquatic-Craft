@@ -1,0 +1,20 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.freshwater_stingray.swim": {
+			"anim_time_update": "query.modified_distance_moved",
+			"loop": true,
+			"bones": {
+				"skirt": {
+					"rotation": ["math.sin(query.anim_time*200)*1", 0, 0]
+				},
+				"l": {
+					"rotation": [0, 0, "-math.sin(query.anim_time*100)*5-5"]
+				},
+				"r": {
+					"rotation": [0, 0, "math.sin(query.anim_time*100)*5+5"]
+				}
+			}
+		}
+	}
+}

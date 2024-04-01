@@ -1,0 +1,32 @@
+{
+	"format_version" : "1.10.0",
+	"animation_controllers" : {
+		"controller.animation.tripod_fish": {
+			"initial_state" : "stand",
+			"states" : {
+				"stand" : {
+					"animations": ["stand"],
+					"transitions" : [
+						{
+							"swim" : "query.skin_id == 0"
+						}
+					],
+					
+					"blend_transition": 1,
+					"blend_via_shortest_path": true
+				},
+				"swim" : {
+					"animations": ["swim"],
+					"transitions" : [
+						{
+							"stand" : "query.skin_id == 1"
+						}
+					],
+					
+					"blend_transition": 1,
+					"blend_via_shortest_path": true
+				}
+			}
+		}
+	}
+}

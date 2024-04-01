@@ -1,0 +1,15 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:search_feature": {
+    "description": {
+      "identifier": "aqua:victoria_lily_tester"
+    },
+    "places_feature": "aqua:water_block",
+    "search_volume": {
+      "min": [ 0, -1, 0 ],
+      "max": [ 3, -1, 3 ]
+    },
+    "search_axis": "-y",
+    "required_successes": 16
+  }
+} 

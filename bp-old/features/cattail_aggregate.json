@@ -1,0 +1,12 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:aggregate_feature": {
+    "description": {
+      "identifier": "aqua:cattail_aggregate"
+    },
+    "features": [
+      "aqua:cattail_scatter",
+      "aqua:cattail_wet_scatter"
+    ]
+  }
+}

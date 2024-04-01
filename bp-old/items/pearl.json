@@ -1,0 +1,19 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:item": {
+		"description": {
+			"identifier": "aqua:pearl",
+			"category": "items"
+		},
+		"components": {
+			"minecraft:icon": {
+				"texture":  "pearl"
+			},
+			"minecraft:creative_category": {
+				"parent": "itemGroup.name.items"
+			}
+		},
+		"events": {
+		}
+	}
+}

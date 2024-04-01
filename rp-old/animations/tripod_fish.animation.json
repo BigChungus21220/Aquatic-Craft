@@ -1,0 +1,37 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.tripod_fish.swim": {
+			"anim_time_update": "query.modified_distance_moved",
+			"loop": true,
+			"bones": {
+				"fin2": {
+					"rotation": [0, 0, -80]
+				},
+				"fin": {
+					"rotation": [0, 0, -85]
+				},
+				"tail": {
+					"rotation": [0, "math.sin(query.anim_time * 200) * 20", 0]
+				},
+				"bone4": {
+					"rotation": [0, 0, -57.5]
+				}
+			}
+		},
+		"animation.tripod_fish.stand": {
+			"loop": true,
+			"bones": {
+				"fin2": {
+					"rotation": [0, 0, 0]
+				},
+				"fin": {
+					"rotation": [0, 0, 0]
+				},
+				"bone4": {
+					"rotation": [0, 0, 2.5]
+				}
+			}
+		}
+	}
+}

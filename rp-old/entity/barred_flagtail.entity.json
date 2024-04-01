@@ -1,0 +1,28 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "aqua:barred_flagtail",
+      "materials": { "default": "entity_alphatest" },
+      "textures": {
+        "default": "textures/entity/barred_flagtail"
+      },
+      "geometry": {
+        "default": "geometry.barred_flagtail"
+      },
+      "animations": {
+        "swim": "animation.barred_flagtail.swim"
+      },
+      "scripts": {
+        "animate": [
+          "swim"
+        ]
+      },
+      "render_controllers": [ "controller.render.squid" ],
+      "spawn_egg": {
+        "texture": "deep_egg",
+        "texture_index": 0
+      }
+    }
+  }
+}

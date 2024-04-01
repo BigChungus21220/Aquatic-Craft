@@ -1,0 +1,24 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "aqua:falling_black_sand",
+      "materials": { "default": "entity_alphatest" },
+      "textures": {
+        "default": "textures/entity/black_sand"
+      },
+      "geometry": {
+        "default": "geometry.black_sand"
+      },
+      "animations": {
+        "look": "animation.black_sand.look"
+      },
+      "scripts": {
+        "animate": [
+          "look"
+        ]
+      },
+      "render_controllers": [ "controller.render.squid" ]
+    }
+  }
+}

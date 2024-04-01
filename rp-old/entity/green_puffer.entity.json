@@ -1,0 +1,28 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "aqua:green_puffer",
+      "materials": { "default": "entity_alphatest" },
+      "textures": {
+        "default": "textures/entity/green_puffer"
+      },
+      "geometry": {
+        "default": "geometry.green_puffer"
+      },
+      "animations": {
+        "swim": "animation.green_puffer.swim"
+      },
+      "scripts": {
+        "animate": [
+          "swim"
+        ]
+      },
+      "render_controllers": [ "controller.render.squid" ],
+      "spawn_egg": {
+        "texture": "fish_egg",
+        "texture_index": 15
+      }
+    }
+  }
+}

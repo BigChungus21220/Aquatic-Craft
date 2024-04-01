@@ -1,0 +1,33 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "aqua:mosquito",
+      "materials": { "default": "bat" },
+      "textures": {
+        "default": "textures/entity/mosquito"
+      },
+      "sound_effects": {
+        "fly_sound": "aqua.mosquito.fly"
+      },
+      "geometry": {
+        "default": "geometry.mosquito"
+      },
+      "animations": {
+        "fly": "animation.mosquito.fly",
+        "sound_player": "animation.mosquito.sound"
+      },
+      "scripts": {
+        "animate": [
+          "fly",
+          "sound_player"
+        ]
+      },
+      "render_controllers": [ "controller.render.bat" ],
+      "spawn_egg": {
+        "texture": "fish_egg",
+        "texture_index": 1
+      }
+    }
+  }
+}

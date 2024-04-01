@@ -1,0 +1,59 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.soldier_crab.walk": {
+			"loop": true,
+			"anim_time_update": "query.modified_distance_moved",
+			"bones": {
+				"leg": {
+					"rotation": [0, 0, "-30+math.cos(query.anim_time*300)*10"]
+				},
+				"leglower": {
+					"rotation": [0, 0, "35-math.sin(query.anim_time*300)*20"]
+				},
+				"leg2": {
+					"rotation": [0, 0, "-30-math.cos(query.anim_time*300)*10"]
+				},
+				"leglower2": {
+					"rotation": [0, 0, "35+math.sin(query.anim_time*300)*20"]
+				},
+				"leg3": {
+					"rotation": [0, 0, "-30+math.cos(query.anim_time*300)*10"]
+				},
+				"leglower3": {
+					"rotation": [0, 0, "35-math.sin(query.anim_time*300)*20"]
+				},
+				"leg4": {
+					"rotation": [0, 0, "-30+math.cos(query.anim_time*300)*10"]
+				},
+				"leglower4": {
+					"rotation": [0, 0, "35+math.sin(query.anim_time*300)*20"]
+				},
+				"leg5": {
+					"rotation": [0, 0, "-30-math.cos(query.anim_time*300)*10"]
+				},
+				"leglower5": {
+					"rotation": [0, 0, "35-math.sin(query.anim_time*300)*20"]
+				},
+				"leg6": {
+					"rotation": [0, 0, "-30+math.cos(query.anim_time*300)*10"]
+				},
+				"leglower6": {
+					"rotation": [0, 0, "35+math.sin(query.anim_time*300)*20"]
+				},
+				"clawR": {
+					"rotation": [15, 2.5, 0]
+				},
+				"claw_lower": {
+					"rotation": [-15, 7.5, 0]
+				},
+				"clawL": {
+					"rotation": [15, -2.5, 0]
+				},
+				"claw_lower2": {
+					"rotation": [-15, -7.5, 0]
+				}
+			}
+		}
+	}
+}

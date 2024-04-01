@@ -1,0 +1,13 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.european_squid.idle": {
+			"loop": true,
+			"bones": {
+				"tentacles": {
+					"scale": ["1 - Math.sin(query.anim_time * 100) * 0.1", "1 - Math.sin(query.anim_time * 100) * 0.1", "1 - (Math.sin((query.anim_time+2) * 100)) * 0.1"]
+				}
+			}
+		}
+	}
+}

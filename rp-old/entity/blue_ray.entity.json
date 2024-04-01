@@ -1,0 +1,28 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "aqua:blue_ray",
+      "materials": { "default": "entity_alphatest" },
+      "textures": {
+        "default": "textures/entity/blue_ray"
+      },
+      "geometry": {
+        "default": "geometry.blue_ray"
+      },
+      "animations": {
+        "swim": "animation.blue_ray.swim"
+      },
+      "scripts": {
+        "animate": [
+          "swim"
+        ]
+      },
+      "render_controllers": [ "controller.render.squid" ],
+      "spawn_egg": {
+        "texture": "fish_egg",
+        "texture_index": 5
+      }
+    }
+  }
+}

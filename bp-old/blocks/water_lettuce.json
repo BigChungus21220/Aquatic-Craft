@@ -1,0 +1,144 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:block": {
+      "description": {
+          "identifier": "aqua:water_lettuce",
+          "properties": {
+            "aqua:rotation": [ 0, 1, 2, 3 ]
+          }
+      },
+      "components": {
+        "minecraft:loot": "loot_tables/blocks/water_lettuce.json",
+        "minecraft:geometry": "geometry.water_lettuce",
+        "minecraft:selection_box": {
+          "origin": [-5, 0, -7],
+          "size": [12, 6, 12]
+        },      
+        "minecraft:block_light_filter" : 0,
+        "minecraft:light_emission" : 0,
+        "minecraft:material_instances": {
+          "*": {
+            "texture": "water_letuce_side",
+            "render_method": "alpha_test"
+          },
+          "up": {
+            "texture": "water_letuce_top",
+            "render_method": "alpha_test"
+          },
+          "down": {
+            "texture": "water_letuce_bottom",
+            "render_method": "alpha_test"
+          }
+        },
+        "minecraft:ticking": {
+          "looping": true,
+          "range": [5, 5],
+          "on_tick": {
+            "event": "test_water"
+          }
+        },
+        "minecraft:placement_filter": {
+          "conditions": [
+            {
+              "block_filter": [
+                "minecraft:water",
+                "minecraft:flowing_water"
+              ],
+              "allowed_faces": ["up"]
+            }
+          ]
+        },
+        "minecraft:on_placed": {
+          "event": "rotate"
+        },
+        "minecraft:on_interact": {
+          "condition": "query.is_item_name_any('slot.weapon.mainhand','minecraft:bone_meal')",
+          "event": "bonemeal"
+        },
+        //"minecraft:breakonpush": true,
+        "minecraft:block_collision": {
+          "origin": [-5, 0, -7],
+          "size": [12, 6, 12]
+        }
+      },
+      "events": {
+        "test_water": {
+          "run_command": {
+            "command": [
+              "fill ~1 ~1 ~1 ~-1 ~-1 ~-1 air 1 replace air 0"
+            ]
+          }
+        },
+        "rotate": {
+          "set_block_property": {
+            "aqua:rotation": "Math.random_integer(0, 3)"
+          }
+        },
+        "bonemeal": {
+          "randomize": [
+            {
+              "run_command": {
+                "command": ["fill ~1 ~ ~ ~1 ~ ~ aqua:water_lettuce 0 replace air"]
+              }
+            },
+            {
+              "run_command": {
+                "command": ["fill ~-1 ~ ~ ~-1 ~ ~ aqua:water_lettuce 0 replace air"]
+              }
+            },
+            {
+              "run_command": {
+                "command": ["fill ~ ~ ~1 ~ ~ ~1 aqua:water_lettuce 0 replace air"]
+              }
+            },
+            {
+              "run_command": {
+                "command": ["fill ~ ~ ~-1 ~ ~ ~-1 aqua:water_lettuce 0 replace air"]
+              }
+            },
+            {
+              "run_command": {
+                "command": ["fill ~1 ~ ~1 ~1 ~ ~1 aqua:water_lettuce 0 replace air"]
+              }
+            },
+            {
+              "run_command": {
+                "command": ["fill ~-1 ~ ~-1 ~-1 ~ ~-1 aqua:water_lettuce 0 replace air"]
+              }
+            },
+            {
+              "run_command": {
+                "command": ["fill ~1 ~ ~-1 ~1 ~ ~-1 aqua:water_lettuce 0 replace air"]
+              }
+            },
+            {
+              "run_command": {
+                "command": ["fill ~-1 ~ ~1 ~-1 ~ ~1 aqua:water_lettuce 0 replace air"]
+              }
+            }
+          ],
+          "decrement_stack": {}
+        }
+      },
+      "permutations": [
+        {
+          "condition": "query.block_property('aqua:rotation') == 1",
+          "components": {
+            "minecraft:rotation": [0, 90, 0]
+          }
+        },
+        {
+          "condition": "query.block_property('aqua:rotation') == 2",
+          "components": {
+            "minecraft:rotation": [0, 180, 0]
+          }
+        },
+        {
+          "condition": "query.block_property('aqua:rotation') == 3",
+          "components": {
+            "minecraft:rotation": [0, 270, 0]
+          }
+        }
+      ]
+  }
+}

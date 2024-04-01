@@ -1,0 +1,47 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.shark_tooth",
+				"texture_width": 16,
+				"texture_height": 16,
+				"visible_bounds_width": 2,
+				"visible_bounds_height": 1.5,
+				"visible_bounds_offset": [0, 0.25, 0]
+			},
+			"bones": [
+				{
+					"name": "bb_main",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{
+							"origin": [-1, 0, 1],
+							"size": [3, 1, 1],
+							"uv": {
+								"north": {"uv": [1, 3], "uv_size": [3, 1]},
+								"east": {"uv": [0, 3], "uv_size": [1, 1]},
+								"south": {"uv": [1, 3], "uv_size": [3, 1]},
+								"west": {"uv": [0, 3], "uv_size": [1, 1]},
+								"up": {"uv": [1, 3], "uv_size": [3, 1]},
+								"down": {"uv": [1, 4], "uv_size": [3, -1]}
+							}
+						},
+						{
+							"origin": [0, 0, -1],
+							"size": [1, 1, 2],
+							"uv": {
+								"north": {"uv": [2, 2], "uv_size": [1, 1]},
+								"east": {"uv": [0, 2], "uv_size": [2, 1]},
+								"south": {"uv": [2, 2], "uv_size": [1, 1]},
+								"west": {"uv": [0, 2], "uv_size": [2, 1]},
+								"up": {"uv": [0, 0], "uv_size": [1, 2]},
+								"down": {"uv": [1, 2], "uv_size": [1, -2]}
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}

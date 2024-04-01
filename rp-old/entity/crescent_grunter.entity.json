@@ -1,0 +1,28 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "aqua:crescent_grunter",
+      "materials": { "default": "entity_alphatest" },
+      "textures": {
+        "default": "textures/entity/crescent_grunter"
+      },
+      "geometry": {
+        "default": "geometry.crescent_grunter"
+      },
+      "animations": {
+        "swim": "animation.crescent_grunter.swim"
+      },
+      "scripts": {
+        "animate": [
+          "swim"
+        ]
+      },
+      "render_controllers": [ "controller.render.squid" ],
+      "spawn_egg": {
+        "texture": "deep_egg",
+        "texture_index": 0
+      }
+    }
+  }
+}

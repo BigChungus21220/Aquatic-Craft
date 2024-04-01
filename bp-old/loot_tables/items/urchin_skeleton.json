@@ -1,0 +1,14 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "aqua:urchin_skeleton_item",
+                    "weight": 1
+                }
+            ]
+        }
+    ]
+}

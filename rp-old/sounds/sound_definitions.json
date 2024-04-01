@@ -1,0 +1,41 @@
+{
+   "format_version" : "1.14.0",
+   "sound_definitions" : {
+      "aqua.cane_toad.croak" : {
+         "max_distance": 25.0,
+         "category" : "neutral",
+         "sounds" : [
+            {
+               "name" : "sounds/aqua/cane_toad/croak_0"
+            },
+            {
+               "name" : "sounds/aqua/cane_toad/croak_1"
+            },
+            {
+               "name" : "sounds/aqua/cane_toad/croak_2"
+            },
+            {
+               "name" : "sounds/aqua/cane_toad/croak_3"
+            }
+         ]
+      },
+      "aqua.mosquito.fly" : {
+         "max_distance": 15.0,
+         "category" : "neutral",
+         "sounds" : [
+            {
+               "name" : "sounds/aqua/mosquito/mosquito"
+            },
+            {
+               "name" : "sounds/aqua/mosquito/mosquito"
+            },
+            {
+               "name" : "sounds/aqua/mosquito/mosquito"
+            },
+            {
+               "name" : "sounds/aqua/mosquito/mosquito"
+            }
+         ]
+      }
+   }
+}

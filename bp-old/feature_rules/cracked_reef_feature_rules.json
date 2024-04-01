@@ -1,0 +1,32 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:feature_rules": {
+    "description": {
+      "identifier": "aqua:cracked_reef_feature_rules",
+      "places_feature": "aqua:cracked_reef_aggregate"
+    },
+    "conditions": {
+      "placement_pass": "first_pass",
+      "minecraft:biome_filter": [
+        {
+          "any_of": [
+            {"test": "has_biome_tag","operator": "==","value": "cracked_reef"}
+          ]
+        }
+      ]
+    },
+    "distribution": {
+      "iterations": 2,
+      "scatter_chance": 50,
+      "x": {
+        "distribution": "uniform",
+        "extent": [ 0, 16 ]
+      },
+      "y": "t.length = math.random_integer(13, 20); t.width = math.random_integer(7, 10); return 75;",
+      "z": {
+        "distribution": "uniform",
+        "extent": [ 0, 16 ]
+      }
+    }
+  }
+}

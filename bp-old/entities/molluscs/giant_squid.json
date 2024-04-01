@@ -1,0 +1,176 @@
+{
+  "format_version": "1.16.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "aqua:giant_squid",
+      "is_spawnable": true,
+      "is_summonable": true,
+      "is_experimental": false,
+      "runtime_identifier": "minecraft:squid"
+    },
+
+    "component_groups":{
+      "has_grav": {
+        "minecraft:physics": {
+          "has_gravity": true
+        }
+      },
+      "not_has_grav": {
+        "minecraft:physics": {
+          "has_gravity": false
+        }
+      }
+    },
+    
+    "components": {
+      "minecraft:nameable": {},
+      "minecraft:balloonable": {},
+        "minecraft:leashable": {
+          "soft_distance": 4.0,
+          "hard_distance": 6.0,
+          "max_distance": 10.0
+        },
+      "minecraft:experience_reward": {
+        "on_death": "query.last_hit_by_player ? Math.Random(1,3) : 0"
+      },
+      "minecraft:type_family": {
+        "family": [ "giant_squid", "mollusc", "predator", "aquatic", "large", "saltwater" ]
+      },
+      "minecraft:behavior.nearest_attackable_target": {
+        "attack_interval_min": 10,
+        "attack_interval": 20,
+        "priority": 7,
+        "must_see": true,
+        "within_radius": 20.0,
+        "must_see_forget_duration": 17.0,
+        "persist_time": 0.5,
+        "entity_types": [
+          {
+            "filters": {
+              "any_of": [
+                {
+                  "all_of": [
+                    { "test": "is_family", "subject": "other", "value": "player"},
+                    { "test": "in_water", "subject": "other", "value": true}
+                  ]
+                },
+                {
+                  "all_of": [
+                    { "test": "is_family", "subject": "other", "value": "prey"},
+                    { "test": "is_family", "subject": "other", "value": "saltwater"},
+                    { "test": "is_family", "subject": "other", "value": "aquatic"},
+                    {
+                      "any_of": [
+                        { "test": "is_family", "subject": "other", "value": "medium"}
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            "max_dist": 20
+          }
+        ]
+      },
+      "minecraft:attack": {
+        "damage": 7
+      },
+      "minecraft:behavior.melee_attack": {
+        "priority": 6,
+        "speed_multiplier": 1,
+        "track_target": false,
+        "require_complete_path": true
+      },
+      "minecraft:collision_box": {
+        "width": 2.0,
+        "height": 1.0
+      },
+      "minecraft:health": {
+        "value": 30,
+        "max": 30
+      },
+      "minecraft:hurt_on_condition": {
+        "damage_conditions": [
+          {
+            "filters": { "test": "in_lava", "subject": "self", "operator": "==", "value": true },
+            "cause": "lava",
+            "damage_per_tick": 4
+          }
+        ]
+      },
+      "minecraft:loot": {
+        "table": "loot_tables/entities/giant_squid.json"
+      },
+      "minecraft:scale": {
+        "value": 1.0
+      },
+      "minecraft:breathable": {
+        "total_supply": 15,
+        "suffocate_time": 0,
+        "breathes_air": false,
+        "breathes_water": true
+      },
+      "minecraft:movement": {
+        "value": 0.5
+      },
+      "minecraft:movement.generic": {
+        "max_turn": 1
+      },
+      "minecraft:water_movement": {},
+      "minecraft:underwater_movement": {
+        "value": 0.5
+      },
+      "minecraft:navigation.swim": { // Allows the mob to go through water
+        "can_swim": true,
+        "can_walk": false,
+        "can_path_over_water": true,
+        "can_path_from_air": true
+      },
+      "minecraft:physics": {
+        "has_gravity": false
+      },
+      "minecraft:pushable": {
+        "is_pushable": true,
+        "is_pushable_by_piston": true
+      },
+      "minecraft:despawn": {
+        "despawn_from_distance": { 
+          "min_distance": 32,
+          "max_distance": 40
+        }
+      },
+      "minecraft:behavior.random_swim": { // Randomly selects points to go to, even in water
+        "avoid_surface": true,
+        "priority": 3,
+        "speed_multiplier": 0.15,
+        "xz_dist": 16,
+        "y_dist": 4,
+        "interval": 0
+      },
+      "minecraft:timer": {
+        "looping": true,
+        "time": 1,
+        "time_down_event": {
+          "event": "in_water"
+        }
+      },
+      "minecraft:conditional_bandwidth_optimization": {
+      }
+    },
+    
+    "events":{
+      "in_water": {
+        "sequence": [
+          {
+            "filters": { "test": "in_water"},
+            "add": { "component_groups": [ "not_has_grav" ] }
+          },
+          {
+            "filters": { "test": "in_water", "operator": "!=" },
+            "add": { "component_groups": [ "has_grav" ] }
+          }
+        ]
+      }
+    }
+  }
+}

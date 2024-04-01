@@ -1,0 +1,29 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "aqua:scallop",
+      "materials": { "default": "entity_alphatest" },
+      "textures": {
+        "default": "textures/entity/scallop"
+      },
+      "geometry": {
+        "default": "geometry.scallop"
+      },
+      "animations": {
+        "idle": "animation.scallop.idle",
+        "swim": "animation.scallop.swim"
+      },
+      "animation_controllers": [
+        {
+          "scallop": "controller.animation.scallop"
+        }
+      ],
+      "render_controllers": [ "controller.render.squid" ],
+      "spawn_egg": {
+        "texture": "mollusc_egg",
+        "texture_index": 18
+      }
+    }
+  }
+}

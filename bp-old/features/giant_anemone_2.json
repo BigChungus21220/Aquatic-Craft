@@ -1,0 +1,22 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:structure_template_feature": {
+    "description": {
+      "identifier": "aqua:giant_anemone_2"
+    },
+    "structure_name": "mystructure:giant_anemone_2",
+    "adjustment_radius": 8,
+    "facing_direction": "random",
+    "constraints": {
+      "block_intersection": {
+        "block_allowlist": [
+          "minecraft:water",
+          "minecraft:seagrass",
+          "minecraft:kelp",
+          "minecraft:air",
+          "minecraft:flowing_water"
+        ]
+      }
+    }
+  }
+}

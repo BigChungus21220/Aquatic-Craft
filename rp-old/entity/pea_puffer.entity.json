@@ -1,0 +1,28 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "aqua:pea_puffer",
+      "materials": { "default": "entity_alphatest" },
+      "textures": {
+        "default": "textures/entity/pea_puffer"
+      },
+      "geometry": {
+        "default": "geometry.pea_puffer"
+      },
+      "animations": {
+        "swim": "animation.pea_puffer.swim"
+      },
+      "scripts": {
+        "animate": [
+          "swim"
+        ]
+      },
+      "render_controllers": [ "controller.render.squid" ],
+      "spawn_egg": {
+        "texture": "fish_egg",
+        "texture_index": 18
+      }
+    }
+  }
+}

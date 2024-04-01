@@ -1,0 +1,32 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "aqua:humboldt_squid",
+      "materials": { "default": "entity_alphatest" },
+      "textures": {
+        "default": "textures/entity/humboldt_squid"
+      },
+      "geometry": {
+        "default": "geometry.humboldt_squid"
+      },
+      "animations": {
+        "idle": "animation.humboldt_squid.idle"
+      },
+      "scripts": {
+        "pre_animation": [
+          "variable.arm_movement_side=(Math.cos(query.anim_time * 40)-1)*20;",
+          "variable.arm_movement_corner=(Math.cos(query.anim_time * 40)-1)*10;"
+        ],
+        "animate": [
+          "idle"
+        ]
+      },
+      "render_controllers": [ "controller.render.squid" ],
+      "spawn_egg": {
+        "texture": "mollusc_egg",
+        "texture_index": 12
+      }
+    }
+  }
+}

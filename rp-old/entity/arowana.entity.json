@@ -1,0 +1,29 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "aqua:arowana",
+      "materials": { "default": "entity_alphatest" },
+      "textures": {
+        "black": "textures/entity/arowana/0",
+        "silver": "textures/entity/arowana/1"
+      },
+      "geometry": {
+        "default": "geometry.arowana"
+      },
+      "animations": {
+        "swim": "animation.arowana.swim"
+      },
+      "scripts": {
+        "animate": [
+          "swim"
+        ]
+      },
+      "render_controllers": [ "controller.render.arowana" ],
+      "spawn_egg": {
+        "texture": "fish_egg",
+        "texture_index": 28
+      }
+    }
+  }
+}

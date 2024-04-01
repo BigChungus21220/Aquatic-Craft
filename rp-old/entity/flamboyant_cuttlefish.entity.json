@@ -1,0 +1,28 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "aqua:flamboyant_cuttlefish",
+      "materials": { "default": "entity_alphatest" },
+      "textures": {
+        "default": "textures/entity/flamboyant_cuttlefish"
+      },
+      "geometry": {
+        "default": "geometry.flamboyant_cuttlefish"
+      },
+      "animations": {
+        "idle": "animation.flamboyant_cuttlefish.idle"
+      },
+      "scripts": {
+        "animate": [
+          "idle"
+        ]
+      },
+      "render_controllers": [ "controller.render.squid" ],
+      "spawn_egg": {
+        "texture": "mollusc_egg",
+        "texture_index": 2
+      }
+    }
+  }
+}

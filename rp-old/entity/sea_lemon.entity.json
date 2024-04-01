@@ -1,0 +1,28 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "aqua:sea_lemon",
+      "materials": { "default": "entity_alphatest" },
+      "textures": {
+        "default": "textures/entity/sea_lemon"
+      },
+      "geometry": {
+        "default": "geometry.sea_lemon"
+      },
+      "animations": {
+        "idle": "animation.sea_lemon.idle"
+      },
+      "scripts": {
+        "animate": [
+          "idle"
+        ]
+      },
+      "render_controllers": [ "controller.render.squid" ],
+      "spawn_egg": {
+        "texture": "mollusc_egg",
+        "texture_index": 17
+      }
+    }
+  }
+}

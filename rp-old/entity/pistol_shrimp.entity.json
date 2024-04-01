@@ -1,0 +1,34 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "aqua:pistol_shrimp",
+      "materials": { "default": "entity_alphatest" },
+      "textures": {
+        "default": "textures/entity/pistol_shrimp"
+      },
+      "sound_effects": {
+				"fire": "note.hat"
+			},
+      "geometry": {
+        "default": "geometry.pistol_shrimp"
+      },
+      "animations": {
+        "idle": "animation.pistol_shrimp.walk",
+        "shoot": "animation.pistol_shrimp.shoot",
+        "controller": "controller.animation.pistol_shrimp.fire"
+      },
+      "scripts": {
+        "animate": [
+          "idle",
+          "controller"
+        ]
+      },
+      "render_controllers": [ "controller.render.squid" ],
+      "spawn_egg": {
+        "texture": "crustacean_egg",
+        "texture_index": 17
+      }
+    }
+  }
+}

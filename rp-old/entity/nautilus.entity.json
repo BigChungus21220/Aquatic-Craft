@@ -1,0 +1,20 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "aqua:nautilus",
+      "materials": { "default": "entity_alphatest" },
+      "textures": {
+        "default": "textures/entity/nautilus"
+      },
+      "geometry": {
+        "default": "geometry.nautilus"
+      },
+      "render_controllers": [ "controller.render.squid" ],
+      "spawn_egg": {
+        "texture": "mollusc_egg",
+        "texture_index": 4
+      }
+    }
+  }
+}

@@ -1,0 +1,48 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.crescent_grunter",
+				"texture_width": 32,
+				"texture_height": 32,
+				"visible_bounds_width": 2,
+				"visible_bounds_height": 2.5,
+				"visible_bounds_offset": [0, 0.75, 0]
+			},
+			"bones": [
+				{
+					"name": "body",
+					"pivot": [0.5, 2, -2.5],
+					"cubes": [
+						{"origin": [-0.5, 2, -5], "size": [1, 4, 4], "uv": [0, 11]},
+						{"origin": [0, 6, -4], "size": [0, 3, 3], "uv": [18, 26]},
+						{"origin": [0, 0, -2], "size": [0, 2, 1], "uv": [19, 11]},
+						{"origin": [-0.25, 0, -4], "size": [0, 2, 2], "pivot": [-0.25, 2, -2], "rotation": [0, 0, 25], "uv": [4, 26]},
+						{"origin": [0.25, 0, -4], "size": [0, 2, 2], "pivot": [0.25, 2, -2], "rotation": [0, 0, -25], "uv": [4, 26]},
+						{"origin": [-0.5, 2, -2.5], "size": [0, 2, 2], "pivot": [-0.5, 2, -2.5], "rotation": [0, -20, 0], "uv": [12, 19]},
+						{"origin": [0.5, 2, -2.5], "size": [0, 2, 2], "pivot": [0.5, 2, -2.5], "rotation": [0, 20, 0], "uv": [12, 19]}
+					]
+				},
+				{
+					"name": "tail",
+					"parent": "body",
+					"pivot": [0, 4.16667, -1],
+					"cubes": [
+						{"origin": [0, 0, -1], "size": [0, 2, 4], "uv": [10, 12]},
+						{"origin": [0, 6, -1], "size": [0, 3, 4], "uv": [0, 2]},
+						{"origin": [-0.5, 2, -1], "size": [1, 4, 3], "uv": [0, 19]}
+					]
+				},
+				{
+					"name": "tailfin",
+					"parent": "tail",
+					"pivot": [0, 4, 2],
+					"cubes": [
+						{"origin": [0, 1, 2], "size": [0, 6, 5], "uv": [14, 0]}
+					]
+				}
+			]
+		}
+	]
+}

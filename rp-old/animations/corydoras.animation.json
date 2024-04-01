@@ -1,0 +1,29 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.corydoras.swim": {
+			"loop": true,
+			"anim_time_update": "q.modified_distance_moved",
+			"bones": {
+				"tail": {
+					"rotation": [0, "-math.sin(q.anim_time * 400) * 20", 0]
+				},
+				"body": {
+					"rotation": [0, "math.sin(q.anim_time * 400) * 2", 0]
+				}
+			}
+		},
+		"animation.corydoras.bottom_swim": {
+			"loop": true,
+			"bones": {
+				"tail": {
+					"rotation": [0, "math.sin(q.anim_time * 1200) * 20", 0]
+				},
+				"body": {
+					"rotation": ["15+math.cos(q.anim_time * 800) * 1", "math.sin(q.anim_time * 800) * 5", 0],
+					"position": [0, 1, 0]
+				}
+			}
+		}
+	}
+}

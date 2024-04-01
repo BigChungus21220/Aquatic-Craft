@@ -1,0 +1,39 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.spanner_crab.idle": {
+                        "anim_time_update": "query.modified_distance_moved*2",
+			"loop": true,
+			"bones": {
+				"root": {
+					"rotation": [0, 0, 0],
+					"position": [0, 0.9, 0]
+				},
+				"arm": {
+					"rotation": [22.5, 27.5, 5]
+				},
+				"claw": {
+					"rotation": [0, 107.5, 30]
+				},
+				"finger": {
+					"rotation": [0, 12.5, 0]
+				},
+				"arm2": {
+					"rotation": [25, -27.5, -5]
+				},
+				"claw2": {
+					"rotation": [0, -107.5, 320]
+				},
+				"finger2": {
+					"rotation": [0, -12.5, 0]
+				},
+				"legs": {
+					"rotation": [-1, "math.sin(query.anim_time*200)*20", -7.5]
+				},
+				"legs2": {
+					"rotation": [-2, "-math.sin(query.anim_time*200)*20", 7.5]
+				}
+			}
+		}
+	}
+}

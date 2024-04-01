@@ -1,0 +1,17 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.crayfish.idle": {
+                        "anim_time_update": "query.modified_distance_moved*2",
+			"loop": true,
+			"bones": {
+				"leg": {
+					"rotation": [0, 0, "math.sin(query.anim_time*200)*10"]
+				},
+				"leg2": {
+					"rotation": [0, 0, "-math.sin(query.anim_time*200)*10"]
+				}
+			}
+		}
+	}
+}

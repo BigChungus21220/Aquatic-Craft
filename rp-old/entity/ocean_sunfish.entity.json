@@ -1,0 +1,28 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "aqua:ocean_sunfish",
+      "materials": { "default": "entity_alphatest" },
+      "textures": {
+        "default": "textures/entity/ocean_sunfish"
+      },
+      "geometry": {
+        "default": "geometry.ocean_sunfish"
+      },
+      "animations": {
+        "swim": "animation.ocean_sunfish.swim"
+      },
+      "scripts": {
+        "animate": [
+          "swim"
+        ]
+      },
+      "render_controllers": [ "controller.render.squid" ],
+      "spawn_egg": {
+        "texture": "fish_egg",
+        "texture_index": 24
+      }
+    }
+  }
+}

@@ -1,0 +1,45 @@
+{
+	"format_version" : "1.10.0",
+	"animation_controllers" : {
+		"controller.animation.frogfish.wiggle": {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"transitions" : [
+						{
+							"idle" : "math.random_integer(0,60*5) == 0"
+						}
+					]
+				},
+				"idle" : {
+					"animations": ["idle"],
+					"transitions" : [
+						{
+							"default" : "query.all_animations_finished"
+						}
+					]
+				}
+			}
+		},
+		"controller.animation.frogfish.bite": {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"transitions" : [
+						{
+							"munch" : "query.is_delayed_attacking"
+						}
+					]
+				},
+				"munch" : {
+					"animations": ["munch"],
+					"transitions" : [
+						{
+							"default" : "query.all_animations_finished"
+						}
+					]
+				}
+			}
+		}
+	}
+}

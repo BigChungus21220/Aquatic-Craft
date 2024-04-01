@@ -1,0 +1,65 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.land_crab.idle": {
+			"loop": true,
+			"anim_time_update": "query.modified_distance_moved*2",
+			"bones": {
+				"leg": {
+					"rotation": [0, 0, "-17.5-math.cos(query.anim_time*200)*5"]
+				},
+				"lower": {
+					"rotation": [0, 0, "-math.cos(query.anim_time*200)*20"]
+				},
+				"leg2": {
+					"rotation": [0, 0, "-17.5+math.cos(query.anim_time*200)*5"]
+				},
+				"lower2": {
+					"rotation": [0, 0, "math.cos(query.anim_time*200)*20"]
+				},
+				"leg3": {
+					"rotation": [0, -12.5, "-17.5-math.cos(query.anim_time*200)*5"]
+				},
+				"lower3": {
+					"rotation": [0, 0, "-math.cos(query.anim_time*200)*20"]
+				},
+				"leg4": {
+					"rotation": [0, 12.5, "-17.5+math.sin(query.anim_time*200)*5"]
+				},
+				"lower4": {
+					"rotation": [0, 0, "math.sin(query.anim_time*200)*20"]
+				},
+				"leg5": {
+					"rotation": [0, 0, "-17.5-math.sin(query.anim_time*200)*5"]
+				},
+				"lower5": {
+					"rotation": [0, 0, "-math.sin(query.anim_time*200)*20"]
+				},
+				"leg6": {
+					"rotation": [0, 0, "-17.5+math.sin(query.anim_time*200)*5"]
+				},
+				"lower6": {
+					"rotation": [0, 0, "math.sin(query.anim_time*200)*20"]
+				},
+				"lower7": {
+					"rotation": [0, 22.5, 0]
+				},
+				"claw2": {
+					"rotation": [0, 7.5, 0]
+				},
+				"lower8": {
+					"rotation": [0, -22.5, 0]
+				},
+				"rotator": {
+					"rotation": [0, 17.5, 0]
+				},
+				"rotator3": {
+					"rotation": [0, -12.5, 0]
+				},
+				"rotator6": {
+					"rotation": [0, -17.5, 0]
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,17 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:scatter_feature": {
+    "description": {
+      "identifier": "aqua:black_sand_stack"
+    },
+    "places_feature": "aqua:black_sand_block",
+    "iterations": 4,
+    "scatter_chance": 100.0,
+    "x": 0,
+    "y": {
+      "distribution": "fixed_grid",
+      "extent": [ -3, 0 ]
+    },
+    "z": 0
+  }
+}

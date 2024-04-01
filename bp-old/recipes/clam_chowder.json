@@ -1,0 +1,37 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "aqua:clam_chowder"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+		  "XY",
+		  " Z"
+		],
+		"key": {
+		  "X": {
+			"item": "aqua:clam_item"
+		  },
+		  "Y": {
+			"item": "minecraft:milk_bucket"
+		  },
+		  "Z": {
+			"item": "minecraft:bowl"
+		  }
+		},
+		"result": [
+			{
+				"item": "aqua:clam_chowder"
+			},
+			{
+				"item": "minecraft:bucket"
+			},
+			{
+				"item": "aqua:clam_shell_item"
+			}
+		]
+	}
+}

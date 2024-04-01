@@ -1,0 +1,19 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:structure_template_feature": {
+    "description": {
+      "identifier": "aqua:amazon_sword_feature"
+    },
+    "structure_name": "mystructure:waterlogged_amazon_sword",
+    "adjustment_radius": 8,
+    "facing_direction": "random",
+    "constraints": {
+      "grounded": {},
+      "block_intersection": {
+        "block_allowlist": [
+          "minecraft:water"
+        ]
+      }
+    }
+  }
+}

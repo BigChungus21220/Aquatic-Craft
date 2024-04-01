@@ -1,0 +1,31 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "aqua:batfish",
+      "materials": { "default": "entity_alphatest" },
+      "textures": {
+        "pinnate": "textures/entity/batfish/0",
+        "orbicular": "textures/entity/batfish/1",
+        "teira": "textures/entity/batfish/2",
+        "golden": "textures/entity/batfish/3"
+    },
+      "geometry": {
+        "default": "geometry.batfish"
+      },
+      "animations": {
+        "swim": "animation.batfish.swim"
+      },
+      "scripts": {
+        "animate": [
+          "swim"
+        ]
+      },
+      "render_controllers": [ "controller.render.batfish" ],
+      "spawn_egg": {
+        "texture": "fish_egg",
+        "texture_index": 1
+      }
+    }
+  }
+}
